@@ -1,0 +1,1665 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C300573A197F034B005DBF3C /* PKc_MessageBox.mm in Sources */ = {isa = PBXBuildFile; fileRef = C3005739197F034B005DBF3C /* PKc_MessageBox.mm */; };
+		C30399F81801A44100848E86 /* PK_MathHelper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C30399F71801A44000848E86 /* PK_MathHelper.cpp */; };
+		C32D443E18C69AD400208DE5 /* PKc_PlayerAuthentication.mm in Sources */ = {isa = PBXBuildFile; fileRef = C32D443D18C69AD400208DE5 /* PKc_PlayerAuthentication.mm */; };
+		C32E57F51809F22600BB7099 /* PK_Mutex.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C32E57F41809F22600BB7099 /* PK_Mutex.cpp */; };
+		C32ECE2A19660AD200B31EBE /* PK_Web.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C32ECE2919660AD200B31EBE /* PK_Web.cpp */; };
+		C32ECE2E19660FA500B31EBE /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = C32ECE2D19660FA500B31EBE /* Reachability.m */; };
+		C32FC6B31916A6D900F52A17 /* libGoogleAdMobAds.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C32FC6B21916A6D900F52A17 /* libGoogleAdMobAds.a */; };
+		C32FC6B71916A72600F52A17 /* libBox2D.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C32FC6B61916A72500F52A17 /* libBox2D.a */; };
+		C32FC6BB1916A73E00F52A17 /* libSDL2_image.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C32FC6B81916A73E00F52A17 /* libSDL2_image.a */; };
+		C32FC6BD1916A73E00F52A17 /* libSDL2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C32FC6BA1916A73E00F52A17 /* libSDL2.a */; };
+		C32FC6BF1916A75900F52A17 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C32FC6BE1916A75900F52A17 /* SystemConfiguration.framework */; };
+		C32FC6C11916A76200F52A17 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C32FC6C01916A76200F52A17 /* StoreKit.framework */; };
+		C32FC6C31916A77000F52A17 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C32FC6C21916A76F00F52A17 /* MessageUI.framework */; };
+		C32FC6C51916A77800F52A17 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C32FC6C41916A77800F52A17 /* CoreTelephony.framework */; };
+		C32FC6C71916A77F00F52A17 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C32FC6C61916A77F00F52A17 /* AVFoundation.framework */; };
+		C32FC6C91916A78700F52A17 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C32FC6C81916A78700F52A17 /* AdSupport.framework */; };
+		C32FC6CB1916A79800F52A17 /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C32FC6CA1916A79800F52A17 /* GameKit.framework */; };
+		C32FC6CD1916A7A100F52A17 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C32FC6CC1916A7A100F52A17 /* ImageIO.framework */; };
+		C32FC6CF1916A7AB00F52A17 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C32FC6CE1916A7AB00F52A17 /* OpenGLES.framework */; };
+		C32FC6D11916A7B200F52A17 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C32FC6D01916A7B200F52A17 /* UIKit.framework */; };
+		C32FC6D31916A7B900F52A17 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C32FC6D21916A7B900F52A17 /* CoreGraphics.framework */; };
+		C32FC6D51916A7BF00F52A17 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C32FC6D41916A7BF00F52A17 /* AudioToolbox.framework */; };
+		C32FC6D71916A7C600F52A17 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C32FC6D61916A7C600F52A17 /* QuartzCore.framework */; };
+		C32FC6D91916A7CE00F52A17 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C32FC6D81916A7CE00F52A17 /* MobileCoreServices.framework */; };
+		C32FC6DB1916A7D500F52A17 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C32FC6DA1916A7D500F52A17 /* CoreAudio.framework */; };
+		C32FC6DF1916A82E00F52A17 /* libSDL2_net.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C32FC6DE1916A82E00F52A17 /* libSDL2_net.a */; };
+		C33200181983095100CE4CBB /* PK_EventManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C33200171983095100CE4CBB /* PK_EventManager.cpp */; };
+		C34448D6199D492300FBFCDF /* PK_Console.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C34448D3199D492300FBFCDF /* PK_Console.cpp */; };
+		C34448D7199D492300FBFCDF /* PK_ConsoleApp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C34448D4199D492300FBFCDF /* PK_ConsoleApp.cpp */; };
+		C34448D8199D492300FBFCDF /* PK_FileAsset.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C34448D5199D492300FBFCDF /* PK_FileAsset.cpp */; };
+		C34E51231805D078000615E3 /* PK_DataFieldFormatException.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C34E51221805D078000615E3 /* PK_DataFieldFormatException.cpp */; };
+		C350E2B717F6043E008892D2 /* PK_Component.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C350E29A17F6043C008892D2 /* PK_Component.cpp */; };
+		C350E2B817F6043E008892D2 /* PK_DataFile.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C350E29B17F6043C008892D2 /* PK_DataFile.cpp */; };
+		C350E2B917F6043E008892D2 /* PK_DataFileField.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C350E29C17F6043C008892D2 /* PK_DataFileField.cpp */; };
+		C350E2BA17F6043E008892D2 /* PK_DataFileRecord.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C350E29D17F6043C008892D2 /* PK_DataFileRecord.cpp */; };
+		C350E2BB17F6043E008892D2 /* PK_FileNotFoundException.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C350E29E17F6043C008892D2 /* PK_FileNotFoundException.cpp */; };
+		C350E2BC17F6043E008892D2 /* PK_Image.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C350E29F17F6043C008892D2 /* PK_Image.cpp */; };
+		C350E2BD17F6043E008892D2 /* PK_Log.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C350E2A017F6043C008892D2 /* PK_Log.cpp */; };
+		C350E2BE17F6043E008892D2 /* PK_NullArgumentException.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C350E2A117F6043C008892D2 /* PK_NullArgumentException.cpp */; };
+		C350E2BF17F6043E008892D2 /* PK_Object.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C350E2A217F6043D008892D2 /* PK_Object.cpp */; };
+		C350E2C017F6043E008892D2 /* PK_OutOfMemoryException.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C350E2A317F6043D008892D2 /* PK_OutOfMemoryException.cpp */; };
+		C350E2C117F6043E008892D2 /* PK_PokeEngine.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C350E2A417F6043D008892D2 /* PK_PokeEngine.cpp */; };
+		C350E2C217F6043E008892D2 /* PK_Profiler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C350E2A517F6043D008892D2 /* PK_Profiler.cpp */; };
+		C350E2C617F6043E008892D2 /* PK_Scene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C350E2A917F6043D008892D2 /* PK_Scene.cpp */; };
+		C350E2C717F6043E008892D2 /* PK_SceneControl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C350E2AA17F6043D008892D2 /* PK_SceneControl.cpp */; };
+		C350E2C817F6043E008892D2 /* PK_SceneManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C350E2AB17F6043D008892D2 /* PK_SceneManager.cpp */; };
+		C350E2C917F6043E008892D2 /* PK_SceneRoot.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C350E2AC17F6043D008892D2 /* PK_SceneRoot.cpp */; };
+		C350E2CA17F6043E008892D2 /* PK_SDLException.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C350E2AD17F6043E008892D2 /* PK_SDLException.cpp */; };
+		C350E2CE17F6043E008892D2 /* PK_Settings.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C350E2B117F6043E008892D2 /* PK_Settings.cpp */; };
+		C350E2D017F6043E008892D2 /* PK_SystemException.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C350E2B317F6043E008892D2 /* PK_SystemException.cpp */; };
+		C350E2D217F6043E008892D2 /* PK_XmlDataFileReader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C350E2B517F6043E008892D2 /* PK_XmlDataFileReader.cpp */; };
+		C350E2D317F6043E008892D2 /* PK_XmlDataFileWriter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C350E2B617F6043E008892D2 /* PK_XmlDataFileWriter.cpp */; };
+		C3580A4B1811C31D002CA301 /* PK_Label.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C3580A4A1811C31D002CA301 /* PK_Label.cpp */; };
+		C35AB595199BF47700331D0C /* libSDL2_mixer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C32FC6B91916A73E00F52A17 /* libSDL2_mixer.a */; };
+		C35CFE5018002913004D4C59 /* PK_tBoundingSquare.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C35CFE4F18002912004D4C59 /* PK_tBoundingSquare.cpp */; };
+		C35CFE5218002D68004D4C59 /* PK_tSpriteFrame.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C35CFE5118002D67004D4C59 /* PK_tSpriteFrame.cpp */; };
+		C35FD68419296577004CBE63 /* PK_CommandAttributes.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C35FD67919296577004CBE63 /* PK_CommandAttributes.cpp */; };
+		C35FD68519296577004CBE63 /* PK_MemoryBufferReader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C35FD67A19296577004CBE63 /* PK_MemoryBufferReader.cpp */; };
+		C35FD68619296577004CBE63 /* PK_MoveCmd.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C35FD67B19296577004CBE63 /* PK_MoveCmd.cpp */; };
+		C35FD68719296577004CBE63 /* PK_PauseCmd.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C35FD67C19296577004CBE63 /* PK_PauseCmd.cpp */; };
+		C35FD68819296577004CBE63 /* PK_RotateCmd.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C35FD67D19296577004CBE63 /* PK_RotateCmd.cpp */; };
+		C35FD68919296577004CBE63 /* PK_Script.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C35FD67E19296577004CBE63 /* PK_Script.cpp */; };
+		C35FD68A19296577004CBE63 /* PK_ScriptAsset.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C35FD67F19296577004CBE63 /* PK_ScriptAsset.cpp */; };
+		C35FD68B19296577004CBE63 /* PK_ScriptCommand.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C35FD68019296577004CBE63 /* PK_ScriptCommand.cpp */; };
+		C35FD68C19296577004CBE63 /* PK_ScriptCompiler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C35FD68119296577004CBE63 /* PK_ScriptCompiler.cpp */; };
+		C35FD68D19296577004CBE63 /* PK_SetAttributeCmd.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C35FD68219296577004CBE63 /* PK_SetAttributeCmd.cpp */; };
+		C35FD68E19296577004CBE63 /* PK_tScriptValue.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C35FD68319296577004CBE63 /* PK_tScriptValue.cpp */; };
+		C364CCEC180F10B200D0A804 /* PK_InvalidObjectException.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C364CCEB180F10B200D0A804 /* PK_InvalidObjectException.cpp */; };
+		C36918661829800B00EE7CDB /* PK_Types.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C36918651829800B00EE7CDB /* PK_Types.cpp */; };
+		C369186C1829803D00EE7CDB /* PK_Effect.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C36918691829803D00EE7CDB /* PK_Effect.cpp */; };
+		C369186D1829803D00EE7CDB /* PK_EffectsBlender.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C369186A1829803D00EE7CDB /* PK_EffectsBlender.cpp */; };
+		C36A3A071804819B00BA1B7F /* PK_TypeConverters.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C36A3A061804819B00BA1B7F /* PK_TypeConverters.cpp */; };
+		C36A3A0C1804945D00BA1B7F /* PK_SDLManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C36A3A0B1804945D00BA1B7F /* PK_SDLManager.cpp */; };
+		C36EE7B417F87AF100260B88 /* PK_Camera.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C36EE7B317F87AF100260B88 /* PK_Camera.cpp */; };
+		C36EFC1E18D3BDE50091BDA4 /* PK_AdBannerControl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C36EFC1D18D3BDE50091BDA4 /* PK_AdBannerControl.cpp */; };
+		C374EF2317FF64730041819B /* PK_Path.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C374EF2217FF64730041819B /* PK_Path.cpp */; };
+		C376769B182831F000494362 /* PK_FPSCounterProfilerItem.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C3767699182831F000494362 /* PK_FPSCounterProfilerItem.cpp */; };
+		C376769C182831F000494362 /* PK_LoadedObjsProfilerItem.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C376769A182831F000494362 /* PK_LoadedObjsProfilerItem.cpp */; };
+		C376769E182831FF00494362 /* PK_AssetManagerProfilerItem.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C376769D182831FF00494362 /* PK_AssetManagerProfilerItem.cpp */; };
+		C37676A3182839F700494362 /* PK_ProfilerMenu.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C37676A2182839F700494362 /* PK_ProfilerMenu.cpp */; };
+		C3775E02198D255100E900A9 /* PK_DrawableComponent.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C3775E01198D255100E900A9 /* PK_DrawableComponent.cpp */; };
+		C379CC8C1815C54C00C112DF /* PK_Sprite.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C379CC8B1815C54C00C112DF /* PK_Sprite.cpp */; };
+		C37A688B1803398700D374CA /* PK_InputManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C37A68841803398700D374CA /* PK_InputManager.cpp */; };
+		C37A688C1803398700D374CA /* PK_NotImplementedException.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C37A68851803398700D374CA /* PK_NotImplementedException.cpp */; };
+		C37A688D1803398700D374CA /* PK_PokeSettings.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C37A68861803398700D374CA /* PK_PokeSettings.cpp */; };
+		C37A688F1803398700D374CA /* PK_SDLInputManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C37A68881803398700D374CA /* PK_SDLInputManager.cpp */; };
+		C37A6D881807290E00113B05 /* PK_SceneTransition.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C37A6D851807290E00113B05 /* PK_SceneTransition.cpp */; };
+		C37A6D891807290E00113B05 /* PK_Thread.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C37A6D861807290E00113B05 /* PK_Thread.cpp */; };
+		C37F579718CA632700F4083C /* PKc_SDLInterface.mm in Sources */ = {isa = PBXBuildFile; fileRef = C37F579518CA632700F4083C /* PKc_SDLInterface.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		C380A15618204CA4006C777D /* PK_Asset.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C380A14C18204CA4006C777D /* PK_Asset.cpp */; };
+		C380A15718204CA4006C777D /* PK_AssetContainer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C380A14D18204CA4006C777D /* PK_AssetContainer.cpp */; };
+		C380A15818204CA4006C777D /* PK_AssetManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C380A14E18204CA4006C777D /* PK_AssetManager.cpp */; };
+		C380A15918204CA4006C777D /* PK_FontAsset.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C380A14F18204CA4006C777D /* PK_FontAsset.cpp */; };
+		C380A15A18204CA4006C777D /* PK_SDLGLTextureAsset.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C380A15018204CA4006C777D /* PK_SDLGLTextureAsset.cpp */; };
+		C380A15B18204CA4006C777D /* PK_SDLMusicAsset.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C380A15118204CA4006C777D /* PK_SDLMusicAsset.cpp */; };
+		C380A15C18204CA4006C777D /* PK_SDLSoundAsset.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C380A15218204CA4006C777D /* PK_SDLSoundAsset.cpp */; };
+		C380A15D18204CA4006C777D /* PK_SDLTextureAsset.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C380A15318204CA4006C777D /* PK_SDLTextureAsset.cpp */; };
+		C380A15E18204CA4006C777D /* PK_SpriteAsset.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C380A15418204CA4006C777D /* PK_SpriteAsset.cpp */; };
+		C380A15F18204CA4006C777D /* PK_SpriteSetAsset.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C380A15518204CA4006C777D /* PK_SpriteSetAsset.cpp */; };
+		C380A16218204CB2006C777D /* PK_tAABoundingSquare.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C380A16018204CB2006C777D /* PK_tAABoundingSquare.cpp */; };
+		C380A16318204CB2006C777D /* PK_tSize.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C380A16118204CB2006C777D /* PK_tSize.cpp */; };
+		C380A9DA19649CC10069365F /* PK_PokeGameData.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C380A9D919649CC10069365F /* PK_PokeGameData.cpp */; };
+		C380B53E1999737000FF2CB7 /* PK_AudioManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C380B53D1999737000FF2CB7 /* PK_AudioManager.cpp */; };
+		C3822C5B18316BDD005AACA7 /* PK_PopUpEffect.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C3822C5918316BDD005AACA7 /* PK_PopUpEffect.cpp */; };
+		C3822C6118316C9A005AACA7 /* PK_ObjectPropertiesAsset.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C3822C6018316C9A005AACA7 /* PK_ObjectPropertiesAsset.cpp */; };
+		C3822C6318316DFF005AACA7 /* PK_LoadableObject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C3822C6218316DFF005AACA7 /* PK_LoadableObject.cpp */; };
+		C3822C6518317449005AACA7 /* PK_DataFileAsset.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C3822C6418317449005AACA7 /* PK_DataFileAsset.cpp */; };
+		C382464F18FC8D2A00F1AB7B /* PK_SDLTCPSocket.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C382464C18FC8D2A00F1AB7B /* PK_SDLTCPSocket.cpp */; };
+		C382465018FC8D2A00F1AB7B /* PK_TCPClient.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C382464D18FC8D2A00F1AB7B /* PK_TCPClient.cpp */; };
+		C382465118FC8D2A00F1AB7B /* PK_TCPServer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C382464E18FC8D2A00F1AB7B /* PK_TCPServer.cpp */; };
+		C382465418FC8D3900F1AB7B /* PK_Library.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C382465218FC8D3900F1AB7B /* PK_Library.cpp */; };
+		C382465518FC8D3900F1AB7B /* PK_LibraryItem.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C382465318FC8D3900F1AB7B /* PK_LibraryItem.cpp */; };
+		C389B93917F8490A0054F409 /* PK_GLESBasicShader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C389B93817F8490A0054F409 /* PK_GLESBasicShader.cpp */; };
+		C38AB18918D0F6480088C4F5 /* PKc_AdBanner.mm in Sources */ = {isa = PBXBuildFile; fileRef = C38AB18818D0F6480088C4F5 /* PKc_AdBanner.mm */; };
+		C38AB18C18D105EC0088C4F5 /* PK_AdBanner.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C38AB18A18D105EC0088C4F5 /* PK_AdBanner.cpp */; };
+		C38AB18D18D105EC0088C4F5 /* PK_iOSAdBanner.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C38AB18B18D105EC0088C4F5 /* PK_iOSAdBanner.cpp */; };
+		C38B2FFD196A071E00B9553E /* PK_ArgumentOutOfRangeException.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C38B2FF7196A071D00B9553E /* PK_ArgumentOutOfRangeException.cpp */; };
+		C38B2FFE196A071E00B9553E /* PK_Environment.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C38B2FF8196A071D00B9553E /* PK_Environment.cpp */; };
+		C38B2FFF196A071E00B9553E /* PK_OfflineAdBanner.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C38B2FF9196A071D00B9553E /* PK_OfflineAdBanner.cpp */; };
+		C38B3000196A071E00B9553E /* PK_OverflowException.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C38B2FFA196A071D00B9553E /* PK_OverflowException.cpp */; };
+		C38B3001196A071E00B9553E /* PK_tDateTime.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C38B2FFB196A071D00B9553E /* PK_tDateTime.cpp */; };
+		C38B3002196A071E00B9553E /* PK_tTimeSpan.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C38B2FFC196A071D00B9553E /* PK_tTimeSpan.cpp */; };
+		C38B3118180DE124005B572B /* PK_AudioManagerSettings.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C38B3116180DE124005B572B /* PK_AudioManagerSettings.cpp */; };
+		C38B3119180DE124005B572B /* PK_SceneManagerSettings.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C38B3117180DE124005B572B /* PK_SceneManagerSettings.cpp */; };
+		C38B666D1819BEB400573CEE /* PK_2DSceneControl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C38B666A1819BEB400573CEE /* PK_2DSceneControl.cpp */; };
+		C38B666E1819BEB400573CEE /* PK_ObjectLoader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C38B666B1819BEB400573CEE /* PK_ObjectLoader.cpp */; };
+		C38B666F1819BEB400573CEE /* PK_ProfilerItem.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C38B666C1819BEB400573CEE /* PK_ProfilerItem.cpp */; };
+		C38BCB771964858D0032DEE0 /* PK_Rate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C38BCB761964858D0032DEE0 /* PK_Rate.cpp */; };
+		C38D552018B2AAF4008AD67E /* PK_GameException.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C38D551C18B2AAF4008AD67E /* PK_GameException.cpp */; };
+		C38D552118B2AAF4008AD67E /* PK_RandomGenerator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C38D551D18B2AAF4008AD67E /* PK_RandomGenerator.cpp */; };
+		C38D552218B2AAF4008AD67E /* PK_tBoundingCircle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C38D551E18B2AAF4008AD67E /* PK_tBoundingCircle.cpp */; };
+		C38D552318B2AAF4008AD67E /* PK_TimerControl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C38D551F18B2AAF4008AD67E /* PK_TimerControl.cpp */; };
+		C38D552A18B2AB3D008AD67E /* PK_Exception.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C38D552918B2AB3D008AD67E /* PK_Exception.cpp */; };
+		C391A7F018C928BC00B86B05 /* PK_iOSLeaderboard.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C391A7EE18C928BC00B86B05 /* PK_iOSLeaderboard.cpp */; };
+		C391A7F118C928BC00B86B05 /* PK_Leaderboard.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C391A7EF18C928BC00B86B05 /* PK_Leaderboard.cpp */; };
+		C391A7F418C9399100B86B05 /* PKc_Leaderboard.mm in Sources */ = {isa = PBXBuildFile; fileRef = C391A7F318C9399100B86B05 /* PKc_Leaderboard.mm */; };
+		C392C0231954D3BE001EA9D0 /* PK_File.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C392C0221954D3BE001EA9D0 /* PK_File.cpp */; };
+		C3962FE018147CA30097E84C /* PK_Panel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C3962FDF18147CA30097E84C /* PK_Panel.cpp */; };
+		C396DCA518B7F963007B21FE /* PK_Body.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C396DCA018B7F963007B21FE /* PK_Body.cpp */; };
+		C396DCA618B7F963007B21FE /* PK_Box2DBody.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C396DCA118B7F963007B21FE /* PK_Box2DBody.cpp */; };
+		C396DCA718B7F963007B21FE /* PK_Box2DContactListener.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C396DCA218B7F963007B21FE /* PK_Box2DContactListener.cpp */; };
+		C396DCA818B7F963007B21FE /* PK_Box2DPhysicsManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C396DCA318B7F963007B21FE /* PK_Box2DPhysicsManager.cpp */; };
+		C396DCA918B7F963007B21FE /* PK_Box2DRenderer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C396DCA418B7F963007B21FE /* PK_Box2DRenderer.cpp */; };
+		C396DCAB18B7F975007B21FE /* PK_PhysicsManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C396DCAA18B7F975007B21FE /* PK_PhysicsManager.cpp */; };
+		C396DCAD18B7F980007B21FE /* PK_tViewport.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C396DCAC18B7F980007B21FE /* PK_tViewport.cpp */; };
+		C3989B601960A4E400BE8714 /* PK_LabelCmd.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C3989B5D1960A4E400BE8714 /* PK_LabelCmd.cpp */; };
+		C3989B611960A4E400BE8714 /* PK_LoopCmd.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C3989B5E1960A4E400BE8714 /* PK_LoopCmd.cpp */; };
+		C3989B621960A4E400BE8714 /* PK_SelectCmd.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C3989B5F1960A4E400BE8714 /* PK_SelectCmd.cpp */; };
+		C3989B741960CDC800BE8714 /* PKc_Facebook.mm in Sources */ = {isa = PBXBuildFile; fileRef = C3989B731960CDC800BE8714 /* PKc_Facebook.mm */; };
+		C399CD161808AF6A0026DC60 /* PK_SDLAudioManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C399CD151808AF6A0026DC60 /* PK_SDLAudioManager.cpp */; };
+		C39CAED817FB66160096C953 /* PK_ClassFactory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C39CAED617FB66160096C953 /* PK_ClassFactory.cpp */; };
+		C39E724117FCCB5C00E8DBB0 /* PK_GLESTextureShader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C39E724017FCCB5C00E8DBB0 /* PK_GLESTextureShader.cpp */; };
+		C3A6555818107F4B001DE383 /* PK_Timer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C3A6555718107F4B001DE383 /* PK_Timer.cpp */; };
+		C3AEDD6017ECFF6400C51129 /* tinyxml2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C3AEDD5717ECFF6400C51129 /* tinyxml2.cpp */; };
+		C3B8077117F9FC860066D2CD /* PK_GLESRenderManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C3B8077017F9FC860066D2CD /* PK_GLESRenderManager.cpp */; };
+		C3B8077317F9FC970066D2CD /* PK_GLESException.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C3B8077217F9FC970066D2CD /* PK_GLESException.cpp */; };
+		C3B8157719450BA300BFE325 /* PK_AdManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C3B8157619450BA300BFE325 /* PK_AdManager.cpp */; };
+		C3BD351D1907169F0084C334 /* PK_GravityEffect.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C3BD35191907169F0084C334 /* PK_GravityEffect.cpp */; };
+		C3BD351E1907169F0084C334 /* PK_LinearMoveEffect.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C3BD351A1907169F0084C334 /* PK_LinearMoveEffect.cpp */; };
+		C3BD351F1907169F0084C334 /* PK_MessageBox.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C3BD351B1907169F0084C334 /* PK_MessageBox.cpp */; };
+		C3BD35201907169F0084C334 /* PK_MotionEffect.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C3BD351C1907169F0084C334 /* PK_MotionEffect.cpp */; };
+		C3C8C1D618AC33540073A9F9 /* PK_Game.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C3C8C1D518AC33540073A9F9 /* PK_Game.cpp */; };
+		C3C900FD197C19D100C6059C /* PK_SplashScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C3C900FC197C19D100C6059C /* PK_SplashScene.cpp */; };
+		C3CF634719942446001AC295 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3CF634619942446001AC295 /* CoreMotion.framework */; };
+		C3D06A7417FA3B0000E53077 /* PK_MemoryBuffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C3D06A7217FA3B0000E53077 /* PK_MemoryBuffer.cpp */; };
+		C3D55FF2181DC36A0085E0E4 /* PK_Button.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C3D55FF1181DC36A0085E0E4 /* PK_Button.cpp */; };
+		C3E9B4AC17F7746E00169223 /* PK_GLESShader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C3E9B4AA17F7746E00169223 /* PK_GLESShader.cpp */; };
+		C3E9B4B817F779AA00169223 /* PK_RenderManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C3E9B4B717F779AA00169223 /* PK_RenderManager.cpp */; };
+		C3EA10D719B226C4008E4C70 /* PK_App.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C3EA10D119B226C4008E4C70 /* PK_App.cpp */; };
+		C3EA10D819B226C4008E4C70 /* PK_AppStore.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C3EA10D219B226C4008E4C70 /* PK_AppStore.cpp */; };
+		C3EA10D919B226C4008E4C70 /* PK_FileReader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C3EA10D319B226C4008E4C70 /* PK_FileReader.cpp */; };
+		C3EA10DA19B226C4008E4C70 /* PK_FileWriter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C3EA10D419B226C4008E4C70 /* PK_FileWriter.cpp */; };
+		C3EA10DB19B226C4008E4C70 /* PK_GameApp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C3EA10D519B226C4008E4C70 /* PK_GameApp.cpp */; };
+		C3EA10DC19B226C4008E4C70 /* PK_StringAsset.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C3EA10D619B226C4008E4C70 /* PK_StringAsset.cpp */; };
+		C3EB89CA18C6668800EAF7F2 /* PK_PhysicsManagerSettings.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C3EB89C918C6668800EAF7F2 /* PK_PhysicsManagerSettings.cpp */; };
+		C3EB89CC18C6669D00EAF7F2 /* PK_ButtonPressEffect.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C3EB89CB18C6669D00EAF7F2 /* PK_ButtonPressEffect.cpp */; };
+		C3EB89DA18C68CEE00EAF7F2 /* PK_Player.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C3EB89D918C68CEE00EAF7F2 /* PK_Player.cpp */; };
+		C3EB89DC18C68D8700EAF7F2 /* PK_iOSPlayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C3EB89DB18C68D8700EAF7F2 /* PK_iOSPlayer.cpp */; };
+		C3EB89E018C691AE00EAF7F2 /* PKc_CInterface.mm in Sources */ = {isa = PBXBuildFile; fileRef = C3EB89DF18C691AE00EAF7F2 /* PKc_CInterface.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		C3ECACA8182FDD49007D6EA6 /* PK_ColorEffect.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C3ECACA7182FDD49007D6EA6 /* PK_ColorEffect.cpp */; };
+		C3EE215D19156486009AF781 /* PK_ProfilerSettings.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C3EE215B19156486009AF781 /* PK_ProfilerSettings.cpp */; };
+		C3EE215E19156486009AF781 /* PK_RemoteDebuggerClient.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C3EE215C19156486009AF781 /* PK_RemoteDebuggerClient.cpp */; };
+		C3F85D251A26878C00A1074E /* PK_PlaySoundCmd.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C3F85D241A26878C00A1074E /* PK_PlaySoundCmd.cpp */; };
+		C3FF4F4A18A82F150023009B /* PK_PointerInfoProfilerItem.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C3FF4F4818A82F150023009B /* PK_PointerInfoProfilerItem.cpp */; };
+		C3FF4F4B18A82F150023009B /* PK_SDLRenderManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C3FF4F4918A82F150023009B /* PK_SDLRenderManager.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C33EF27417E66A0400C0B75C /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/${PRODUCT_NAME}";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		C3005737197EF8EB005DBF3C /* PK_MessageBoxCallback.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PK_MessageBoxCallback.h; sourceTree = "<group>"; };
+		C3005738197F034B005DBF3C /* PKc_MessageBox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PKc_MessageBox.h; path = PokeEngine/src/iOS/PKc_MessageBox.h; sourceTree = "<group>"; };
+		C3005739197F034B005DBF3C /* PKc_MessageBox.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = PKc_MessageBox.mm; path = PokeEngine/src/iOS/PKc_MessageBox.mm; sourceTree = "<group>"; };
+		C30399F61801A32000848E86 /* PK_MathHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PK_MathHelper.h; sourceTree = "<group>"; };
+		C30399F71801A44000848E86 /* PK_MathHelper.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PK_MathHelper.cpp; path = PokeEngine/src/PK_MathHelper.cpp; sourceTree = "<group>"; };
+		C32D443C18C69AD400208DE5 /* PKc_PlayerAuthentication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PKc_PlayerAuthentication.h; path = PokeEngine/src/iOS/PKc_PlayerAuthentication.h; sourceTree = "<group>"; };
+		C32D443D18C69AD400208DE5 /* PKc_PlayerAuthentication.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = PKc_PlayerAuthentication.mm; path = PokeEngine/src/iOS/PKc_PlayerAuthentication.mm; sourceTree = "<group>"; };
+		C32E57F31809F21200BB7099 /* PK_Mutex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PK_Mutex.h; sourceTree = "<group>"; };
+		C32E57F41809F22600BB7099 /* PK_Mutex.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PK_Mutex.cpp; path = PokeEngine/src/PK_Mutex.cpp; sourceTree = "<group>"; };
+		C32ECE2919660AD200B31EBE /* PK_Web.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PK_Web.cpp; path = PokeEngine/src/PK_Web.cpp; sourceTree = "<group>"; };
+		C32ECE2B19660ADC00B31EBE /* PK_Web.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PK_Web.h; sourceTree = "<group>"; };
+		C32ECE2C19660FA500B31EBE /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Reachability.h; path = PokeEngine/src/iOS/Reachability.h; sourceTree = "<group>"; };
+		C32ECE2D19660FA500B31EBE /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Reachability.m; path = PokeEngine/src/iOS/Reachability.m; sourceTree = "<group>"; };
+		C32FC6B21916A6D900F52A17 /* libGoogleAdMobAds.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libGoogleAdMobAds.a; path = ../../src/iOS/GoogleAdMob/libGoogleAdMobAds.a; sourceTree = "<group>"; };
+		C32FC6B61916A72500F52A17 /* libBox2D.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libBox2D.a; path = "../../../../../../../../../../Library/Developer/Xcode/DerivedData/Build/Products/Debug-iphoneos/libBox2D.a"; sourceTree = "<group>"; };
+		C32FC6B81916A73E00F52A17 /* libSDL2_image.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libSDL2_image.a; path = "../../../../../../../../../../Library/Developer/Xcode/DerivedData/Build/Products/Debug-iphoneos/libSDL2_image.a"; sourceTree = "<group>"; };
+		C32FC6B91916A73E00F52A17 /* libSDL2_mixer.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libSDL2_mixer.a; path = "../../../../../../../../../../Library/Developer/Xcode/DerivedData/Build/Products/Debug-iphoneos/libSDL2_mixer.a"; sourceTree = "<group>"; };
+		C32FC6BA1916A73E00F52A17 /* libSDL2.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libSDL2.a; path = "../../../../../../../../../../Library/Developer/Xcode/DerivedData/Build/Products/Debug-iphoneos/libSDL2.a"; sourceTree = "<group>"; };
+		C32FC6BE1916A75900F52A17 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/SystemConfiguration.framework; sourceTree = DEVELOPER_DIR; };
+		C32FC6C01916A76200F52A17 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/StoreKit.framework; sourceTree = DEVELOPER_DIR; };
+		C32FC6C21916A76F00F52A17 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/MessageUI.framework; sourceTree = DEVELOPER_DIR; };
+		C32FC6C41916A77800F52A17 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/CoreTelephony.framework; sourceTree = DEVELOPER_DIR; };
+		C32FC6C61916A77F00F52A17 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/AVFoundation.framework; sourceTree = DEVELOPER_DIR; };
+		C32FC6C81916A78700F52A17 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/AdSupport.framework; sourceTree = DEVELOPER_DIR; };
+		C32FC6CA1916A79800F52A17 /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/GameKit.framework; sourceTree = DEVELOPER_DIR; };
+		C32FC6CC1916A7A100F52A17 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/ImageIO.framework; sourceTree = DEVELOPER_DIR; };
+		C32FC6CE1916A7AB00F52A17 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/OpenGLES.framework; sourceTree = DEVELOPER_DIR; };
+		C32FC6D01916A7B200F52A17 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		C32FC6D21916A7B900F52A17 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
+		C32FC6D41916A7BF00F52A17 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/AudioToolbox.framework; sourceTree = DEVELOPER_DIR; };
+		C32FC6D61916A7C600F52A17 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		C32FC6D81916A7CE00F52A17 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/MobileCoreServices.framework; sourceTree = DEVELOPER_DIR; };
+		C32FC6DA1916A7D500F52A17 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/CoreAudio.framework; sourceTree = DEVELOPER_DIR; };
+		C32FC6DE1916A82E00F52A17 /* libSDL2_net.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libSDL2_net.a; path = "../../../../../../../../../../Library/Developer/Xcode/DerivedData/Build/Products/Debug-iphoneos/libSDL2_net.a"; sourceTree = "<group>"; };
+		C33200171983095100CE4CBB /* PK_EventManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PK_EventManager.cpp; path = PokeEngine/src/PK_EventManager.cpp; sourceTree = "<group>"; };
+		C33200191983095A00CE4CBB /* PK_EventManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PK_EventManager.h; sourceTree = "<group>"; };
+		C33A4B0A194D0F4500826DFA /* PK_RemoteDebuggerTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PK_RemoteDebuggerTypes.h; sourceTree = "<group>"; };
+		C33EF20617E663CD00C0B75C /* PK_Globals.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PK_Globals.h; sourceTree = "<group>"; };
+		C33EF20717E663CD00C0B75C /* PK_PokeEngine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PK_PokeEngine.h; sourceTree = "<group>"; };
+		C33EF20917E663CD00C0B75C /* PK_RenderManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PK_RenderManager.h; sourceTree = "<group>"; };
+		C33EF20A17E663CD00C0B75C /* PK_Settings.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PK_Settings.h; sourceTree = "<group>"; };
+		C33EF20B17E663CD00C0B75C /* PokeEngine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PokeEngine.h; sourceTree = "<group>"; };
+		C33EF20F17E663CD00C0B75C /* tinyxml2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = tinyxml2.h; sourceTree = "<group>"; };
+		C33EF27617E66A0400C0B75C /* libPoke Engine.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPoke Engine.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C34448D3199D492300FBFCDF /* PK_Console.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PK_Console.cpp; path = PokeEngine/src/PK_Console.cpp; sourceTree = "<group>"; };
+		C34448D4199D492300FBFCDF /* PK_ConsoleApp.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PK_ConsoleApp.cpp; path = PokeEngine/src/PK_ConsoleApp.cpp; sourceTree = "<group>"; };
+		C34448D5199D492300FBFCDF /* PK_FileAsset.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PK_FileAsset.cpp; path = PokeEngine/src/PK_FileAsset.cpp; sourceTree = "<group>"; };
+		C34448D9199D497200FBFCDF /* PK_ArgumentOutOfRangeException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PK_ArgumentOutOfRangeException.h; sourceTree = "<group>"; };
+		C34448DA199D497200FBFCDF /* PK_Console.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PK_Console.h; sourceTree = "<group>"; };
+		C34448DB199D497200FBFCDF /* PK_ConsoleApp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PK_ConsoleApp.h; sourceTree = "<group>"; };
+		C34448DC199D497200FBFCDF /* PK_Dictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PK_Dictionary.h; sourceTree = "<group>"; };
+		C34448DD199D497200FBFCDF /* PK_FileAsset.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PK_FileAsset.h; sourceTree = "<group>"; };
+		C34448DE199D497200FBFCDF /* PK_FileCopyCallback.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PK_FileCopyCallback.h; sourceTree = "<group>"; };
+		C3445D93180B1C960035A011 /* PK_Vector4.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PK_Vector4.h; sourceTree = "<group>"; };
+		C34E51221805D078000615E3 /* PK_DataFieldFormatException.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PK_DataFieldFormatException.cpp; path = PokeEngine/src/PK_DataFieldFormatException.cpp; sourceTree = "<group>"; };
+		C34E51241805D086000615E3 /* PK_DataFieldFormatException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PK_DataFieldFormatException.h; sourceTree = "<group>"; };
+		C350E29A17F6043C008892D2 /* PK_Component.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PK_Component.cpp; path = PokeEngine/src/PK_Component.cpp; sourceTree = "<group>"; };
+		C350E29B17F6043C008892D2 /* PK_DataFile.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PK_DataFile.cpp; path = PokeEngine/src/PK_DataFile.cpp; sourceTree = "<group>"; };
+		C350E29C17F6043C008892D2 /* PK_DataFileField.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PK_DataFileField.cpp; path = PokeEngine/src/PK_DataFileField.cpp; sourceTree = "<group>"; };
+		C350E29D17F6043C008892D2 /* PK_DataFileRecord.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PK_DataFileRecord.cpp; path = PokeEngine/src/PK_DataFileRecord.cpp; sourceTree = "<group>"; };
+		C350E29E17F6043C008892D2 /* PK_FileNotFoundException.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PK_FileNotFoundException.cpp; path = PokeEngine/src/PK_FileNotFoundException.cpp; sourceTree = "<group>"; };
+		C350E29F17F6043C008892D2 /* PK_Image.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PK_Image.cpp; path = PokeEngine/src/PK_Image.cpp; sourceTree = "<group>"; };
+		C350E2A017F6043C008892D2 /* PK_Log.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PK_Log.cpp; path = PokeEngine/src/PK_Log.cpp; sourceTree = "<group>"; };
+		C350E2A117F6043C008892D2 /* PK_NullArgumentException.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PK_NullArgumentException.cpp; path = PokeEngine/src/PK_NullArgumentException.cpp; sourceTree = "<group>"; };
+		C350E2A217F6043D008892D2 /* PK_Object.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PK_Object.cpp; path = PokeEngine/src/PK_Object.cpp; sourceTree = "<group>"; };
+		C350E2A317F6043D008892D2 /* PK_OutOfMemoryException.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PK_OutOfMemoryException.cpp; path = PokeEngine/src/PK_OutOfMemoryException.cpp; sourceTree = "<group>"; };
+		C350E2A417F6043D008892D2 /* PK_PokeEngine.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PK_PokeEngine.cpp; path = PokeEngine/src/PK_PokeEngine.cpp; sourceTree = "<group>"; };
+		C350E2A517F6043D008892D2 /* PK_Profiler.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PK_Profiler.cpp; path = PokeEngine/src/PK_Profiler.cpp; sourceTree = "<group>"; };
+		C350E2A917F6043D008892D2 /* PK_Scene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PK_Scene.cpp; path = PokeEngine/src/PK_Scene.cpp; sourceTree = "<group>"; };
+		C350E2AA17F6043D008892D2 /* PK_SceneControl.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PK_SceneControl.cpp; path = PokeEngine/src/PK_SceneControl.cpp; sourceTree = "<group>"; };
+		C350E2AB17F6043D008892D2 /* PK_SceneManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PK_SceneManager.cpp; path = PokeEngine/src/PK_SceneManager.cpp; sourceTree = "<group>"; };
+		C350E2AC17F6043D008892D2 /* PK_SceneRoot.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PK_SceneRoot.cpp; path = PokeEngine/src/PK_SceneRoot.cpp; sourceTree = "<group>"; };
+		C350E2AD17F6043E008892D2 /* PK_SDLException.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PK_SDLException.cpp; path = PokeEngine/src/PK_SDLException.cpp; sourceTree = "<group>"; };
+		C350E2B117F6043E008892D2 /* PK_Settings.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PK_Settings.cpp; path = PokeEngine/src/PK_Settings.cpp; sourceTree = "<group>"; };
+		C350E2B317F6043E008892D2 /* PK_SystemException.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PK_SystemException.cpp; path = PokeEngine/src/PK_SystemException.cpp; sourceTree = "<group>"; };
+		C350E2B517F6043E008892D2 /* PK_XmlDataFileReader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PK_XmlDataFileReader.cpp; path = PokeEngine/src/PK_XmlDataFileReader.cpp; sourceTree = "<group>"; };
+		C350E2B617F6043E008892D2 /* PK_XmlDataFileWriter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PK_XmlDataFileWriter.cpp; path = PokeEngine/src/PK_XmlDataFileWriter.cpp; sourceTree = "<group>"; };
+		C3580A491811C30F002CA301 /* PK_Label.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PK_Label.h; sourceTree = "<group>"; };
+		C3580A4A1811C31D002CA301 /* PK_Label.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PK_Label.cpp; path = PokeEngine/src/PK_Label.cpp; sourceTree = "<group>"; };
+		C35CFE4B18001E3D004D4C59 /* PK_tSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PK_tSize.h; sourceTree = "<group>"; };
+		C35CFE4E18002900004D4C59 /* PK_tBoundingSquare.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PK_tBoundingSquare.h; sourceTree = "<group>"; };
+		C35CFE4F18002912004D4C59 /* PK_tBoundingSquare.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PK_tBoundingSquare.cpp; path = PokeEngine/src/PK_tBoundingSquare.cpp; sourceTree = "<group>"; };
+		C35CFE5118002D67004D4C59 /* PK_tSpriteFrame.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PK_tSpriteFrame.cpp; path = PokeEngine/src/PK_tSpriteFrame.cpp; sourceTree = "<group>"; };
+		C35CFE5318002D73004D4C59 /* PK_tSpriteFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PK_tSpriteFrame.h; sourceTree = "<group>"; };
+		C35FD65519296463004CBE63 /* PK_CommandAttributes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PK_CommandAttributes.h; sourceTree = "<group>"; };
+		C35FD65619296463004CBE63 /* PK_MemoryBufferReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PK_MemoryBufferReader.h; sourceTree = "<group>"; };
+		C35FD65719296463004CBE63 /* PK_MoveCmd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PK_MoveCmd.h; sourceTree = "<group>"; };
+		C35FD65819296463004CBE63 /* PK_PauseCmd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PK_PauseCmd.h; sourceTree = "<group>"; };
+		C35FD65919296463004CBE63 /* PK_RotateCmd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PK_RotateCmd.h; sourceTree = "<group>"; };
+		C35FD65A19296463004CBE63 /* PK_Script.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PK_Script.h; sourceTree = "<group>"; };
+		C35FD65B19296463004CBE63 /* PK_ScriptAsset.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PK_ScriptAsset.h; sourceTree = "<group>"; };
+		C35FD65C19296463004CBE63 /* PK_ScriptCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PK_ScriptCommand.h; sourceTree = "<group>"; };
+		C35FD65D19296463004CBE63 /* PK_ScriptCompiler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PK_ScriptCompiler.h; sourceTree = "<group>"; };
+		C35FD65E19296463004CBE63 /* PK_ScriptException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PK_ScriptException.h; sourceTree = "<group>"; };
+		C35FD65F19296463004CBE63 /* PK_SetAttributeCmd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PK_SetAttributeCmd.h; sourceTree = "<group>"; };
+		C35FD66019296463004CBE63 /* PK_tScriptValue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PK_tScriptValue.h; sourceTree = "<group>"; };
+		C35FD66119296463004CBE63 /* PK_tScriptVariable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PK_tScriptVariable.h; sourceTree = "<group>"; };
+		C35FD67919296577004CBE63 /* PK_CommandAttributes.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PK_CommandAttributes.cpp; path = PokeEngine/src/PK_CommandAttributes.cpp; sourceTree = "<group>"; };
+		C35FD67A19296577004CBE63 /* PK_MemoryBufferReader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PK_MemoryBufferReader.cpp; path = PokeEngine/src/PK_MemoryBufferReader.cpp; sourceTree = "<group>"; };
+		C35FD67B19296577004CBE63 /* PK_MoveCmd.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PK_MoveCmd.cpp; path = PokeEngine/src/PK_MoveCmd.cpp; sourceTree = "<group>"; };
+		C35FD67C19296577004CBE63 /* PK_PauseCmd.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PK_PauseCmd.cpp; path = PokeEngine/src/PK_PauseCmd.cpp; sourceTree = "<group>"; };
+		C35FD67D19296577004CBE63 /* PK_RotateCmd.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PK_RotateCmd.cpp; path = PokeEngine/src/PK_RotateCmd.cpp; sourceTree = "<group>"; };
+		C35FD67E19296577004CBE63 /* PK_Script.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PK_Script.cpp; path = PokeEngine/src/PK_Script.cpp; sourceTree = "<group>"; };
+		C35FD67F19296577004CBE63 /* PK_ScriptAsset.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PK_ScriptAsset.cpp; path = PokeEngine/src/PK_ScriptAsset.cpp; sourceTree = "<group>"; };
+		C35FD68019296577004CBE63 /* PK_ScriptCommand.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PK_ScriptCommand.cpp; path = PokeEngine/src/PK_ScriptCommand.cpp; sourceTree = "<group>"; };
+		C35FD68119296577004CBE63 /* PK_ScriptCompiler.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PK_ScriptCompiler.cpp; path = PokeEngine/src/PK_ScriptCompiler.cpp; sourceTree = "<group>"; };
+		C35FD68219296577004CBE63 /* PK_SetAttributeCmd.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PK_SetAttributeCmd.cpp; path = PokeEngine/src/PK_SetAttributeCmd.cpp; sourceTree = "<group>"; };
+		C35FD68319296577004CBE63 /* PK_tScriptValue.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PK_tScriptValue.cpp; path = PokeEngine/src/PK_tScriptValue.cpp; sourceTree = "<group>"; };
+		C364CCEA180F10A200D0A804 /* PK_InvalidObjectException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PK_InvalidObjectException.h; sourceTree = "<group>"; };
+		C364CCEB180F10B200D0A804 /* PK_InvalidObjectException.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PK_InvalidObjectException.cpp; path = PokeEngine/src/PK_InvalidObjectException.cpp; sourceTree = "<group>"; };
+		C369186018297FC900EE7CDB /* PK_Effect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PK_Effect.h; sourceTree = "<group>"; };
+		C369186118297FC900EE7CDB /* PK_EffectsBlender.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PK_EffectsBlender.h; sourceTree = "<group>"; };
+		C369186418297FC900EE7CDB /* PK_ParameterizedCallback.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PK_ParameterizedCallback.h; sourceTree = "<group>"; };
+		C36918651829800B00EE7CDB /* PK_Types.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PK_Types.cpp; path = PokeEngine/src/PK_Types.cpp; sourceTree = "<group>"; };
+		C36918691829803D00EE7CDB /* PK_Effect.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PK_Effect.cpp; path = PokeEngine/src/PK_Effect.cpp; sourceTree = "<group>"; };
+		C369186A1829803D00EE7CDB /* PK_EffectsBlender.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PK_EffectsBlender.cpp; path = PokeEngine/src/PK_EffectsBlender.cpp; sourceTree = "<group>"; };
+		C3698C511811B92B0055C180 /* PK_GameTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PK_GameTimer.h; sourceTree = "<group>"; };
+		C36A3A051804819000BA1B7F /* PK_TypeConverters.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PK_TypeConverters.h; sourceTree = "<group>"; };
+		C36A3A061804819B00BA1B7F /* PK_TypeConverters.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PK_TypeConverters.cpp; path = PokeEngine/src/PK_TypeConverters.cpp; sourceTree = "<group>"; };
+		C36A3A0A1804944D00BA1B7F /* PK_SDLManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PK_SDLManager.h; sourceTree = "<group>"; };
+		C36A3A0B1804945D00BA1B7F /* PK_SDLManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PK_SDLManager.cpp; path = PokeEngine/src/PK_SDLManager.cpp; sourceTree = "<group>"; };
+		C36EE7B217F87A7E00260B88 /* PK_Matrix4.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PK_Matrix4.h; sourceTree = "<group>"; };
+		C36EE7B317F87AF100260B88 /* PK_Camera.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PK_Camera.cpp; path = PokeEngine/src/PK_Camera.cpp; sourceTree = "<group>"; };
+		C36EE7B517F87AFC00260B88 /* PK_Camera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PK_Camera.h; sourceTree = "<group>"; };
+		C36EFC1D18D3BDE50091BDA4 /* PK_AdBannerControl.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PK_AdBannerControl.cpp; path = PokeEngine/src/PK_AdBannerControl.cpp; sourceTree = "<group>"; };
+		C36EFC1F18D3BDEE0091BDA4 /* PK_AdBannerControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PK_AdBannerControl.h; sourceTree = "<group>"; };
+		C374EF1817FF3C6E0041819B /* PK_Types.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PK_Types.h; sourceTree = "<group>"; };
+		C374EF2017FF63EE0041819B /* PK_Path.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PK_Path.h; sourceTree = "<group>"; };
+		C374EF2217FF64730041819B /* PK_Path.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PK_Path.cpp; path = PokeEngine/src/PK_Path.cpp; sourceTree = "<group>"; };
+		C3767699182831F000494362 /* PK_FPSCounterProfilerItem.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PK_FPSCounterProfilerItem.cpp; path = PokeEngine/src/PK_FPSCounterProfilerItem.cpp; sourceTree = "<group>"; };
+		C376769A182831F000494362 /* PK_LoadedObjsProfilerItem.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PK_LoadedObjsProfilerItem.cpp; path = PokeEngine/src/PK_LoadedObjsProfilerItem.cpp; sourceTree = "<group>"; };
+		C376769D182831FF00494362 /* PK_AssetManagerProfilerItem.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PK_AssetManagerProfilerItem.cpp; path = PokeEngine/src/PK_AssetManagerProfilerItem.cpp; sourceTree = "<group>"; };
+		C376769F1828321300494362 /* PK_AssetManagerProfilerItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PK_AssetManagerProfilerItem.h; sourceTree = "<group>"; };
+		C37676A01828321300494362 /* PK_FPSCounterProfilerItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PK_FPSCounterProfilerItem.h; sourceTree = "<group>"; };
+		C37676A11828321300494362 /* PK_LoadedObjsProfilerItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PK_LoadedObjsProfilerItem.h; sourceTree = "<group>"; };
+		C37676A2182839F700494362 /* PK_ProfilerMenu.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PK_ProfilerMenu.cpp; path = PokeEngine/src/PK_ProfilerMenu.cpp; sourceTree = "<group>"; };
+		C37676A418283A0500494362 /* PK_ProfilerMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PK_ProfilerMenu.h; sourceTree = "<group>"; };
+		C376BE431835658700683E8E /* PK_Scripting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PK_Scripting.h; sourceTree = "<group>"; };
+		C3775346180C218200C5DF64 /* PK_Callback.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PK_Callback.h; sourceTree = "<group>"; };
+		C3775E01198D255100E900A9 /* PK_DrawableComponent.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PK_DrawableComponent.cpp; path = PokeEngine/src/PK_DrawableComponent.cpp; sourceTree = "<group>"; };
+		C3775E03198D258700E900A9 /* PK_DrawableComponent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PK_DrawableComponent.h; sourceTree = "<group>"; };
+		C3775E04198D258700E900A9 /* PK_SplashScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PK_SplashScene.h; sourceTree = "<group>"; };
+		C377D7AC1832BAC500EB0002 /* PK_SettingsAsset.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PK_SettingsAsset.h; sourceTree = "<group>"; };
+		C379CC841815A74800C112DF /* PK_ProfilerItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PK_ProfilerItem.h; sourceTree = "<group>"; };
+		C379CC8A1815C53800C112DF /* PK_Sprite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PK_Sprite.h; sourceTree = "<group>"; };
+		C379CC8B1815C54C00C112DF /* PK_Sprite.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PK_Sprite.cpp; path = PokeEngine/src/PK_Sprite.cpp; sourceTree = "<group>"; };
+		C37A68841803398700D374CA /* PK_InputManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PK_InputManager.cpp; path = PokeEngine/src/PK_InputManager.cpp; sourceTree = "<group>"; };
+		C37A68851803398700D374CA /* PK_NotImplementedException.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PK_NotImplementedException.cpp; path = PokeEngine/src/PK_NotImplementedException.cpp; sourceTree = "<group>"; };
+		C37A68861803398700D374CA /* PK_PokeSettings.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PK_PokeSettings.cpp; path = PokeEngine/src/PK_PokeSettings.cpp; sourceTree = "<group>"; };
+		C37A68881803398700D374CA /* PK_SDLInputManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PK_SDLInputManager.cpp; path = PokeEngine/src/PK_SDLInputManager.cpp; sourceTree = "<group>"; };
+		C37A689218033B0700D374CA /* PK_InputManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PK_InputManager.h; sourceTree = "<group>"; };
+		C37A689318033B0700D374CA /* PK_NotImplementedException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PK_NotImplementedException.h; sourceTree = "<group>"; };
+		C37A689418033B0700D374CA /* PK_PokeSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PK_PokeSettings.h; sourceTree = "<group>"; };
+		C37A689618033B0700D374CA /* PK_SDLInputManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PK_SDLInputManager.h; sourceTree = "<group>"; };
+		C37A6D3D1816F67800EA8552 /* PK_tAABoundingSquare.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PK_tAABoundingSquare.h; sourceTree = "<group>"; };
+		C37A6D851807290E00113B05 /* PK_SceneTransition.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PK_SceneTransition.cpp; path = PokeEngine/src/PK_SceneTransition.cpp; sourceTree = "<group>"; };
+		C37A6D861807290E00113B05 /* PK_Thread.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PK_Thread.cpp; path = PokeEngine/src/PK_Thread.cpp; sourceTree = "<group>"; };
+		C37A6D8A1807292C00113B05 /* PK_SceneTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PK_SceneTransition.h; sourceTree = "<group>"; };
+		C37A6D8B1807292C00113B05 /* PK_Thread.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PK_Thread.h; sourceTree = "<group>"; };
+		C37F579518CA632700F4083C /* PKc_SDLInterface.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = PKc_SDLInterface.mm; path = PokeEngine/src/iOS/PKc_SDLInterface.mm; sourceTree = "<group>"; };
+		C37F579618CA632700F4083C /* PKc_SDLInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PKc_SDLInterface.h; path = PokeEngine/src/iOS/PKc_SDLInterface.h; sourceTree = "<group>"; };
+		C380A14C18204CA4006C777D /* PK_Asset.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PK_Asset.cpp; path = PokeEngine/src/PK_Asset.cpp; sourceTree = "<group>"; };
+		C380A14D18204CA4006C777D /* PK_AssetContainer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PK_AssetContainer.cpp; path = PokeEngine/src/PK_AssetContainer.cpp; sourceTree = "<group>"; };
+		C380A14E18204CA4006C777D /* PK_AssetManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PK_AssetManager.cpp; path = PokeEngine/src/PK_AssetManager.cpp; sourceTree = "<group>"; };
+		C380A14F18204CA4006C777D /* PK_FontAsset.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PK_FontAsset.cpp; path = PokeEngine/src/PK_FontAsset.cpp; sourceTree = "<group>"; };
+		C380A15018204CA4006C777D /* PK_SDLGLTextureAsset.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PK_SDLGLTextureAsset.cpp; path = PokeEngine/src/PK_SDLGLTextureAsset.cpp; sourceTree = "<group>"; };
+		C380A15118204CA4006C777D /* PK_SDLMusicAsset.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PK_SDLMusicAsset.cpp; path = PokeEngine/src/PK_SDLMusicAsset.cpp; sourceTree = "<group>"; };
+		C380A15218204CA4006C777D /* PK_SDLSoundAsset.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PK_SDLSoundAsset.cpp; path = PokeEngine/src/PK_SDLSoundAsset.cpp; sourceTree = "<group>"; };
+		C380A15318204CA4006C777D /* PK_SDLTextureAsset.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PK_SDLTextureAsset.cpp; path = PokeEngine/src/PK_SDLTextureAsset.cpp; sourceTree = "<group>"; };
+		C380A15418204CA4006C777D /* PK_SpriteAsset.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PK_SpriteAsset.cpp; path = PokeEngine/src/PK_SpriteAsset.cpp; sourceTree = "<group>"; };
+		C380A15518204CA4006C777D /* PK_SpriteSetAsset.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PK_SpriteSetAsset.cpp; path = PokeEngine/src/PK_SpriteSetAsset.cpp; sourceTree = "<group>"; };
+		C380A16018204CB2006C777D /* PK_tAABoundingSquare.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PK_tAABoundingSquare.cpp; path = PokeEngine/src/PK_tAABoundingSquare.cpp; sourceTree = "<group>"; };
+		C380A16118204CB2006C777D /* PK_tSize.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PK_tSize.cpp; path = PokeEngine/src/PK_tSize.cpp; sourceTree = "<group>"; };
+		C380A16418204CDF006C777D /* PK_Asset.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PK_Asset.h; sourceTree = "<group>"; };
+		C380A16518204CDF006C777D /* PK_AssetContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PK_AssetContainer.h; sourceTree = "<group>"; };
+		C380A16618204CDF006C777D /* PK_AssetManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PK_AssetManager.h; sourceTree = "<group>"; };
+		C380A16718204CDF006C777D /* PK_FontAsset.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PK_FontAsset.h; sourceTree = "<group>"; };
+		C380A16818204CDF006C777D /* PK_MusicAsset.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PK_MusicAsset.h; sourceTree = "<group>"; };
+		C380A16918204CDF006C777D /* PK_SDLGLTextureAsset.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PK_SDLGLTextureAsset.h; sourceTree = "<group>"; };
+		C380A16A18204CDF006C777D /* PK_SDLMusicAsset.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PK_SDLMusicAsset.h; sourceTree = "<group>"; };
+		C380A16B18204CDF006C777D /* PK_SDLSoundAsset.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PK_SDLSoundAsset.h; sourceTree = "<group>"; };
+		C380A16C18204CDF006C777D /* PK_SDLTextureAsset.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PK_SDLTextureAsset.h; sourceTree = "<group>"; };
+		C380A16D18204CDF006C777D /* PK_SoundAsset.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PK_SoundAsset.h; sourceTree = "<group>"; };
+		C380A16E18204CDF006C777D /* PK_SpriteAsset.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PK_SpriteAsset.h; sourceTree = "<group>"; };
+		C380A16F18204CDF006C777D /* PK_SpriteSetAsset.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PK_SpriteSetAsset.h; sourceTree = "<group>"; };
+		C380A17018204CDF006C777D /* PK_TextureAsset.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PK_TextureAsset.h; sourceTree = "<group>"; };
+		C380A9D819649CB20069365F /* PK_PokeGameData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PK_PokeGameData.h; sourceTree = "<group>"; };
+		C380A9D919649CC10069365F /* PK_PokeGameData.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PK_PokeGameData.cpp; path = PokeEngine/src/PK_PokeGameData.cpp; sourceTree = "<group>"; };
+		C380B53D1999737000FF2CB7 /* PK_AudioManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PK_AudioManager.cpp; path = PokeEngine/src/PK_AudioManager.cpp; sourceTree = "<group>"; };
+		C3822C5918316BDD005AACA7 /* PK_PopUpEffect.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PK_PopUpEffect.cpp; path = PokeEngine/src/PK_PopUpEffect.cpp; sourceTree = "<group>"; };
+		C3822C5C18316BF5005AACA7 /* PK_Assert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PK_Assert.h; sourceTree = "<group>"; };
+		C3822C5E18316BF5005AACA7 /* PK_PopUpEffect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PK_PopUpEffect.h; sourceTree = "<group>"; };
+		C3822C5F18316C89005AACA7 /* PK_ObjectPropertiesAsset.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PK_ObjectPropertiesAsset.h; sourceTree = "<group>"; };
+		C3822C6018316C9A005AACA7 /* PK_ObjectPropertiesAsset.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PK_ObjectPropertiesAsset.cpp; path = PokeEngine/src/PK_ObjectPropertiesAsset.cpp; sourceTree = "<group>"; };
+		C3822C6218316DFF005AACA7 /* PK_LoadableObject.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PK_LoadableObject.cpp; path = PokeEngine/src/PK_LoadableObject.cpp; sourceTree = "<group>"; };
+		C3822C6418317449005AACA7 /* PK_DataFileAsset.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PK_DataFileAsset.cpp; path = PokeEngine/src/PK_DataFileAsset.cpp; sourceTree = "<group>"; };
+		C3822C6618317457005AACA7 /* PK_DataFileAsset.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PK_DataFileAsset.h; sourceTree = "<group>"; };
+		C382464518FC8D0900F1AB7B /* PK_Library.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PK_Library.h; sourceTree = "<group>"; };
+		C382464618FC8D0900F1AB7B /* PK_LibraryItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PK_LibraryItem.h; sourceTree = "<group>"; };
+		C382464818FC8D0900F1AB7B /* PK_TCPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PK_TCPClient.h; sourceTree = "<group>"; };
+		C382464918FC8D0900F1AB7B /* PK_TCPServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PK_TCPServer.h; sourceTree = "<group>"; };
+		C382464A18FC8D0900F1AB7B /* PK_TCPSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PK_TCPSocket.h; sourceTree = "<group>"; };
+		C382464C18FC8D2A00F1AB7B /* PK_SDLTCPSocket.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PK_SDLTCPSocket.cpp; path = PokeEngine/src/PK_SDLTCPSocket.cpp; sourceTree = "<group>"; };
+		C382464D18FC8D2A00F1AB7B /* PK_TCPClient.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PK_TCPClient.cpp; path = PokeEngine/src/PK_TCPClient.cpp; sourceTree = "<group>"; };
+		C382464E18FC8D2A00F1AB7B /* PK_TCPServer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PK_TCPServer.cpp; path = PokeEngine/src/PK_TCPServer.cpp; sourceTree = "<group>"; };
+		C382465218FC8D3900F1AB7B /* PK_Library.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PK_Library.cpp; path = PokeEngine/src/PK_Library.cpp; sourceTree = "<group>"; };
+		C382465318FC8D3900F1AB7B /* PK_LibraryItem.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PK_LibraryItem.cpp; path = PokeEngine/src/PK_LibraryItem.cpp; sourceTree = "<group>"; };
+		C383D1CC17FE1F9E00974B24 /* PK_Vector2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PK_Vector2.h; sourceTree = "<group>"; };
+		C389B93817F8490A0054F409 /* PK_GLESBasicShader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PK_GLESBasicShader.cpp; path = PokeEngine/src/PK_GLESBasicShader.cpp; sourceTree = "<group>"; };
+		C389B93A17F849110054F409 /* PK_GLESBasicShader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PK_GLESBasicShader.h; sourceTree = "<group>"; };
+		C389B93D17F84A250054F409 /* PK_Vector3.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PK_Vector3.h; sourceTree = "<group>"; };
+		C389B93E17F84B5C0054F409 /* PK_Color.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PK_Color.h; sourceTree = "<group>"; };
+		C38AB17C18D0F60F0088C4F5 /* GADAdMobExtras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADAdMobExtras.h; sourceTree = "<group>"; };
+		C38AB17D18D0F60F0088C4F5 /* GADAdNetworkExtras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADAdNetworkExtras.h; sourceTree = "<group>"; };
+		C38AB17E18D0F60F0088C4F5 /* GADAdSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADAdSize.h; sourceTree = "<group>"; };
+		C38AB17F18D0F60F0088C4F5 /* GADBannerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADBannerView.h; sourceTree = "<group>"; };
+		C38AB18018D0F60F0088C4F5 /* GADBannerViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADBannerViewDelegate.h; sourceTree = "<group>"; };
+		C38AB18118D0F60F0088C4F5 /* GADInterstitial.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADInterstitial.h; sourceTree = "<group>"; };
+		C38AB18218D0F60F0088C4F5 /* GADInterstitialDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADInterstitialDelegate.h; sourceTree = "<group>"; };
+		C38AB18318D0F60F0088C4F5 /* GADRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADRequest.h; sourceTree = "<group>"; };
+		C38AB18418D0F60F0088C4F5 /* GADRequestError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADRequestError.h; sourceTree = "<group>"; };
+		C38AB18718D0F6480088C4F5 /* PKc_AdBanner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PKc_AdBanner.h; path = PokeEngine/src/iOS/PKc_AdBanner.h; sourceTree = "<group>"; };
+		C38AB18818D0F6480088C4F5 /* PKc_AdBanner.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = PKc_AdBanner.mm; path = PokeEngine/src/iOS/PKc_AdBanner.mm; sourceTree = "<group>"; };
+		C38AB18A18D105EC0088C4F5 /* PK_AdBanner.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PK_AdBanner.cpp; path = PokeEngine/src/PK_AdBanner.cpp; sourceTree = "<group>"; };
+		C38AB18B18D105EC0088C4F5 /* PK_iOSAdBanner.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PK_iOSAdBanner.cpp; path = PokeEngine/src/PK_iOSAdBanner.cpp; sourceTree = "<group>"; };
+		C38AB18E18D105FD0088C4F5 /* PK_AdBanner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PK_AdBanner.h; sourceTree = "<group>"; };
+		C38AB18F18D105FD0088C4F5 /* PK_iOSAdBanner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PK_iOSAdBanner.h; sourceTree = "<group>"; };
+		C38B2FF2196A06FA00B9553E /* PK_Environment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PK_Environment.h; sourceTree = "<group>"; };
+		C38B2FF3196A06FA00B9553E /* PK_OfflineAdBanner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PK_OfflineAdBanner.h; sourceTree = "<group>"; };
+		C38B2FF4196A06FA00B9553E /* PK_OverflowException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PK_OverflowException.h; sourceTree = "<group>"; };
+		C38B2FF5196A06FA00B9553E /* PK_tDateTime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PK_tDateTime.h; sourceTree = "<group>"; };
+		C38B2FF6196A06FA00B9553E /* PK_tTimeSpan.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PK_tTimeSpan.h; sourceTree = "<group>"; };
+		C38B2FF7196A071D00B9553E /* PK_ArgumentOutOfRangeException.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PK_ArgumentOutOfRangeException.cpp; path = PokeEngine/src/PK_ArgumentOutOfRangeException.cpp; sourceTree = "<group>"; };
+		C38B2FF8196A071D00B9553E /* PK_Environment.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PK_Environment.cpp; path = PokeEngine/src/PK_Environment.cpp; sourceTree = "<group>"; };
+		C38B2FF9196A071D00B9553E /* PK_OfflineAdBanner.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PK_OfflineAdBanner.cpp; path = PokeEngine/src/PK_OfflineAdBanner.cpp; sourceTree = "<group>"; };
+		C38B2FFA196A071D00B9553E /* PK_OverflowException.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PK_OverflowException.cpp; path = PokeEngine/src/PK_OverflowException.cpp; sourceTree = "<group>"; };
+		C38B2FFB196A071D00B9553E /* PK_tDateTime.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PK_tDateTime.cpp; path = PokeEngine/src/PK_tDateTime.cpp; sourceTree = "<group>"; };
+		C38B2FFC196A071D00B9553E /* PK_tTimeSpan.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PK_tTimeSpan.cpp; path = PokeEngine/src/PK_tTimeSpan.cpp; sourceTree = "<group>"; };
+		C38B3114180DE10B005B572B /* PK_AudioManagerSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PK_AudioManagerSettings.h; sourceTree = "<group>"; };
+		C38B3115180DE10B005B572B /* PK_SceneManagerSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PK_SceneManagerSettings.h; sourceTree = "<group>"; };
+		C38B3116180DE124005B572B /* PK_AudioManagerSettings.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PK_AudioManagerSettings.cpp; path = PokeEngine/src/PK_AudioManagerSettings.cpp; sourceTree = "<group>"; };
+		C38B3117180DE124005B572B /* PK_SceneManagerSettings.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PK_SceneManagerSettings.cpp; path = PokeEngine/src/PK_SceneManagerSettings.cpp; sourceTree = "<group>"; };
+		C38B666A1819BEB400573CEE /* PK_2DSceneControl.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PK_2DSceneControl.cpp; path = PokeEngine/src/PK_2DSceneControl.cpp; sourceTree = "<group>"; };
+		C38B666B1819BEB400573CEE /* PK_ObjectLoader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PK_ObjectLoader.cpp; path = PokeEngine/src/PK_ObjectLoader.cpp; sourceTree = "<group>"; };
+		C38B666C1819BEB400573CEE /* PK_ProfilerItem.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PK_ProfilerItem.cpp; path = PokeEngine/src/PK_ProfilerItem.cpp; sourceTree = "<group>"; };
+		C38B66701819BEE000573CEE /* PK_2DSceneControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PK_2DSceneControl.h; sourceTree = "<group>"; };
+		C38B66711819BEE000573CEE /* PK_LoadableObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PK_LoadableObject.h; sourceTree = "<group>"; };
+		C38B66721819BEE000573CEE /* PK_ObjectLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PK_ObjectLoader.h; sourceTree = "<group>"; };
+		C38B66731819BEE000573CEE /* PK_tOOBoundingSquare.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PK_tOOBoundingSquare.h; sourceTree = "<group>"; };
+		C38BCB761964858D0032DEE0 /* PK_Rate.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PK_Rate.cpp; path = PokeEngine/src/PK_Rate.cpp; sourceTree = "<group>"; };
+		C38BCB78196485980032DEE0 /* PK_Rate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PK_Rate.h; sourceTree = "<group>"; };
+		C38D551C18B2AAF4008AD67E /* PK_GameException.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PK_GameException.cpp; path = PokeEngine/src/PK_GameException.cpp; sourceTree = "<group>"; };
+		C38D551D18B2AAF4008AD67E /* PK_RandomGenerator.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PK_RandomGenerator.cpp; path = PokeEngine/src/PK_RandomGenerator.cpp; sourceTree = "<group>"; };
+		C38D551E18B2AAF4008AD67E /* PK_tBoundingCircle.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PK_tBoundingCircle.cpp; path = PokeEngine/src/PK_tBoundingCircle.cpp; sourceTree = "<group>"; };
+		C38D551F18B2AAF4008AD67E /* PK_TimerControl.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PK_TimerControl.cpp; path = PokeEngine/src/PK_TimerControl.cpp; sourceTree = "<group>"; };
+		C38D552418B2AB2B008AD67E /* PK_Exception.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PK_Exception.h; sourceTree = "<group>"; };
+		C38D552518B2AB2B008AD67E /* PK_GameException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PK_GameException.h; sourceTree = "<group>"; };
+		C38D552618B2AB2B008AD67E /* PK_RandomGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PK_RandomGenerator.h; sourceTree = "<group>"; };
+		C38D552718B2AB2B008AD67E /* PK_tBoundingCircle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PK_tBoundingCircle.h; sourceTree = "<group>"; };
+		C38D552818B2AB2B008AD67E /* PK_TimerControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PK_TimerControl.h; sourceTree = "<group>"; };
+		C38D552918B2AB3D008AD67E /* PK_Exception.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PK_Exception.cpp; path = PokeEngine/src/PK_Exception.cpp; sourceTree = "<group>"; };
+		C38EC3AD17E7B2B600962097 /* PK_Consts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PK_Consts.h; sourceTree = "<group>"; };
+		C38EC3AE17E7B2B600962097 /* PK_DataFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PK_DataFile.h; sourceTree = "<group>"; };
+		C38EC3AF17E7B2B600962097 /* PK_DataFileField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PK_DataFileField.h; sourceTree = "<group>"; };
+		C38EC3B017E7B2B600962097 /* PK_DataFileRecord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PK_DataFileRecord.h; sourceTree = "<group>"; };
+		C38EC3B117E7B2B600962097 /* PK_List.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PK_List.h; sourceTree = "<group>"; };
+		C38EC3B217E7B2B600962097 /* PK_Log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PK_Log.h; sourceTree = "<group>"; };
+		C38EC3B717E7B2B600962097 /* PK_XmlDataFileReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PK_XmlDataFileReader.h; sourceTree = "<group>"; };
+		C38EC3B817E7B2B600962097 /* PK_XmlDataFileWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PK_XmlDataFileWriter.h; sourceTree = "<group>"; };
+		C391A7EA18C910BC00B86B05 /* PK_ObjectCallback.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PK_ObjectCallback.h; sourceTree = "<group>"; };
+		C391A7EB18C9287900B86B05 /* PK_iOSLeaderboard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PK_iOSLeaderboard.h; sourceTree = "<group>"; };
+		C391A7EC18C9287900B86B05 /* PK_Leaderboard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PK_Leaderboard.h; sourceTree = "<group>"; };
+		C391A7EE18C928BC00B86B05 /* PK_iOSLeaderboard.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PK_iOSLeaderboard.cpp; path = PokeEngine/src/PK_iOSLeaderboard.cpp; sourceTree = "<group>"; };
+		C391A7EF18C928BC00B86B05 /* PK_Leaderboard.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PK_Leaderboard.cpp; path = PokeEngine/src/PK_Leaderboard.cpp; sourceTree = "<group>"; };
+		C391A7F218C9399100B86B05 /* PKc_Leaderboard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PKc_Leaderboard.h; path = PokeEngine/src/iOS/PKc_Leaderboard.h; sourceTree = "<group>"; };
+		C391A7F318C9399100B86B05 /* PKc_Leaderboard.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = PKc_Leaderboard.mm; path = PokeEngine/src/iOS/PKc_Leaderboard.mm; sourceTree = "<group>"; };
+		C391A7F518C93ACD00B86B05 /* PKc_Consts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PKc_Consts.h; path = PokeEngine/src/iOS/PKc_Consts.h; sourceTree = "<group>"; };
+		C392C0221954D3BE001EA9D0 /* PK_File.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PK_File.cpp; path = PokeEngine/src/PK_File.cpp; sourceTree = "<group>"; };
+		C392C0261954D3EC001EA9D0 /* PK_File.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PK_File.h; sourceTree = "<group>"; };
+		C392C0271954D3EC001EA9D0 /* PK_FileWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PK_FileWriter.h; sourceTree = "<group>"; };
+		C3962FDE18147C900097E84C /* PK_Panel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PK_Panel.h; sourceTree = "<group>"; };
+		C3962FDF18147CA30097E84C /* PK_Panel.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PK_Panel.cpp; path = PokeEngine/src/PK_Panel.cpp; sourceTree = "<group>"; };
+		C396DC9618B7F947007B21FE /* PK_Body.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PK_Body.h; sourceTree = "<group>"; };
+		C396DC9718B7F947007B21FE /* PK_Box2DBody.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PK_Box2DBody.h; sourceTree = "<group>"; };
+		C396DC9818B7F947007B21FE /* PK_Box2DContactListener.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PK_Box2DContactListener.h; sourceTree = "<group>"; };
+		C396DC9918B7F947007B21FE /* PK_Box2DPhysicsManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PK_Box2DPhysicsManager.h; sourceTree = "<group>"; };
+		C396DC9A18B7F947007B21FE /* PK_Box2DRenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PK_Box2DRenderer.h; sourceTree = "<group>"; };
+		C396DC9B18B7F947007B21FE /* PK_CollisionCallback.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PK_CollisionCallback.h; sourceTree = "<group>"; };
+		C396DC9D18B7F947007B21FE /* PK_PhysicsManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PK_PhysicsManager.h; sourceTree = "<group>"; };
+		C396DC9E18B7F947007B21FE /* PK_tViewport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PK_tViewport.h; sourceTree = "<group>"; };
+		C396DCA018B7F963007B21FE /* PK_Body.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PK_Body.cpp; path = PokeEngine/src/PK_Body.cpp; sourceTree = "<group>"; };
+		C396DCA118B7F963007B21FE /* PK_Box2DBody.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PK_Box2DBody.cpp; path = PokeEngine/src/PK_Box2DBody.cpp; sourceTree = "<group>"; };
+		C396DCA218B7F963007B21FE /* PK_Box2DContactListener.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PK_Box2DContactListener.cpp; path = PokeEngine/src/PK_Box2DContactListener.cpp; sourceTree = "<group>"; };
+		C396DCA318B7F963007B21FE /* PK_Box2DPhysicsManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PK_Box2DPhysicsManager.cpp; path = PokeEngine/src/PK_Box2DPhysicsManager.cpp; sourceTree = "<group>"; };
+		C396DCA418B7F963007B21FE /* PK_Box2DRenderer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PK_Box2DRenderer.cpp; path = PokeEngine/src/PK_Box2DRenderer.cpp; sourceTree = "<group>"; };
+		C396DCAA18B7F975007B21FE /* PK_PhysicsManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PK_PhysicsManager.cpp; path = PokeEngine/src/PK_PhysicsManager.cpp; sourceTree = "<group>"; };
+		C396DCAC18B7F980007B21FE /* PK_tViewport.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PK_tViewport.cpp; path = PokeEngine/src/PK_tViewport.cpp; sourceTree = "<group>"; };
+		C3989B5D1960A4E400BE8714 /* PK_LabelCmd.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PK_LabelCmd.cpp; path = PokeEngine/src/PK_LabelCmd.cpp; sourceTree = "<group>"; };
+		C3989B5E1960A4E400BE8714 /* PK_LoopCmd.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PK_LoopCmd.cpp; path = PokeEngine/src/PK_LoopCmd.cpp; sourceTree = "<group>"; };
+		C3989B5F1960A4E400BE8714 /* PK_SelectCmd.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PK_SelectCmd.cpp; path = PokeEngine/src/PK_SelectCmd.cpp; sourceTree = "<group>"; };
+		C3989B631960A50300BE8714 /* PK_LabelCmd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PK_LabelCmd.h; sourceTree = "<group>"; };
+		C3989B641960A50300BE8714 /* PK_LoopCmd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PK_LoopCmd.h; sourceTree = "<group>"; };
+		C3989B651960A50300BE8714 /* PK_SelectCmd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PK_SelectCmd.h; sourceTree = "<group>"; };
+		C3989B721960CDC800BE8714 /* PKc_Facebook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PKc_Facebook.h; path = PokeEngine/src/iOS/PKc_Facebook.h; sourceTree = "<group>"; };
+		C3989B731960CDC800BE8714 /* PKc_Facebook.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = PKc_Facebook.mm; path = PokeEngine/src/iOS/PKc_Facebook.mm; sourceTree = "<group>"; };
+		C399CD0718087ECE0026DC60 /* PK_LoadingIcon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PK_LoadingIcon.h; sourceTree = "<group>"; };
+		C399CD151808AF6A0026DC60 /* PK_SDLAudioManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PK_SDLAudioManager.cpp; path = PokeEngine/src/PK_SDLAudioManager.cpp; sourceTree = "<group>"; };
+		C399CD171808AF8D0026DC60 /* PK_AudioManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PK_AudioManager.h; sourceTree = "<group>"; };
+		C399CD181808AF8E0026DC60 /* PK_SDLAudioManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PK_SDLAudioManager.h; sourceTree = "<group>"; };
+		C39C21AC17EF50A100AF172D /* PK_Array.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PK_Array.h; sourceTree = "<group>"; };
+		C39C21AE17EF50A100AF172D /* PK_Component.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PK_Component.h; sourceTree = "<group>"; };
+		C39C21AF17EF50A100AF172D /* PK_Exceptions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PK_Exceptions.h; sourceTree = "<group>"; };
+		C39C21B017EF50A100AF172D /* PK_FileNotFoundException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PK_FileNotFoundException.h; sourceTree = "<group>"; };
+		C39C21B117EF50A100AF172D /* PK_Image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PK_Image.h; sourceTree = "<group>"; };
+		C39C21B217EF50A100AF172D /* PK_NullArgumentException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PK_NullArgumentException.h; sourceTree = "<group>"; };
+		C39C21B317EF50A100AF172D /* PK_Object.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PK_Object.h; sourceTree = "<group>"; };
+		C39C21B417EF50A100AF172D /* PK_OutOfMemoryException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PK_OutOfMemoryException.h; sourceTree = "<group>"; };
+		C39C21B517EF50A100AF172D /* PK_Profiler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PK_Profiler.h; sourceTree = "<group>"; };
+		C39C21B817EF50A100AF172D /* PK_Scene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PK_Scene.h; sourceTree = "<group>"; };
+		C39C21B917EF50A100AF172D /* PK_SceneControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PK_SceneControl.h; sourceTree = "<group>"; };
+		C39C21BA17EF50A100AF172D /* PK_SceneManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PK_SceneManager.h; sourceTree = "<group>"; };
+		C39C21BB17EF50A100AF172D /* PK_SceneRoot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PK_SceneRoot.h; sourceTree = "<group>"; };
+		C39C21BC17EF50A100AF172D /* PK_SDLException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PK_SDLException.h; sourceTree = "<group>"; };
+		C39C21C017EF50A100AF172D /* PK_String.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PK_String.h; sourceTree = "<group>"; };
+		C39C21C117EF50A100AF172D /* PK_SystemException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PK_SystemException.h; sourceTree = "<group>"; };
+		C39C21C317EF50AC00AF172D /* glm */ = {isa = PBXFileReference; lastKnownFileType = folder; path = glm; sourceTree = "<group>"; };
+		C39CAED617FB66160096C953 /* PK_ClassFactory.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PK_ClassFactory.cpp; path = PokeEngine/src/PK_ClassFactory.cpp; sourceTree = "<group>"; };
+		C39CAEDA17FB66480096C953 /* PK_ClassFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PK_ClassFactory.h; sourceTree = "<group>"; };
+		C39CAEDB17FB68B90096C953 /* PK_Config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PK_Config.h; sourceTree = "<group>"; };
+		C39E723E17FCBA9400E8DBB0 /* PK_OpenGL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PK_OpenGL.h; sourceTree = "<group>"; };
+		C39E723F17FCCB4D00E8DBB0 /* PK_GLESTextureShader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PK_GLESTextureShader.h; sourceTree = "<group>"; };
+		C39E724017FCCB5C00E8DBB0 /* PK_GLESTextureShader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PK_GLESTextureShader.cpp; path = PokeEngine/src/PK_GLESTextureShader.cpp; sourceTree = "<group>"; };
+		C3A6555718107F4B001DE383 /* PK_Timer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PK_Timer.cpp; path = PokeEngine/src/PK_Timer.cpp; sourceTree = "<group>"; };
+		C3A6555918107F57001DE383 /* PK_Timer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PK_Timer.h; sourceTree = "<group>"; };
+		C3AEDD5717ECFF6400C51129 /* tinyxml2.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = tinyxml2.cpp; path = PokeEngine/src/tinyxml2.cpp; sourceTree = "<group>"; };
+		C3B8076E17F9FC740066D2CD /* PK_GLESException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PK_GLESException.h; sourceTree = "<group>"; };
+		C3B8076F17F9FC740066D2CD /* PK_GLESRenderManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PK_GLESRenderManager.h; sourceTree = "<group>"; };
+		C3B8077017F9FC860066D2CD /* PK_GLESRenderManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PK_GLESRenderManager.cpp; path = PokeEngine/src/PK_GLESRenderManager.cpp; sourceTree = "<group>"; };
+		C3B8077217F9FC970066D2CD /* PK_GLESException.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PK_GLESException.cpp; path = PokeEngine/src/PK_GLESException.cpp; sourceTree = "<group>"; };
+		C3B8077517FA1B640066D2CD /* PK_DataFiles.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PK_DataFiles.h; sourceTree = "<group>"; };
+		C3B8157619450BA300BFE325 /* PK_AdManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PK_AdManager.cpp; path = PokeEngine/src/PK_AdManager.cpp; sourceTree = "<group>"; };
+		C3B8157819450BAC00BFE325 /* PK_AdManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PK_AdManager.h; sourceTree = "<group>"; };
+		C3BD35191907169F0084C334 /* PK_GravityEffect.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PK_GravityEffect.cpp; path = PokeEngine/src/PK_GravityEffect.cpp; sourceTree = "<group>"; };
+		C3BD351A1907169F0084C334 /* PK_LinearMoveEffect.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PK_LinearMoveEffect.cpp; path = PokeEngine/src/PK_LinearMoveEffect.cpp; sourceTree = "<group>"; };
+		C3BD351B1907169F0084C334 /* PK_MessageBox.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PK_MessageBox.cpp; path = PokeEngine/src/PK_MessageBox.cpp; sourceTree = "<group>"; };
+		C3BD351C1907169F0084C334 /* PK_MotionEffect.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PK_MotionEffect.cpp; path = PokeEngine/src/PK_MotionEffect.cpp; sourceTree = "<group>"; };
+		C3BD3521190716C70084C334 /* PK_GravityEffect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PK_GravityEffect.h; sourceTree = "<group>"; };
+		C3BD3522190716C70084C334 /* PK_LinearMoveEffect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PK_LinearMoveEffect.h; sourceTree = "<group>"; };
+		C3BD3523190716C70084C334 /* PK_MessageBox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PK_MessageBox.h; sourceTree = "<group>"; };
+		C3BD3524190716C70084C334 /* PK_MotionEffect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PK_MotionEffect.h; sourceTree = "<group>"; };
+		C3BD3525190717110084C334 /* PK_SDLTCPSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PK_SDLTCPSocket.h; sourceTree = "<group>"; };
+		C3C8C1D518AC33540073A9F9 /* PK_Game.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PK_Game.cpp; path = PokeEngine/src/PK_Game.cpp; sourceTree = "<group>"; };
+		C3C8C1D718AC335D0073A9F9 /* PK_Game.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PK_Game.h; sourceTree = "<group>"; };
+		C3C900FC197C19D100C6059C /* PK_SplashScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PK_SplashScene.cpp; path = PokeEngine/src/PK_SplashScene.cpp; sourceTree = "<group>"; };
+		C3CF634619942446001AC295 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/CoreMotion.framework; sourceTree = DEVELOPER_DIR; };
+		C3D06A6F17FA3AE800E53077 /* PK_FileReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PK_FileReader.h; sourceTree = "<group>"; };
+		C3D06A7017FA3AE800E53077 /* PK_MemoryBuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PK_MemoryBuffer.h; sourceTree = "<group>"; };
+		C3D06A7217FA3B0000E53077 /* PK_MemoryBuffer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PK_MemoryBuffer.cpp; path = PokeEngine/src/PK_MemoryBuffer.cpp; sourceTree = "<group>"; };
+		C3D55FF0181DC35F0085E0E4 /* PK_Button.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PK_Button.h; sourceTree = "<group>"; };
+		C3D55FF1181DC36A0085E0E4 /* PK_Button.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PK_Button.cpp; path = PokeEngine/src/PK_Button.cpp; sourceTree = "<group>"; };
+		C3E9B4AA17F7746E00169223 /* PK_GLESShader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PK_GLESShader.cpp; path = PokeEngine/src/PK_GLESShader.cpp; sourceTree = "<group>"; };
+		C3E9B4B317F7750200169223 /* PK_GLESShader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PK_GLESShader.h; sourceTree = "<group>"; };
+		C3E9B4B717F779AA00169223 /* PK_RenderManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PK_RenderManager.cpp; path = PokeEngine/src/PK_RenderManager.cpp; sourceTree = "<group>"; };
+		C3E9B4BB17F7855F00169223 /* PK_Shader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PK_Shader.h; sourceTree = "<group>"; };
+		C3EA10CC19B2265C008E4C70 /* PK_App.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PK_App.h; sourceTree = "<group>"; };
+		C3EA10CD19B2265C008E4C70 /* PK_AppStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PK_AppStore.h; sourceTree = "<group>"; };
+		C3EA10CE19B2265C008E4C70 /* PK_GameApp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PK_GameApp.h; sourceTree = "<group>"; };
+		C3EA10CF19B2265C008E4C70 /* PK_StringAsset.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PK_StringAsset.h; sourceTree = "<group>"; };
+		C3EA10D019B2265C008E4C70 /* PK_tPrimitiveData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PK_tPrimitiveData.h; sourceTree = "<group>"; };
+		C3EA10D119B226C4008E4C70 /* PK_App.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PK_App.cpp; path = PokeEngine/src/PK_App.cpp; sourceTree = "<group>"; };
+		C3EA10D219B226C4008E4C70 /* PK_AppStore.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PK_AppStore.cpp; path = PokeEngine/src/PK_AppStore.cpp; sourceTree = "<group>"; };
+		C3EA10D319B226C4008E4C70 /* PK_FileReader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PK_FileReader.cpp; path = PokeEngine/src/PK_FileReader.cpp; sourceTree = "<group>"; };
+		C3EA10D419B226C4008E4C70 /* PK_FileWriter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PK_FileWriter.cpp; path = PokeEngine/src/PK_FileWriter.cpp; sourceTree = "<group>"; };
+		C3EA10D519B226C4008E4C70 /* PK_GameApp.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PK_GameApp.cpp; path = PokeEngine/src/PK_GameApp.cpp; sourceTree = "<group>"; };
+		C3EA10D619B226C4008E4C70 /* PK_StringAsset.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PK_StringAsset.cpp; path = PokeEngine/src/PK_StringAsset.cpp; sourceTree = "<group>"; };
+		C3EB89C918C6668800EAF7F2 /* PK_PhysicsManagerSettings.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PK_PhysicsManagerSettings.cpp; path = PokeEngine/src/PK_PhysicsManagerSettings.cpp; sourceTree = "<group>"; };
+		C3EB89CB18C6669D00EAF7F2 /* PK_ButtonPressEffect.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PK_ButtonPressEffect.cpp; path = PokeEngine/src/PK_ButtonPressEffect.cpp; sourceTree = "<group>"; };
+		C3EB89CD18C666B300EAF7F2 /* PK_BodyCollisionCallback.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PK_BodyCollisionCallback.h; sourceTree = "<group>"; };
+		C3EB89CE18C666B300EAF7F2 /* PK_ButtonPressEffect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PK_ButtonPressEffect.h; sourceTree = "<group>"; };
+		C3EB89CF18C666B300EAF7F2 /* PK_PhysicsManagerSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PK_PhysicsManagerSettings.h; sourceTree = "<group>"; };
+		C3EB89D818C68CDB00EAF7F2 /* PK_Player.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PK_Player.h; sourceTree = "<group>"; };
+		C3EB89D918C68CEE00EAF7F2 /* PK_Player.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PK_Player.cpp; path = PokeEngine/src/PK_Player.cpp; sourceTree = "<group>"; };
+		C3EB89DB18C68D8700EAF7F2 /* PK_iOSPlayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PK_iOSPlayer.cpp; path = PokeEngine/src/PK_iOSPlayer.cpp; sourceTree = "<group>"; };
+		C3EB89DD18C68D9600EAF7F2 /* PK_iOSPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PK_iOSPlayer.h; sourceTree = "<group>"; };
+		C3EB89DE18C691AE00EAF7F2 /* PKc_CInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PKc_CInterface.h; path = PokeEngine/src/iOS/PKc_CInterface.h; sourceTree = "<group>"; };
+		C3EB89DF18C691AE00EAF7F2 /* PKc_CInterface.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = PKc_CInterface.mm; path = PokeEngine/src/iOS/PKc_CInterface.mm; sourceTree = "<group>"; };
+		C3ECACA7182FDD49007D6EA6 /* PK_ColorEffect.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PK_ColorEffect.cpp; path = PokeEngine/src/PK_ColorEffect.cpp; sourceTree = "<group>"; };
+		C3ECACA9182FDD51007D6EA6 /* PK_ColorEffect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PK_ColorEffect.h; sourceTree = "<group>"; };
+		C3EE215819156474009AF781 /* PK_ProfilerSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PK_ProfilerSettings.h; sourceTree = "<group>"; };
+		C3EE215919156474009AF781 /* PK_RemoteDebuggerClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PK_RemoteDebuggerClient.h; sourceTree = "<group>"; };
+		C3EE215A19156474009AF781 /* PK_Sleep.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PK_Sleep.h; sourceTree = "<group>"; };
+		C3EE215B19156486009AF781 /* PK_ProfilerSettings.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PK_ProfilerSettings.cpp; path = PokeEngine/src/PK_ProfilerSettings.cpp; sourceTree = "<group>"; };
+		C3EE215C19156486009AF781 /* PK_RemoteDebuggerClient.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PK_RemoteDebuggerClient.cpp; path = PokeEngine/src/PK_RemoteDebuggerClient.cpp; sourceTree = "<group>"; };
+		C3F85D241A26878C00A1074E /* PK_PlaySoundCmd.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PK_PlaySoundCmd.cpp; path = PokeEngine/src/PK_PlaySoundCmd.cpp; sourceTree = "<group>"; };
+		C3F85D261A2687A700A1074E /* PK_PlaySoundCmd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PK_PlaySoundCmd.h; sourceTree = "<group>"; };
+		C3FF4F4818A82F150023009B /* PK_PointerInfoProfilerItem.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PK_PointerInfoProfilerItem.cpp; path = PokeEngine/src/PK_PointerInfoProfilerItem.cpp; sourceTree = "<group>"; };
+		C3FF4F4918A82F150023009B /* PK_SDLRenderManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PK_SDLRenderManager.cpp; path = PokeEngine/src/PK_SDLRenderManager.cpp; sourceTree = "<group>"; };
+		C3FF4F4C18A82F3B0023009B /* PK_PointerInfoProfilerItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PK_PointerInfoProfilerItem.h; sourceTree = "<group>"; };
+		C3FF4F4D18A82F3B0023009B /* PK_SDLRenderManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PK_SDLRenderManager.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C33EF27317E66A0400C0B75C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3CF634719942446001AC295 /* CoreMotion.framework in Frameworks */,
+				C32FC6BF1916A75900F52A17 /* SystemConfiguration.framework in Frameworks */,
+				C32FC6DB1916A7D500F52A17 /* CoreAudio.framework in Frameworks */,
+				C32FC6D91916A7CE00F52A17 /* MobileCoreServices.framework in Frameworks */,
+				C32FC6D71916A7C600F52A17 /* QuartzCore.framework in Frameworks */,
+				C32FC6D51916A7BF00F52A17 /* AudioToolbox.framework in Frameworks */,
+				C32FC6D31916A7B900F52A17 /* CoreGraphics.framework in Frameworks */,
+				C32FC6D11916A7B200F52A17 /* UIKit.framework in Frameworks */,
+				C32FC6CF1916A7AB00F52A17 /* OpenGLES.framework in Frameworks */,
+				C32FC6CD1916A7A100F52A17 /* ImageIO.framework in Frameworks */,
+				C32FC6CB1916A79800F52A17 /* GameKit.framework in Frameworks */,
+				C32FC6C91916A78700F52A17 /* AdSupport.framework in Frameworks */,
+				C32FC6C71916A77F00F52A17 /* AVFoundation.framework in Frameworks */,
+				C32FC6C51916A77800F52A17 /* CoreTelephony.framework in Frameworks */,
+				C32FC6C31916A77000F52A17 /* MessageUI.framework in Frameworks */,
+				C32FC6C11916A76200F52A17 /* StoreKit.framework in Frameworks */,
+				C32FC6DF1916A82E00F52A17 /* libSDL2_net.a in Frameworks */,
+				C32FC6BB1916A73E00F52A17 /* libSDL2_image.a in Frameworks */,
+				C32FC6BD1916A73E00F52A17 /* libSDL2.a in Frameworks */,
+				C32FC6B71916A72600F52A17 /* libBox2D.a in Frameworks */,
+				C35AB595199BF47700331D0C /* libSDL2_mixer.a in Frameworks */,
+				C32FC6B31916A6D900F52A17 /* libGoogleAdMobAds.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C32E57F61809F6C700BB7099 /* Threading */ = {
+			isa = PBXGroup;
+			children = (
+				C37A6D861807290E00113B05 /* PK_Thread.cpp */,
+				C32E57F41809F22600BB7099 /* PK_Mutex.cpp */,
+			);
+			name = Threading;
+			sourceTree = "<group>";
+		};
+		C33EF1EC17E6635B00C0B75C = {
+			isa = PBXGroup;
+			children = (
+				C391763E17E8FE5600D6F597 /* PokeEngine */,
+			);
+			sourceTree = "<group>";
+		};
+		C33EF1F317E663BE00C0B75C /* src */ = {
+			isa = PBXGroup;
+			children = (
+				C391A7ED18C9288000B86B05 /* Advertising */,
+				C3AEDD6417ECFFB600C51129 /* Assets */,
+				C399CD0E18087EDF0026DC60 /* Audio */,
+				C36A3A08180481AD00BA1B7F /* Configuration */,
+				C3AEDD6617ECFFD600C51129 /* Data */,
+				C3AEDD6217ECFF9A00C51129 /* Debug */,
+				C36918671829802A00EE7CDB /* Effects */,
+				C390BB9917F0E683009EA36E /* Exceptions */,
+				C3AEDD6317ECFFA900C51129 /* Graphics */,
+				C33EF1FF17E663CD00C0B75C /* Include */,
+				C37A689818033B1E00D374CA /* Input */,
+				C374EF2117FF645C0041819B /* IO */,
+				C3EB89D418C67D5700EAF7F2 /* iOS */,
+				C36EFC2018D3C10D0091BDA4 /* Leaderboards */,
+				C382464B18FC8D1400F1AB7B /* Net */,
+				C396DC9F18B7F94F007B21FE /* Physics */,
+				C3EB89D718C68BDE00EAF7F2 /* Player */,
+				C39C21C417EF50D900AF172D /* Scenes */,
+				C35FD66219296468004CBE63 /* Scripting */,
+				C37A68811803394D00D374CA /* System */,
+				C32E57F61809F6C700BB7099 /* Threading */,
+				C36A3A09180481CE00BA1B7F /* Types */,
+			);
+			name = src;
+			path = ../../..;
+			sourceTree = "<group>";
+		};
+		C33EF1FF17E663CD00C0B75C /* Include */ = {
+			isa = PBXGroup;
+			children = (
+				C3F85D261A2687A700A1074E /* PK_PlaySoundCmd.h */,
+				C39C21C317EF50AC00AF172D /* glm */,
+				C38B66701819BEE000573CEE /* PK_2DSceneControl.h */,
+				C38AB18E18D105FD0088C4F5 /* PK_AdBanner.h */,
+				C36EFC1F18D3BDEE0091BDA4 /* PK_AdBannerControl.h */,
+				C3B8157819450BAC00BFE325 /* PK_AdManager.h */,
+				C3EA10CC19B2265C008E4C70 /* PK_App.h */,
+				C3EA10CD19B2265C008E4C70 /* PK_AppStore.h */,
+				C34448D9199D497200FBFCDF /* PK_ArgumentOutOfRangeException.h */,
+				C39C21AC17EF50A100AF172D /* PK_Array.h */,
+				C3822C5C18316BF5005AACA7 /* PK_Assert.h */,
+				C380A16418204CDF006C777D /* PK_Asset.h */,
+				C380A16518204CDF006C777D /* PK_AssetContainer.h */,
+				C380A16618204CDF006C777D /* PK_AssetManager.h */,
+				C376769F1828321300494362 /* PK_AssetManagerProfilerItem.h */,
+				C399CD171808AF8D0026DC60 /* PK_AudioManager.h */,
+				C38B3114180DE10B005B572B /* PK_AudioManagerSettings.h */,
+				C396DC9618B7F947007B21FE /* PK_Body.h */,
+				C3EB89CD18C666B300EAF7F2 /* PK_BodyCollisionCallback.h */,
+				C396DC9718B7F947007B21FE /* PK_Box2DBody.h */,
+				C396DC9818B7F947007B21FE /* PK_Box2DContactListener.h */,
+				C396DC9918B7F947007B21FE /* PK_Box2DPhysicsManager.h */,
+				C396DC9A18B7F947007B21FE /* PK_Box2DRenderer.h */,
+				C3D55FF0181DC35F0085E0E4 /* PK_Button.h */,
+				C3EB89CE18C666B300EAF7F2 /* PK_ButtonPressEffect.h */,
+				C3775346180C218200C5DF64 /* PK_Callback.h */,
+				C36EE7B517F87AFC00260B88 /* PK_Camera.h */,
+				C39CAEDA17FB66480096C953 /* PK_ClassFactory.h */,
+				C396DC9B18B7F947007B21FE /* PK_CollisionCallback.h */,
+				C389B93E17F84B5C0054F409 /* PK_Color.h */,
+				C3ECACA9182FDD51007D6EA6 /* PK_ColorEffect.h */,
+				C35FD65519296463004CBE63 /* PK_CommandAttributes.h */,
+				C39C21AE17EF50A100AF172D /* PK_Component.h */,
+				C39CAEDB17FB68B90096C953 /* PK_Config.h */,
+				C34448DA199D497200FBFCDF /* PK_Console.h */,
+				C34448DB199D497200FBFCDF /* PK_ConsoleApp.h */,
+				C38EC3AD17E7B2B600962097 /* PK_Consts.h */,
+				C34E51241805D086000615E3 /* PK_DataFieldFormatException.h */,
+				C38EC3AE17E7B2B600962097 /* PK_DataFile.h */,
+				C3822C6618317457005AACA7 /* PK_DataFileAsset.h */,
+				C38EC3AF17E7B2B600962097 /* PK_DataFileField.h */,
+				C38EC3B017E7B2B600962097 /* PK_DataFileRecord.h */,
+				C3B8077517FA1B640066D2CD /* PK_DataFiles.h */,
+				C34448DC199D497200FBFCDF /* PK_Dictionary.h */,
+				C3775E03198D258700E900A9 /* PK_DrawableComponent.h */,
+				C369186018297FC900EE7CDB /* PK_Effect.h */,
+				C369186118297FC900EE7CDB /* PK_EffectsBlender.h */,
+				C38B2FF2196A06FA00B9553E /* PK_Environment.h */,
+				C33200191983095A00CE4CBB /* PK_EventManager.h */,
+				C38D552418B2AB2B008AD67E /* PK_Exception.h */,
+				C39C21AF17EF50A100AF172D /* PK_Exceptions.h */,
+				C392C0261954D3EC001EA9D0 /* PK_File.h */,
+				C34448DD199D497200FBFCDF /* PK_FileAsset.h */,
+				C34448DE199D497200FBFCDF /* PK_FileCopyCallback.h */,
+				C39C21B017EF50A100AF172D /* PK_FileNotFoundException.h */,
+				C3D06A6F17FA3AE800E53077 /* PK_FileReader.h */,
+				C392C0271954D3EC001EA9D0 /* PK_FileWriter.h */,
+				C380A16718204CDF006C777D /* PK_FontAsset.h */,
+				C37676A01828321300494362 /* PK_FPSCounterProfilerItem.h */,
+				C3C8C1D718AC335D0073A9F9 /* PK_Game.h */,
+				C3EA10CE19B2265C008E4C70 /* PK_GameApp.h */,
+				C38D552518B2AB2B008AD67E /* PK_GameException.h */,
+				C3698C511811B92B0055C180 /* PK_GameTimer.h */,
+				C389B93A17F849110054F409 /* PK_GLESBasicShader.h */,
+				C3B8076E17F9FC740066D2CD /* PK_GLESException.h */,
+				C3B8076F17F9FC740066D2CD /* PK_GLESRenderManager.h */,
+				C3E9B4B317F7750200169223 /* PK_GLESShader.h */,
+				C39E723F17FCCB4D00E8DBB0 /* PK_GLESTextureShader.h */,
+				C33EF20617E663CD00C0B75C /* PK_Globals.h */,
+				C3BD3521190716C70084C334 /* PK_GravityEffect.h */,
+				C39C21B117EF50A100AF172D /* PK_Image.h */,
+				C37A689218033B0700D374CA /* PK_InputManager.h */,
+				C364CCEA180F10A200D0A804 /* PK_InvalidObjectException.h */,
+				C38AB18F18D105FD0088C4F5 /* PK_iOSAdBanner.h */,
+				C391A7EB18C9287900B86B05 /* PK_iOSLeaderboard.h */,
+				C3EB89DD18C68D9600EAF7F2 /* PK_iOSPlayer.h */,
+				C3580A491811C30F002CA301 /* PK_Label.h */,
+				C3989B631960A50300BE8714 /* PK_LabelCmd.h */,
+				C391A7EC18C9287900B86B05 /* PK_Leaderboard.h */,
+				C382464518FC8D0900F1AB7B /* PK_Library.h */,
+				C382464618FC8D0900F1AB7B /* PK_LibraryItem.h */,
+				C3BD3522190716C70084C334 /* PK_LinearMoveEffect.h */,
+				C38EC3B117E7B2B600962097 /* PK_List.h */,
+				C38B66711819BEE000573CEE /* PK_LoadableObject.h */,
+				C37676A11828321300494362 /* PK_LoadedObjsProfilerItem.h */,
+				C399CD0718087ECE0026DC60 /* PK_LoadingIcon.h */,
+				C38EC3B217E7B2B600962097 /* PK_Log.h */,
+				C3989B641960A50300BE8714 /* PK_LoopCmd.h */,
+				C30399F61801A32000848E86 /* PK_MathHelper.h */,
+				C36EE7B217F87A7E00260B88 /* PK_Matrix4.h */,
+				C3D06A7017FA3AE800E53077 /* PK_MemoryBuffer.h */,
+				C35FD65619296463004CBE63 /* PK_MemoryBufferReader.h */,
+				C3BD3523190716C70084C334 /* PK_MessageBox.h */,
+				C3005737197EF8EB005DBF3C /* PK_MessageBoxCallback.h */,
+				C3BD3524190716C70084C334 /* PK_MotionEffect.h */,
+				C35FD65719296463004CBE63 /* PK_MoveCmd.h */,
+				C380A16818204CDF006C777D /* PK_MusicAsset.h */,
+				C32E57F31809F21200BB7099 /* PK_Mutex.h */,
+				C37A689318033B0700D374CA /* PK_NotImplementedException.h */,
+				C39C21B217EF50A100AF172D /* PK_NullArgumentException.h */,
+				C39C21B317EF50A100AF172D /* PK_Object.h */,
+				C391A7EA18C910BC00B86B05 /* PK_ObjectCallback.h */,
+				C38B66721819BEE000573CEE /* PK_ObjectLoader.h */,
+				C3822C5F18316C89005AACA7 /* PK_ObjectPropertiesAsset.h */,
+				C38B2FF3196A06FA00B9553E /* PK_OfflineAdBanner.h */,
+				C39E723E17FCBA9400E8DBB0 /* PK_OpenGL.h */,
+				C39C21B417EF50A100AF172D /* PK_OutOfMemoryException.h */,
+				C38B2FF4196A06FA00B9553E /* PK_OverflowException.h */,
+				C3962FDE18147C900097E84C /* PK_Panel.h */,
+				C369186418297FC900EE7CDB /* PK_ParameterizedCallback.h */,
+				C374EF2017FF63EE0041819B /* PK_Path.h */,
+				C35FD65819296463004CBE63 /* PK_PauseCmd.h */,
+				C396DC9D18B7F947007B21FE /* PK_PhysicsManager.h */,
+				C3EB89CF18C666B300EAF7F2 /* PK_PhysicsManagerSettings.h */,
+				C3EB89D818C68CDB00EAF7F2 /* PK_Player.h */,
+				C3FF4F4C18A82F3B0023009B /* PK_PointerInfoProfilerItem.h */,
+				C33EF20717E663CD00C0B75C /* PK_PokeEngine.h */,
+				C380A9D819649CB20069365F /* PK_PokeGameData.h */,
+				C37A689418033B0700D374CA /* PK_PokeSettings.h */,
+				C3822C5E18316BF5005AACA7 /* PK_PopUpEffect.h */,
+				C39C21B517EF50A100AF172D /* PK_Profiler.h */,
+				C379CC841815A74800C112DF /* PK_ProfilerItem.h */,
+				C37676A418283A0500494362 /* PK_ProfilerMenu.h */,
+				C3EE215819156474009AF781 /* PK_ProfilerSettings.h */,
+				C38D552618B2AB2B008AD67E /* PK_RandomGenerator.h */,
+				C38BCB78196485980032DEE0 /* PK_Rate.h */,
+				C3EE215919156474009AF781 /* PK_RemoteDebuggerClient.h */,
+				C33A4B0A194D0F4500826DFA /* PK_RemoteDebuggerTypes.h */,
+				C33EF20917E663CD00C0B75C /* PK_RenderManager.h */,
+				C35FD65919296463004CBE63 /* PK_RotateCmd.h */,
+				C39C21B817EF50A100AF172D /* PK_Scene.h */,
+				C39C21B917EF50A100AF172D /* PK_SceneControl.h */,
+				C39C21BA17EF50A100AF172D /* PK_SceneManager.h */,
+				C38B3115180DE10B005B572B /* PK_SceneManagerSettings.h */,
+				C39C21BB17EF50A100AF172D /* PK_SceneRoot.h */,
+				C37A6D8A1807292C00113B05 /* PK_SceneTransition.h */,
+				C35FD65A19296463004CBE63 /* PK_Script.h */,
+				C35FD65B19296463004CBE63 /* PK_ScriptAsset.h */,
+				C35FD65C19296463004CBE63 /* PK_ScriptCommand.h */,
+				C35FD65D19296463004CBE63 /* PK_ScriptCompiler.h */,
+				C35FD65E19296463004CBE63 /* PK_ScriptException.h */,
+				C376BE431835658700683E8E /* PK_Scripting.h */,
+				C399CD181808AF8E0026DC60 /* PK_SDLAudioManager.h */,
+				C39C21BC17EF50A100AF172D /* PK_SDLException.h */,
+				C380A16918204CDF006C777D /* PK_SDLGLTextureAsset.h */,
+				C37A689618033B0700D374CA /* PK_SDLInputManager.h */,
+				C36A3A0A1804944D00BA1B7F /* PK_SDLManager.h */,
+				C380A16A18204CDF006C777D /* PK_SDLMusicAsset.h */,
+				C3FF4F4D18A82F3B0023009B /* PK_SDLRenderManager.h */,
+				C380A16B18204CDF006C777D /* PK_SDLSoundAsset.h */,
+				C3BD3525190717110084C334 /* PK_SDLTCPSocket.h */,
+				C380A16C18204CDF006C777D /* PK_SDLTextureAsset.h */,
+				C3989B651960A50300BE8714 /* PK_SelectCmd.h */,
+				C35FD65F19296463004CBE63 /* PK_SetAttributeCmd.h */,
+				C33EF20A17E663CD00C0B75C /* PK_Settings.h */,
+				C377D7AC1832BAC500EB0002 /* PK_SettingsAsset.h */,
+				C3E9B4BB17F7855F00169223 /* PK_Shader.h */,
+				C3EE215A19156474009AF781 /* PK_Sleep.h */,
+				C380A16D18204CDF006C777D /* PK_SoundAsset.h */,
+				C3775E04198D258700E900A9 /* PK_SplashScene.h */,
+				C379CC8A1815C53800C112DF /* PK_Sprite.h */,
+				C380A16E18204CDF006C777D /* PK_SpriteAsset.h */,
+				C380A16F18204CDF006C777D /* PK_SpriteSetAsset.h */,
+				C39C21C017EF50A100AF172D /* PK_String.h */,
+				C3EA10CF19B2265C008E4C70 /* PK_StringAsset.h */,
+				C39C21C117EF50A100AF172D /* PK_SystemException.h */,
+				C37A6D3D1816F67800EA8552 /* PK_tAABoundingSquare.h */,
+				C38D552718B2AB2B008AD67E /* PK_tBoundingCircle.h */,
+				C35CFE4E18002900004D4C59 /* PK_tBoundingSquare.h */,
+				C382464818FC8D0900F1AB7B /* PK_TCPClient.h */,
+				C382464918FC8D0900F1AB7B /* PK_TCPServer.h */,
+				C382464A18FC8D0900F1AB7B /* PK_TCPSocket.h */,
+				C38B2FF5196A06FA00B9553E /* PK_tDateTime.h */,
+				C380A17018204CDF006C777D /* PK_TextureAsset.h */,
+				C37A6D8B1807292C00113B05 /* PK_Thread.h */,
+				C3A6555918107F57001DE383 /* PK_Timer.h */,
+				C38D552818B2AB2B008AD67E /* PK_TimerControl.h */,
+				C38B66731819BEE000573CEE /* PK_tOOBoundingSquare.h */,
+				C3EA10D019B2265C008E4C70 /* PK_tPrimitiveData.h */,
+				C35FD66019296463004CBE63 /* PK_tScriptValue.h */,
+				C35FD66119296463004CBE63 /* PK_tScriptVariable.h */,
+				C35CFE4B18001E3D004D4C59 /* PK_tSize.h */,
+				C35CFE5318002D73004D4C59 /* PK_tSpriteFrame.h */,
+				C38B2FF6196A06FA00B9553E /* PK_tTimeSpan.h */,
+				C396DC9E18B7F947007B21FE /* PK_tViewport.h */,
+				C36A3A051804819000BA1B7F /* PK_TypeConverters.h */,
+				C374EF1817FF3C6E0041819B /* PK_Types.h */,
+				C383D1CC17FE1F9E00974B24 /* PK_Vector2.h */,
+				C389B93D17F84A250054F409 /* PK_Vector3.h */,
+				C3445D93180B1C960035A011 /* PK_Vector4.h */,
+				C32ECE2B19660ADC00B31EBE /* PK_Web.h */,
+				C38EC3B717E7B2B600962097 /* PK_XmlDataFileReader.h */,
+				C38EC3B817E7B2B600962097 /* PK_XmlDataFileWriter.h */,
+				C33EF20B17E663CD00C0B75C /* PokeEngine.h */,
+				C33EF20F17E663CD00C0B75C /* tinyxml2.h */,
+			);
+			name = Include;
+			path = PokeEngine/src/Include;
+			sourceTree = "<group>";
+		};
+		C33EF21D17E6640300C0B75C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C33EF27617E66A0400C0B75C /* libPoke Engine.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C33EF21E17E6640300C0B75C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C32FC6C81916A78700F52A17 /* AdSupport.framework */,
+				C32FC6D41916A7BF00F52A17 /* AudioToolbox.framework */,
+				C32FC6C61916A77F00F52A17 /* AVFoundation.framework */,
+				C32FC6DA1916A7D500F52A17 /* CoreAudio.framework */,
+				C32FC6D21916A7B900F52A17 /* CoreGraphics.framework */,
+				C3CF634619942446001AC295 /* CoreMotion.framework */,
+				C32FC6C41916A77800F52A17 /* CoreTelephony.framework */,
+				C32FC6CA1916A79800F52A17 /* GameKit.framework */,
+				C32FC6CC1916A7A100F52A17 /* ImageIO.framework */,
+				C32FC6C21916A76F00F52A17 /* MessageUI.framework */,
+				C32FC6D81916A7CE00F52A17 /* MobileCoreServices.framework */,
+				C32FC6CE1916A7AB00F52A17 /* OpenGLES.framework */,
+				C32FC6D61916A7C600F52A17 /* QuartzCore.framework */,
+				C32FC6C01916A76200F52A17 /* StoreKit.framework */,
+				C32FC6BE1916A75900F52A17 /* SystemConfiguration.framework */,
+				C32FC6D01916A7B200F52A17 /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C350E2F817F713D2008892D2 /* Libs */ = {
+			isa = PBXGroup;
+			children = (
+				C32FC6DE1916A82E00F52A17 /* libSDL2_net.a */,
+				C32FC6B81916A73E00F52A17 /* libSDL2_image.a */,
+				C32FC6B91916A73E00F52A17 /* libSDL2_mixer.a */,
+				C32FC6BA1916A73E00F52A17 /* libSDL2.a */,
+				C32FC6B61916A72500F52A17 /* libBox2D.a */,
+				C32FC6B21916A6D900F52A17 /* libGoogleAdMobAds.a */,
+			);
+			name = Libs;
+			sourceTree = "<group>";
+		};
+		C35FD66219296468004CBE63 /* Scripting */ = {
+			isa = PBXGroup;
+			children = (
+				C3F85D241A26878C00A1074E /* PK_PlaySoundCmd.cpp */,
+				C3989B5D1960A4E400BE8714 /* PK_LabelCmd.cpp */,
+				C3989B5E1960A4E400BE8714 /* PK_LoopCmd.cpp */,
+				C3989B5F1960A4E400BE8714 /* PK_SelectCmd.cpp */,
+				C35FD67919296577004CBE63 /* PK_CommandAttributes.cpp */,
+				C35FD67B19296577004CBE63 /* PK_MoveCmd.cpp */,
+				C35FD67C19296577004CBE63 /* PK_PauseCmd.cpp */,
+				C35FD67D19296577004CBE63 /* PK_RotateCmd.cpp */,
+				C35FD67F19296577004CBE63 /* PK_ScriptAsset.cpp */,
+				C35FD68019296577004CBE63 /* PK_ScriptCommand.cpp */,
+				C35FD68119296577004CBE63 /* PK_ScriptCompiler.cpp */,
+				C35FD68219296577004CBE63 /* PK_SetAttributeCmd.cpp */,
+				C35FD68319296577004CBE63 /* PK_tScriptValue.cpp */,
+			);
+			name = Scripting;
+			sourceTree = "<group>";
+		};
+		C36918671829802A00EE7CDB /* Effects */ = {
+			isa = PBXGroup;
+			children = (
+				C3BD351C1907169F0084C334 /* PK_MotionEffect.cpp */,
+				C3BD351A1907169F0084C334 /* PK_LinearMoveEffect.cpp */,
+				C3BD35191907169F0084C334 /* PK_GravityEffect.cpp */,
+				C3EB89CB18C6669D00EAF7F2 /* PK_ButtonPressEffect.cpp */,
+				C3822C5918316BDD005AACA7 /* PK_PopUpEffect.cpp */,
+				C3ECACA7182FDD49007D6EA6 /* PK_ColorEffect.cpp */,
+				C36918691829803D00EE7CDB /* PK_Effect.cpp */,
+				C369186A1829803D00EE7CDB /* PK_EffectsBlender.cpp */,
+			);
+			name = Effects;
+			sourceTree = "<group>";
+		};
+		C36A3A08180481AD00BA1B7F /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				C3EE215B19156486009AF781 /* PK_ProfilerSettings.cpp */,
+				C3EB89C918C6668800EAF7F2 /* PK_PhysicsManagerSettings.cpp */,
+				C38B3116180DE124005B572B /* PK_AudioManagerSettings.cpp */,
+				C38B3117180DE124005B572B /* PK_SceneManagerSettings.cpp */,
+				C350E2B117F6043E008892D2 /* PK_Settings.cpp */,
+				C37A68861803398700D374CA /* PK_PokeSettings.cpp */,
+			);
+			name = Configuration;
+			sourceTree = "<group>";
+		};
+		C36A3A09180481CE00BA1B7F /* Types */ = {
+			isa = PBXGroup;
+			children = (
+				C38B2FFB196A071D00B9553E /* PK_tDateTime.cpp */,
+				C38B2FFC196A071D00B9553E /* PK_tTimeSpan.cpp */,
+				C396DCAC18B7F980007B21FE /* PK_tViewport.cpp */,
+				C380A16018204CB2006C777D /* PK_tAABoundingSquare.cpp */,
+				C35CFE4F18002912004D4C59 /* PK_tBoundingSquare.cpp */,
+				C380A16118204CB2006C777D /* PK_tSize.cpp */,
+				C35CFE5118002D67004D4C59 /* PK_tSpriteFrame.cpp */,
+				C38D551E18B2AAF4008AD67E /* PK_tBoundingCircle.cpp */,
+				C36A3A061804819B00BA1B7F /* PK_TypeConverters.cpp */,
+				C36918651829800B00EE7CDB /* PK_Types.cpp */,
+			);
+			name = Types;
+			sourceTree = "<group>";
+		};
+		C36EFC2018D3C10D0091BDA4 /* Leaderboards */ = {
+			isa = PBXGroup;
+			children = (
+				C391A7EE18C928BC00B86B05 /* PK_iOSLeaderboard.cpp */,
+				C391A7EF18C928BC00B86B05 /* PK_Leaderboard.cpp */,
+			);
+			name = Leaderboards;
+			sourceTree = "<group>";
+		};
+		C374EF2117FF645C0041819B /* IO */ = {
+			isa = PBXGroup;
+			children = (
+				C3EA10D319B226C4008E4C70 /* PK_FileReader.cpp */,
+				C3EA10D419B226C4008E4C70 /* PK_FileWriter.cpp */,
+				C392C0221954D3BE001EA9D0 /* PK_File.cpp */,
+				C374EF2217FF64730041819B /* PK_Path.cpp */,
+			);
+			name = IO;
+			sourceTree = "<group>";
+		};
+		C37A68811803394D00D374CA /* System */ = {
+			isa = PBXGroup;
+			children = (
+				C3EA10D119B226C4008E4C70 /* PK_App.cpp */,
+				C3EA10D219B226C4008E4C70 /* PK_AppStore.cpp */,
+				C3EA10D519B226C4008E4C70 /* PK_GameApp.cpp */,
+				C34448D3199D492300FBFCDF /* PK_Console.cpp */,
+				C34448D4199D492300FBFCDF /* PK_ConsoleApp.cpp */,
+				C3775E01198D255100E900A9 /* PK_DrawableComponent.cpp */,
+				C39CAED617FB66160096C953 /* PK_ClassFactory.cpp */,
+				C350E29A17F6043C008892D2 /* PK_Component.cpp */,
+				C38B2FF8196A071D00B9553E /* PK_Environment.cpp */,
+				C33200171983095100CE4CBB /* PK_EventManager.cpp */,
+				C3C8C1D518AC33540073A9F9 /* PK_Game.cpp */,
+				C382465218FC8D3900F1AB7B /* PK_Library.cpp */,
+				C382465318FC8D3900F1AB7B /* PK_LibraryItem.cpp */,
+				C3822C6218316DFF005AACA7 /* PK_LoadableObject.cpp */,
+				C30399F71801A44000848E86 /* PK_MathHelper.cpp */,
+				C3BD351B1907169F0084C334 /* PK_MessageBox.cpp */,
+				C350E2A217F6043D008892D2 /* PK_Object.cpp */,
+				C38B666B1819BEB400573CEE /* PK_ObjectLoader.cpp */,
+				C350E2A417F6043D008892D2 /* PK_PokeEngine.cpp */,
+				C380A9D919649CC10069365F /* PK_PokeGameData.cpp */,
+				C38D551D18B2AAF4008AD67E /* PK_RandomGenerator.cpp */,
+				C38BCB761964858D0032DEE0 /* PK_Rate.cpp */,
+				C36A3A0B1804945D00BA1B7F /* PK_SDLManager.cpp */,
+				C3A6555718107F4B001DE383 /* PK_Timer.cpp */,
+			);
+			name = System;
+			sourceTree = "<group>";
+		};
+		C37A689818033B1E00D374CA /* Input */ = {
+			isa = PBXGroup;
+			children = (
+				C37A68841803398700D374CA /* PK_InputManager.cpp */,
+				C37A68881803398700D374CA /* PK_SDLInputManager.cpp */,
+			);
+			name = Input;
+			sourceTree = "<group>";
+		};
+		C382464B18FC8D1400F1AB7B /* Net */ = {
+			isa = PBXGroup;
+			children = (
+				C32ECE2919660AD200B31EBE /* PK_Web.cpp */,
+				C382464C18FC8D2A00F1AB7B /* PK_SDLTCPSocket.cpp */,
+				C382464D18FC8D2A00F1AB7B /* PK_TCPClient.cpp */,
+				C382464E18FC8D2A00F1AB7B /* PK_TCPServer.cpp */,
+			);
+			name = Net;
+			sourceTree = "<group>";
+		};
+		C38AB17B18D0F60F0088C4F5 /* GoogleAdMob */ = {
+			isa = PBXGroup;
+			children = (
+				C38AB17C18D0F60F0088C4F5 /* GADAdMobExtras.h */,
+				C38AB17D18D0F60F0088C4F5 /* GADAdNetworkExtras.h */,
+				C38AB17E18D0F60F0088C4F5 /* GADAdSize.h */,
+				C38AB17F18D0F60F0088C4F5 /* GADBannerView.h */,
+				C38AB18018D0F60F0088C4F5 /* GADBannerViewDelegate.h */,
+				C38AB18118D0F60F0088C4F5 /* GADInterstitial.h */,
+				C38AB18218D0F60F0088C4F5 /* GADInterstitialDelegate.h */,
+				C38AB18318D0F60F0088C4F5 /* GADRequest.h */,
+				C38AB18418D0F60F0088C4F5 /* GADRequestError.h */,
+			);
+			name = GoogleAdMob;
+			path = PokeEngine/src/iOS/GoogleAdMob;
+			sourceTree = "<group>";
+		};
+		C390BB9917F0E683009EA36E /* Exceptions */ = {
+			isa = PBXGroup;
+			children = (
+				C38B2FF7196A071D00B9553E /* PK_ArgumentOutOfRangeException.cpp */,
+				C38B2FFA196A071D00B9553E /* PK_OverflowException.cpp */,
+				C34E51221805D078000615E3 /* PK_DataFieldFormatException.cpp */,
+				C38D552918B2AB3D008AD67E /* PK_Exception.cpp */,
+				C350E29E17F6043C008892D2 /* PK_FileNotFoundException.cpp */,
+				C38D551C18B2AAF4008AD67E /* PK_GameException.cpp */,
+				C3B8077217F9FC970066D2CD /* PK_GLESException.cpp */,
+				C364CCEB180F10B200D0A804 /* PK_InvalidObjectException.cpp */,
+				C37A68851803398700D374CA /* PK_NotImplementedException.cpp */,
+				C350E2A117F6043C008892D2 /* PK_NullArgumentException.cpp */,
+				C350E2A317F6043D008892D2 /* PK_OutOfMemoryException.cpp */,
+				C350E2AD17F6043E008892D2 /* PK_SDLException.cpp */,
+				C350E2B317F6043E008892D2 /* PK_SystemException.cpp */,
+			);
+			name = Exceptions;
+			sourceTree = "<group>";
+		};
+		C391763E17E8FE5600D6F597 /* PokeEngine */ = {
+			isa = PBXGroup;
+			children = (
+				C350E2F817F713D2008892D2 /* Libs */,
+				C33EF21E17E6640300C0B75C /* Frameworks */,
+				C33EF21D17E6640300C0B75C /* Products */,
+				C33EF1F317E663BE00C0B75C /* src */,
+			);
+			name = PokeEngine;
+			sourceTree = "<group>";
+		};
+		C391A7ED18C9288000B86B05 /* Advertising */ = {
+			isa = PBXGroup;
+			children = (
+				C38AB18A18D105EC0088C4F5 /* PK_AdBanner.cpp */,
+				C3B8157619450BA300BFE325 /* PK_AdManager.cpp */,
+				C38AB18B18D105EC0088C4F5 /* PK_iOSAdBanner.cpp */,
+			);
+			name = Advertising;
+			sourceTree = "<group>";
+		};
+		C396DC9F18B7F94F007B21FE /* Physics */ = {
+			isa = PBXGroup;
+			children = (
+				C396DCAA18B7F975007B21FE /* PK_PhysicsManager.cpp */,
+				C396DCA018B7F963007B21FE /* PK_Body.cpp */,
+				C396DCA118B7F963007B21FE /* PK_Box2DBody.cpp */,
+				C396DCA218B7F963007B21FE /* PK_Box2DContactListener.cpp */,
+				C396DCA318B7F963007B21FE /* PK_Box2DPhysicsManager.cpp */,
+				C396DCA418B7F963007B21FE /* PK_Box2DRenderer.cpp */,
+			);
+			name = Physics;
+			sourceTree = "<group>";
+		};
+		C399CD0E18087EDF0026DC60 /* Audio */ = {
+			isa = PBXGroup;
+			children = (
+				C380B53D1999737000FF2CB7 /* PK_AudioManager.cpp */,
+				C399CD151808AF6A0026DC60 /* PK_SDLAudioManager.cpp */,
+			);
+			name = Audio;
+			sourceTree = "<group>";
+		};
+		C39C21C417EF50D900AF172D /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				C39C21C517EF50E900AF172D /* Controls */,
+				C350E2A917F6043D008892D2 /* PK_Scene.cpp */,
+				C350E2AB17F6043D008892D2 /* PK_SceneManager.cpp */,
+				C37A6D851807290E00113B05 /* PK_SceneTransition.cpp */,
+				C3C900FC197C19D100C6059C /* PK_SplashScene.cpp */,
+			);
+			name = Scenes;
+			sourceTree = "<group>";
+		};
+		C39C21C517EF50E900AF172D /* Controls */ = {
+			isa = PBXGroup;
+			children = (
+				C38B666A1819BEB400573CEE /* PK_2DSceneControl.cpp */,
+				C36EFC1D18D3BDE50091BDA4 /* PK_AdBannerControl.cpp */,
+				C3D55FF1181DC36A0085E0E4 /* PK_Button.cpp */,
+				C350E29F17F6043C008892D2 /* PK_Image.cpp */,
+				C3580A4A1811C31D002CA301 /* PK_Label.cpp */,
+				C38B2FF9196A071D00B9553E /* PK_OfflineAdBanner.cpp */,
+				C3962FDF18147CA30097E84C /* PK_Panel.cpp */,
+				C350E2AA17F6043D008892D2 /* PK_SceneControl.cpp */,
+				C350E2AC17F6043D008892D2 /* PK_SceneRoot.cpp */,
+				C35FD67E19296577004CBE63 /* PK_Script.cpp */,
+				C379CC8B1815C54C00C112DF /* PK_Sprite.cpp */,
+				C38D551F18B2AAF4008AD67E /* PK_TimerControl.cpp */,
+			);
+			name = Controls;
+			sourceTree = "<group>";
+		};
+		C3AEDD6117ECFF8F00C51129 /* DataFiles */ = {
+			isa = PBXGroup;
+			children = (
+				C350E29B17F6043C008892D2 /* PK_DataFile.cpp */,
+				C350E29C17F6043C008892D2 /* PK_DataFileField.cpp */,
+				C350E29D17F6043C008892D2 /* PK_DataFileRecord.cpp */,
+			);
+			name = DataFiles;
+			sourceTree = "<group>";
+		};
+		C3AEDD6217ECFF9A00C51129 /* Debug */ = {
+			isa = PBXGroup;
+			children = (
+				C3EE215C19156486009AF781 /* PK_RemoteDebuggerClient.cpp */,
+				C3FF4F4818A82F150023009B /* PK_PointerInfoProfilerItem.cpp */,
+				C37676A2182839F700494362 /* PK_ProfilerMenu.cpp */,
+				C376769D182831FF00494362 /* PK_AssetManagerProfilerItem.cpp */,
+				C3767699182831F000494362 /* PK_FPSCounterProfilerItem.cpp */,
+				C376769A182831F000494362 /* PK_LoadedObjsProfilerItem.cpp */,
+				C38B666C1819BEB400573CEE /* PK_ProfilerItem.cpp */,
+				C350E2A017F6043C008892D2 /* PK_Log.cpp */,
+				C350E2A517F6043D008892D2 /* PK_Profiler.cpp */,
+			);
+			name = Debug;
+			sourceTree = "<group>";
+		};
+		C3AEDD6317ECFFA900C51129 /* Graphics */ = {
+			isa = PBXGroup;
+			children = (
+				C36EE7B317F87AF100260B88 /* PK_Camera.cpp */,
+				C389B93817F8490A0054F409 /* PK_GLESBasicShader.cpp */,
+				C3B8077017F9FC860066D2CD /* PK_GLESRenderManager.cpp */,
+				C3E9B4AA17F7746E00169223 /* PK_GLESShader.cpp */,
+				C39E724017FCCB5C00E8DBB0 /* PK_GLESTextureShader.cpp */,
+				C3E9B4B717F779AA00169223 /* PK_RenderManager.cpp */,
+				C3FF4F4918A82F150023009B /* PK_SDLRenderManager.cpp */,
+			);
+			name = Graphics;
+			sourceTree = "<group>";
+		};
+		C3AEDD6417ECFFB600C51129 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				C3EA10D619B226C4008E4C70 /* PK_StringAsset.cpp */,
+				C34448D5199D492300FBFCDF /* PK_FileAsset.cpp */,
+				C3822C6418317449005AACA7 /* PK_DataFileAsset.cpp */,
+				C380A14C18204CA4006C777D /* PK_Asset.cpp */,
+				C380A14D18204CA4006C777D /* PK_AssetContainer.cpp */,
+				C380A14E18204CA4006C777D /* PK_AssetManager.cpp */,
+				C380A14F18204CA4006C777D /* PK_FontAsset.cpp */,
+				C3822C6018316C9A005AACA7 /* PK_ObjectPropertiesAsset.cpp */,
+				C380A15018204CA4006C777D /* PK_SDLGLTextureAsset.cpp */,
+				C380A15118204CA4006C777D /* PK_SDLMusicAsset.cpp */,
+				C380A15218204CA4006C777D /* PK_SDLSoundAsset.cpp */,
+				C380A15318204CA4006C777D /* PK_SDLTextureAsset.cpp */,
+				C380A15418204CA4006C777D /* PK_SpriteAsset.cpp */,
+				C380A15518204CA4006C777D /* PK_SpriteSetAsset.cpp */,
+			);
+			name = Assets;
+			sourceTree = "<group>";
+		};
+		C3AEDD6517ECFFC700C51129 /* XML */ = {
+			isa = PBXGroup;
+			children = (
+				C350E2B517F6043E008892D2 /* PK_XmlDataFileReader.cpp */,
+				C350E2B617F6043E008892D2 /* PK_XmlDataFileWriter.cpp */,
+				C3AEDD5717ECFF6400C51129 /* tinyxml2.cpp */,
+			);
+			name = XML;
+			sourceTree = "<group>";
+		};
+		C3AEDD6617ECFFD600C51129 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				C35FD67A19296577004CBE63 /* PK_MemoryBufferReader.cpp */,
+				C3D06A7217FA3B0000E53077 /* PK_MemoryBuffer.cpp */,
+				C3AEDD6117ECFF8F00C51129 /* DataFiles */,
+				C3AEDD6517ECFFC700C51129 /* XML */,
+			);
+			name = Data;
+			sourceTree = "<group>";
+		};
+		C3EB89D418C67D5700EAF7F2 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				C38AB17B18D0F60F0088C4F5 /* GoogleAdMob */,
+				C38AB18718D0F6480088C4F5 /* PKc_AdBanner.h */,
+				C38AB18818D0F6480088C4F5 /* PKc_AdBanner.mm */,
+				C3EB89DE18C691AE00EAF7F2 /* PKc_CInterface.h */,
+				C3EB89DF18C691AE00EAF7F2 /* PKc_CInterface.mm */,
+				C391A7F518C93ACD00B86B05 /* PKc_Consts.h */,
+				C3989B721960CDC800BE8714 /* PKc_Facebook.h */,
+				C3989B731960CDC800BE8714 /* PKc_Facebook.mm */,
+				C391A7F218C9399100B86B05 /* PKc_Leaderboard.h */,
+				C391A7F318C9399100B86B05 /* PKc_Leaderboard.mm */,
+				C3005738197F034B005DBF3C /* PKc_MessageBox.h */,
+				C3005739197F034B005DBF3C /* PKc_MessageBox.mm */,
+				C32D443C18C69AD400208DE5 /* PKc_PlayerAuthentication.h */,
+				C32D443D18C69AD400208DE5 /* PKc_PlayerAuthentication.mm */,
+				C37F579618CA632700F4083C /* PKc_SDLInterface.h */,
+				C37F579518CA632700F4083C /* PKc_SDLInterface.mm */,
+				C32ECE2C19660FA500B31EBE /* Reachability.h */,
+				C32ECE2D19660FA500B31EBE /* Reachability.m */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		C3EB89D718C68BDE00EAF7F2 /* Player */ = {
+			isa = PBXGroup;
+			children = (
+				C3EB89DB18C68D8700EAF7F2 /* PK_iOSPlayer.cpp */,
+				C3EB89D918C68CEE00EAF7F2 /* PK_Player.cpp */,
+			);
+			name = Player;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C33EF27517E66A0400C0B75C /* Poke Engine */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C33EF27F17E66A0400C0B75C /* Build configuration list for PBXNativeTarget "Poke Engine" */;
+			buildPhases = (
+				C33EF27217E66A0400C0B75C /* Sources */,
+				C33EF27317E66A0400C0B75C /* Frameworks */,
+				C33EF27417E66A0400C0B75C /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Poke Engine";
+			productName = "Poke Engine";
+			productReference = C33EF27617E66A0400C0B75C /* libPoke Engine.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C33EF1ED17E6635B00C0B75C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+			};
+			buildConfigurationList = C33EF1F017E6635B00C0B75C /* Build configuration list for PBXProject "PokeEngine.iOS" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = C33EF1EC17E6635B00C0B75C;
+			productRefGroup = C33EF21D17E6640300C0B75C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C33EF27517E66A0400C0B75C /* Poke Engine */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C33EF27217E66A0400C0B75C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3AEDD6017ECFF6400C51129 /* tinyxml2.cpp in Sources */,
+				C3BD35201907169F0084C334 /* PK_MotionEffect.cpp in Sources */,
+				C350E2B717F6043E008892D2 /* PK_Component.cpp in Sources */,
+				C350E2B817F6043E008892D2 /* PK_DataFile.cpp in Sources */,
+				C350E2B917F6043E008892D2 /* PK_DataFileField.cpp in Sources */,
+				C350E2BA17F6043E008892D2 /* PK_DataFileRecord.cpp in Sources */,
+				C350E2BB17F6043E008892D2 /* PK_FileNotFoundException.cpp in Sources */,
+				C350E2BC17F6043E008892D2 /* PK_Image.cpp in Sources */,
+				C350E2BD17F6043E008892D2 /* PK_Log.cpp in Sources */,
+				C3EE215E19156486009AF781 /* PK_RemoteDebuggerClient.cpp in Sources */,
+				C350E2BE17F6043E008892D2 /* PK_NullArgumentException.cpp in Sources */,
+				C33200181983095100CE4CBB /* PK_EventManager.cpp in Sources */,
+				C350E2BF17F6043E008892D2 /* PK_Object.cpp in Sources */,
+				C350E2C017F6043E008892D2 /* PK_OutOfMemoryException.cpp in Sources */,
+				C3EA10D719B226C4008E4C70 /* PK_App.cpp in Sources */,
+				C35FD68419296577004CBE63 /* PK_CommandAttributes.cpp in Sources */,
+				C35FD68E19296577004CBE63 /* PK_tScriptValue.cpp in Sources */,
+				C350E2C117F6043E008892D2 /* PK_PokeEngine.cpp in Sources */,
+				C3989B741960CDC800BE8714 /* PKc_Facebook.mm in Sources */,
+				C350E2C217F6043E008892D2 /* PK_Profiler.cpp in Sources */,
+				C350E2C617F6043E008892D2 /* PK_Scene.cpp in Sources */,
+				C3BD351D1907169F0084C334 /* PK_GravityEffect.cpp in Sources */,
+				C350E2C717F6043E008892D2 /* PK_SceneControl.cpp in Sources */,
+				C350E2C817F6043E008892D2 /* PK_SceneManager.cpp in Sources */,
+				C3F85D251A26878C00A1074E /* PK_PlaySoundCmd.cpp in Sources */,
+				C350E2C917F6043E008892D2 /* PK_SceneRoot.cpp in Sources */,
+				C350E2CA17F6043E008892D2 /* PK_SDLException.cpp in Sources */,
+				C3EA10DA19B226C4008E4C70 /* PK_FileWriter.cpp in Sources */,
+				C350E2CE17F6043E008892D2 /* PK_Settings.cpp in Sources */,
+				C35FD68B19296577004CBE63 /* PK_ScriptCommand.cpp in Sources */,
+				C34448D6199D492300FBFCDF /* PK_Console.cpp in Sources */,
+				C3BD351E1907169F0084C334 /* PK_LinearMoveEffect.cpp in Sources */,
+				C350E2D017F6043E008892D2 /* PK_SystemException.cpp in Sources */,
+				C350E2D217F6043E008892D2 /* PK_XmlDataFileReader.cpp in Sources */,
+				C350E2D317F6043E008892D2 /* PK_XmlDataFileWriter.cpp in Sources */,
+				C35FD68C19296577004CBE63 /* PK_ScriptCompiler.cpp in Sources */,
+				C3E9B4AC17F7746E00169223 /* PK_GLESShader.cpp in Sources */,
+				C3E9B4B817F779AA00169223 /* PK_RenderManager.cpp in Sources */,
+				C389B93917F8490A0054F409 /* PK_GLESBasicShader.cpp in Sources */,
+				C380A9DA19649CC10069365F /* PK_PokeGameData.cpp in Sources */,
+				C36EE7B417F87AF100260B88 /* PK_Camera.cpp in Sources */,
+				C3B8077117F9FC860066D2CD /* PK_GLESRenderManager.cpp in Sources */,
+				C3B8077317F9FC970066D2CD /* PK_GLESException.cpp in Sources */,
+				C3D06A7417FA3B0000E53077 /* PK_MemoryBuffer.cpp in Sources */,
+				C39CAED817FB66160096C953 /* PK_ClassFactory.cpp in Sources */,
+				C39E724117FCCB5C00E8DBB0 /* PK_GLESTextureShader.cpp in Sources */,
+				C38B3002196A071E00B9553E /* PK_tTimeSpan.cpp in Sources */,
+				C374EF2317FF64730041819B /* PK_Path.cpp in Sources */,
+				C3989B601960A4E400BE8714 /* PK_LabelCmd.cpp in Sources */,
+				C35CFE5018002913004D4C59 /* PK_tBoundingSquare.cpp in Sources */,
+				C35CFE5218002D68004D4C59 /* PK_tSpriteFrame.cpp in Sources */,
+				C30399F81801A44100848E86 /* PK_MathHelper.cpp in Sources */,
+				C37A688B1803398700D374CA /* PK_InputManager.cpp in Sources */,
+				C3775E02198D255100E900A9 /* PK_DrawableComponent.cpp in Sources */,
+				C37A688C1803398700D374CA /* PK_NotImplementedException.cpp in Sources */,
+				C37A688D1803398700D374CA /* PK_PokeSettings.cpp in Sources */,
+				C37A688F1803398700D374CA /* PK_SDLInputManager.cpp in Sources */,
+				C36A3A071804819B00BA1B7F /* PK_TypeConverters.cpp in Sources */,
+				C36A3A0C1804945D00BA1B7F /* PK_SDLManager.cpp in Sources */,
+				C38B2FFF196A071E00B9553E /* PK_OfflineAdBanner.cpp in Sources */,
+				C34E51231805D078000615E3 /* PK_DataFieldFormatException.cpp in Sources */,
+				C37A6D881807290E00113B05 /* PK_SceneTransition.cpp in Sources */,
+				C37A6D891807290E00113B05 /* PK_Thread.cpp in Sources */,
+				C399CD161808AF6A0026DC60 /* PK_SDLAudioManager.cpp in Sources */,
+				C32E57F51809F22600BB7099 /* PK_Mutex.cpp in Sources */,
+				C38B3118180DE124005B572B /* PK_AudioManagerSettings.cpp in Sources */,
+				C38B3119180DE124005B572B /* PK_SceneManagerSettings.cpp in Sources */,
+				C3EA10D819B226C4008E4C70 /* PK_AppStore.cpp in Sources */,
+				C364CCEC180F10B200D0A804 /* PK_InvalidObjectException.cpp in Sources */,
+				C3A6555818107F4B001DE383 /* PK_Timer.cpp in Sources */,
+				C35FD68619296577004CBE63 /* PK_MoveCmd.cpp in Sources */,
+				C3580A4B1811C31D002CA301 /* PK_Label.cpp in Sources */,
+				C34448D8199D492300FBFCDF /* PK_FileAsset.cpp in Sources */,
+				C3962FE018147CA30097E84C /* PK_Panel.cpp in Sources */,
+				C379CC8C1815C54C00C112DF /* PK_Sprite.cpp in Sources */,
+				C38B666D1819BEB400573CEE /* PK_2DSceneControl.cpp in Sources */,
+				C38B666E1819BEB400573CEE /* PK_ObjectLoader.cpp in Sources */,
+				C38B666F1819BEB400573CEE /* PK_ProfilerItem.cpp in Sources */,
+				C3D55FF2181DC36A0085E0E4 /* PK_Button.cpp in Sources */,
+				C380A15618204CA4006C777D /* PK_Asset.cpp in Sources */,
+				C3EA10D919B226C4008E4C70 /* PK_FileReader.cpp in Sources */,
+				C38B3001196A071E00B9553E /* PK_tDateTime.cpp in Sources */,
+				C380A15718204CA4006C777D /* PK_AssetContainer.cpp in Sources */,
+				C380A15818204CA4006C777D /* PK_AssetManager.cpp in Sources */,
+				C32ECE2A19660AD200B31EBE /* PK_Web.cpp in Sources */,
+				C35FD68D19296577004CBE63 /* PK_SetAttributeCmd.cpp in Sources */,
+				C380A15918204CA4006C777D /* PK_FontAsset.cpp in Sources */,
+				C35FD68719296577004CBE63 /* PK_PauseCmd.cpp in Sources */,
+				C380A15A18204CA4006C777D /* PK_SDLGLTextureAsset.cpp in Sources */,
+				C380A15B18204CA4006C777D /* PK_SDLMusicAsset.cpp in Sources */,
+				C3BD351F1907169F0084C334 /* PK_MessageBox.cpp in Sources */,
+				C380A15C18204CA4006C777D /* PK_SDLSoundAsset.cpp in Sources */,
+				C35FD68919296577004CBE63 /* PK_Script.cpp in Sources */,
+				C380A15D18204CA4006C777D /* PK_SDLTextureAsset.cpp in Sources */,
+				C3989B621960A4E400BE8714 /* PK_SelectCmd.cpp in Sources */,
+				C380A15E18204CA4006C777D /* PK_SpriteAsset.cpp in Sources */,
+				C380A15F18204CA4006C777D /* PK_SpriteSetAsset.cpp in Sources */,
+				C380A16218204CB2006C777D /* PK_tAABoundingSquare.cpp in Sources */,
+				C380A16318204CB2006C777D /* PK_tSize.cpp in Sources */,
+				C376769B182831F000494362 /* PK_FPSCounterProfilerItem.cpp in Sources */,
+				C38B2FFE196A071E00B9553E /* PK_Environment.cpp in Sources */,
+				C376769C182831F000494362 /* PK_LoadedObjsProfilerItem.cpp in Sources */,
+				C32ECE2E19660FA500B31EBE /* Reachability.m in Sources */,
+				C376769E182831FF00494362 /* PK_AssetManagerProfilerItem.cpp in Sources */,
+				C392C0231954D3BE001EA9D0 /* PK_File.cpp in Sources */,
+				C37676A3182839F700494362 /* PK_ProfilerMenu.cpp in Sources */,
+				C36918661829800B00EE7CDB /* PK_Types.cpp in Sources */,
+				C369186C1829803D00EE7CDB /* PK_Effect.cpp in Sources */,
+				C369186D1829803D00EE7CDB /* PK_EffectsBlender.cpp in Sources */,
+				C3ECACA8182FDD49007D6EA6 /* PK_ColorEffect.cpp in Sources */,
+				C3C900FD197C19D100C6059C /* PK_SplashScene.cpp in Sources */,
+				C3822C5B18316BDD005AACA7 /* PK_PopUpEffect.cpp in Sources */,
+				C3822C6118316C9A005AACA7 /* PK_ObjectPropertiesAsset.cpp in Sources */,
+				C34448D7199D492300FBFCDF /* PK_ConsoleApp.cpp in Sources */,
+				C3822C6318316DFF005AACA7 /* PK_LoadableObject.cpp in Sources */,
+				C3822C6518317449005AACA7 /* PK_DataFileAsset.cpp in Sources */,
+				C3FF4F4A18A82F150023009B /* PK_PointerInfoProfilerItem.cpp in Sources */,
+				C3FF4F4B18A82F150023009B /* PK_SDLRenderManager.cpp in Sources */,
+				C3C8C1D618AC33540073A9F9 /* PK_Game.cpp in Sources */,
+				C38D552018B2AAF4008AD67E /* PK_GameException.cpp in Sources */,
+				C38D552118B2AAF4008AD67E /* PK_RandomGenerator.cpp in Sources */,
+				C38D552218B2AAF4008AD67E /* PK_tBoundingCircle.cpp in Sources */,
+				C38D552318B2AAF4008AD67E /* PK_TimerControl.cpp in Sources */,
+				C3989B611960A4E400BE8714 /* PK_LoopCmd.cpp in Sources */,
+				C380B53E1999737000FF2CB7 /* PK_AudioManager.cpp in Sources */,
+				C3EA10DC19B226C4008E4C70 /* PK_StringAsset.cpp in Sources */,
+				C38D552A18B2AB3D008AD67E /* PK_Exception.cpp in Sources */,
+				C396DCA518B7F963007B21FE /* PK_Body.cpp in Sources */,
+				C396DCA618B7F963007B21FE /* PK_Box2DBody.cpp in Sources */,
+				C396DCA718B7F963007B21FE /* PK_Box2DContactListener.cpp in Sources */,
+				C396DCA818B7F963007B21FE /* PK_Box2DPhysicsManager.cpp in Sources */,
+				C396DCA918B7F963007B21FE /* PK_Box2DRenderer.cpp in Sources */,
+				C396DCAB18B7F975007B21FE /* PK_PhysicsManager.cpp in Sources */,
+				C396DCAD18B7F980007B21FE /* PK_tViewport.cpp in Sources */,
+				C3EB89CA18C6668800EAF7F2 /* PK_PhysicsManagerSettings.cpp in Sources */,
+				C3EB89CC18C6669D00EAF7F2 /* PK_ButtonPressEffect.cpp in Sources */,
+				C3EB89DA18C68CEE00EAF7F2 /* PK_Player.cpp in Sources */,
+				C3EB89DC18C68D8700EAF7F2 /* PK_iOSPlayer.cpp in Sources */,
+				C3EB89E018C691AE00EAF7F2 /* PKc_CInterface.mm in Sources */,
+				C38BCB771964858D0032DEE0 /* PK_Rate.cpp in Sources */,
+				C32D443E18C69AD400208DE5 /* PKc_PlayerAuthentication.mm in Sources */,
+				C38B2FFD196A071E00B9553E /* PK_ArgumentOutOfRangeException.cpp in Sources */,
+				C391A7F018C928BC00B86B05 /* PK_iOSLeaderboard.cpp in Sources */,
+				C391A7F118C928BC00B86B05 /* PK_Leaderboard.cpp in Sources */,
+				C391A7F418C9399100B86B05 /* PKc_Leaderboard.mm in Sources */,
+				C3B8157719450BA300BFE325 /* PK_AdManager.cpp in Sources */,
+				C37F579718CA632700F4083C /* PKc_SDLInterface.mm in Sources */,
+				C38AB18918D0F6480088C4F5 /* PKc_AdBanner.mm in Sources */,
+				C38AB18C18D105EC0088C4F5 /* PK_AdBanner.cpp in Sources */,
+				C35FD68519296577004CBE63 /* PK_MemoryBufferReader.cpp in Sources */,
+				C35FD68A19296577004CBE63 /* PK_ScriptAsset.cpp in Sources */,
+				C38AB18D18D105EC0088C4F5 /* PK_iOSAdBanner.cpp in Sources */,
+				C36EFC1E18D3BDE50091BDA4 /* PK_AdBannerControl.cpp in Sources */,
+				C38B3000196A071E00B9553E /* PK_OverflowException.cpp in Sources */,
+				C382464F18FC8D2A00F1AB7B /* PK_SDLTCPSocket.cpp in Sources */,
+				C382465018FC8D2A00F1AB7B /* PK_TCPClient.cpp in Sources */,
+				C382465118FC8D2A00F1AB7B /* PK_TCPServer.cpp in Sources */,
+				C382465418FC8D3900F1AB7B /* PK_Library.cpp in Sources */,
+				C300573A197F034B005DBF3C /* PKc_MessageBox.mm in Sources */,
+				C3EA10DB19B226C4008E4C70 /* PK_GameApp.cpp in Sources */,
+				C3EE215D19156486009AF781 /* PK_ProfilerSettings.cpp in Sources */,
+				C35FD68819296577004CBE63 /* PK_RotateCmd.cpp in Sources */,
+				C382465518FC8D3900F1AB7B /* PK_LibraryItem.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		C33EF1F117E6635B00C0B75C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		C33EF1F217E6635B00C0B75C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+		C33EF28017E66A0400C0B75C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DSTROOT = /tmp/Poke_Engine.dst;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/jrlima/Documents/FacebookSDK,
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Poke Engine/Poke Engine-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					POKE_DEBUG,
+					POKE_IOS,
+				);
+				"GCC_PREPROCESSOR_DEFINITIONS[arch=*]" = (
+					POKE_DEBUG,
+					POKE_IOS,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					../../..,
+					../../../SDL/Include,
+					../../../SDL_Image,
+					../../src/include,
+					../../../SDL2_mixer/,
+					../../../PokeEngine/src,
+					../../../Box2d/src,
+					../../../SDL_net,
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../src/IOS/GoogleAdMob\"",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/Build/Products/Debug-iphoneos",
+					/Users/jrlima/Users/Jo/Dev/LimanimaShovelware/trunk/FatCatsAndMice/jni/PokeEngine/src/iOS/GoogleAdMob,
+				);
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		C33EF28117E66A0400C0B75C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DSTROOT = /tmp/Poke_Engine.dst;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/jrlima/Documents/FacebookSDK,
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Poke Engine/Poke Engine-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = POKE_IOS;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					../../..,
+					../../../SDL/Include,
+					../../../SDL_Image,
+					../../src/include,
+					../../../SDL2_mixer/,
+					../../../PokeEngine/src,
+					../../../Box2d/src,
+					../../../SDL_net,
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../src/IOS/GoogleAdMob\"",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/Build/Products/Debug-iphoneos",
+					/Users/jrlima/Users/Jo/Dev/LimanimaShovelware/trunk/FatCatsAndMice/jni/PokeEngine/src/iOS/GoogleAdMob,
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C33EF1F017E6635B00C0B75C /* Build configuration list for PBXProject "PokeEngine.iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C33EF1F117E6635B00C0B75C /* Debug */,
+				C33EF1F217E6635B00C0B75C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C33EF27F17E66A0400C0B75C /* Build configuration list for PBXNativeTarget "Poke Engine" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C33EF28017E66A0400C0B75C /* Debug */,
+				C33EF28117E66A0400C0B75C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C33EF1ED17E6635B00C0B75C /* Project object */;
+}

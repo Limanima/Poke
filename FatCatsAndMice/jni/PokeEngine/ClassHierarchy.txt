@@ -1,0 +1,208 @@
+PK_Object
+   |
+   +--PK_PokeEngine
+   |
+   +--PK_Settings
+   |    |
+   |    +--PK_AudioManagerSettings
+   |    |
+   |    +--PK_SceneManagerSettings
+   |    |
+   |    +--PK_PokeSettings
+   |
+   +--PK_Component
+   |    |
+   |    +--PK_Game
+   |    |
+   |    +--PK_AssetManager
+   |    |
+   |    +--PK_RenderManager (interface)
+   |    |   |
+   |    |   +--PK_SDLRenderManager
+   |    |      |
+   |    |      +--PK_GLESRenderManager (iOS, Android)
+   |    |      |
+   |    |      +--PK_GLRenderManager (Windows)
+   |    |
+   |    +--PK_AudioManager
+   |    |
+   |    +--PK_InputManager (interface)
+   |    |   |
+   |    |   +--PK_SDLInputManager
+   |    |
+   |    +--PK_SDLManager
+   |    |
+   |    +--PK_SceneManager
+   |    |
+   |    +--PK_Profiler 
+   |    |
+   |    +--PK_PhysicsManager (interface)
+   |        |
+   |        +--PK_Box2DPhysicsManager
+   |
+   +--PK_Timer
+   |    |
+   |    +--PK_GameTimer
+   |
+   +--PK_ClassFactory
+   |
+   +--PK_ObjectLoader
+   |
+   +--PK_LoadableObject   
+   |    |
+   |    +--PK_Scene
+   |    |   |
+   |    |   +--PK_SceneTransition 
+   |    |   
+   |    +--PK_SceneControl
+   |         |
+   |         +--PK_2DSceneControl
+   |         |    |
+   |         |    +--PK_SceneRoot
+   |         |    |
+   |         |    +--PK_Image
+   |         |    |
+   |         |    +--PK_Sprite
+   |         |    |
+   |         |    +--PK_Panel
+   |         |    |
+   |         |    +--PK_Label
+   |         |    |
+   |         |    +--PK_Button
+   |         |    |
+   |         |    +--PK_ProfilerMenu
+   |         |
+   |         +--PK_LoadingIcon
+   |         |
+   |         +--PK_TimerControl
+   |        
+   +--PK_ProfilerItem
+   |    |  
+   |    +--PK_PointerInfoProfilerItem
+   |    |  
+   |    +--PK_FPSCounterProfilerItem
+   |    |  
+   |    +--PK_AssetManagerProfilerItem
+   |    |  
+   |    +--PK_LoadedObjsProfilerItem
+   |
+   +--PK_EffectsBlender
+   |
+   +--PK_Effect
+   |    |  
+   |    +--PK_ColorEffect
+   |    |  
+   |    +--PK_PopUpEffect
+   |
+   +--PK_DataFile
+   |
+   +--PK_DataFileField
+   |
+   +--PK_DataFileRecord
+   |
+   +--PK_FileReader 
+   |    |
+   |    +--PK_SDLFileReader
+   |
+   +--PK_AssetContainer
+   |
+   +--PK_Asset
+   |    |
+   |    +--PK_SpriteAsset
+   |    |
+   |    +--PK_SpriteSetAsset
+   |    |
+   |    +--PK_TextureAsset 
+   |    |   |
+   |    |   +--PK_SDLGLTextureAsset
+   |    |    
+   |    +--PK_DataFileAsset
+   |    |   |    
+   |    |   +--PK_FontAsset
+   |    |   |    
+   |    |   +--PK_ObjectPropertiesAsset
+   |    |   |    
+   |    |   +--PK_SettingsAsset
+   |    |      
+   |    +--PK_MusicAsset (interface)
+   |    |   |
+   |    |   +--PK_SDLMusicAsset
+   |    |    
+   |    +--PK_SoundAsset (interface)
+   |        |
+   |        +--PK_SDLAudioAsset
+   |
+   +--PK_Shader 
+   |    |
+   |    +--PK_GLESShader
+   |        |
+   |        +--PK_GLESBasicShader
+   |        |
+   |        +--PK_GLESTextureShader
+   |
+   +--PK_IObjectCallback 
+   |    |
+   |    +--PK_ObjectCallback
+   |
+   +--PK_ICollisionCallback 
+   |    |
+   |    +--PK_CollisionCallback 
+   |
+   +--PK_IParameterizedCallback
+   |    |
+   |    +--PK_ParameterizedCallback
+   |    
+   +--PK_MemoryBuffer
+   |
+   +--PK_Mutex
+   |
+   +--PK_Thread
+   |       
+   +--PK_XmlDataFileWriter
+   |
+   +--PK_XmlDataFileReader
+   |
+   +--PK_Body
+       |
+       +--PK_Box2DBody
+
+        
+PK_Exception
+   |
+   +--PK_SystemException
+   |
+   +--PK_GameException
+   |
+   +--PK_FileNotFoundException
+   |
+   +--PK_GLESException
+   |
+   +--PK_NullArgumentException
+   |
+   +--PK_NotImplementedException
+   |
+   +--PK_OutOfMemoryException
+   |
+   +--PK_SDLException
+   |
+   +--PK_DataFieldFormatException
+
+PK_TypeConverters
+
+PK_RandomGenerator
+        
+PK_Box2DRenderer
+
+b2ContactListener
+   |
+   +--PK_Box2DContactListener
+
+
+
+// Estruturas
+PK_tSize
+PK_tViewport
+PK_tAABoundingSquare
+PK_tBoundingCircle
+PK_tBoundingSquare
+PK_tSpriteFrame

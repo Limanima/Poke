@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>Fat Cats &amp; Mice.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>5</integer>
+		</dict>
+		<key>Fat Cats And Mice - iPad.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>5</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>C36C732D17E8F54A00D3E1A6</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>C3C4739F17E9063B005E2FCF</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>C3C473E817E907B4005E2FCF</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>C3C7270F18075DCE0086FA68</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>

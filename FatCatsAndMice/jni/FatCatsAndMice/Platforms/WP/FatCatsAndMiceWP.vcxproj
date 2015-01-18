@@ -1,0 +1,285 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|ARM">
+      <Configuration>Debug</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|ARM">
+      <Configuration>Release</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{fcca2911-5073-4a41-92f3-81f0571f37ee}</ProjectGuid>
+    <RootNamespace>FatCatsAndMiceWP</RootNamespace>
+    <DefaultLanguage>en-US</DefaultLanguage>
+    <MinimumVisualStudioVersion>11.0</MinimumVisualStudioVersion>
+    <XapOutputs>true</XapOutputs>
+    <XapFilename>FatCatsAndMiceWP_$(Configuration)_$(Platform).xap</XapFilename>
+    <WinMDAssembly>true</WinMDAssembly>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v110_wp80</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v110_wp80</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v110_wp80</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v110_wp80</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>PSAPI_VERSION=2;%(PreprocessorDefinitions);_CRT_SECURE_NO_WARNINGS</PreprocessorDefinitions>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\..\..\PokeEngine\src\include;$(ProjectDir)..\..\src\include;$(ProjectDir)..\..\..\SDL\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <CompileAsWinRT>true</CompileAsWinRT>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>d3d11.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <GenerateWindowsMetadata>false</GenerateWindowsMetadata>
+      <IgnoreSpecificDefaultLibraries>ole32.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>PSAPI_VERSION=2;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(IntermediateOutputPath);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <CompileAsWinRT>true</CompileAsWinRT>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>d3d11.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <GenerateWindowsMetadata>false</GenerateWindowsMetadata>
+      <IgnoreSpecificDefaultLibraries>ole32.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
+    <ClCompile>
+      <PreprocessorDefinitions>PSAPI_VERSION=2;%(PreprocessorDefinitions);_CRT_SECURE_NO_WARNINGS</PreprocessorDefinitions>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(IntermediateOutputPath);$(ProjectDir)\..\..\..\PokeEngine\src\include;$(ProjectDir)\..\..\src\include;$(ProjectDir)\..\..\..\SDL\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <CompileAsWinRT>true</CompileAsWinRT>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>d3d11.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <GenerateWindowsMetadata>false</GenerateWindowsMetadata>
+      <IgnoreSpecificDefaultLibraries>ole32.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">
+    <ClCompile>
+      <PreprocessorDefinitions>PSAPI_VERSION=2;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(IntermediateOutputPath);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <CompileAsWinRT>true</CompileAsWinRT>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>d3d11.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <GenerateWindowsMetadata>false</GenerateWindowsMetadata>
+      <IgnoreSpecificDefaultLibraries>ole32.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Reference Include="platform.winmd">
+      <IsWinMDFile>true</IsWinMDFile>
+      <Private>false</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Assets\ApplicationIcon.png" />
+    <Image Include="Assets\AlignmentGrid.png" />
+    <Image Include="Assets\Tiles\FlipCycleTileLarge.png" />
+    <Image Include="Assets\Tiles\FlipCycleTileMedium.png" />
+    <Image Include="Assets\Tiles\FlipCycleTileSmall.png" />
+    <Image Include="Assets\Tiles\IconicTileMediumLarge.png" />
+    <Image Include="Assets\Tiles\IconicTileSmall.png" />
+    <Image Include="res\images\splash.png" />
+    <Image Include="res\images\sprites-1.png" />
+    <Image Include="res\images\sprites-2.png" />
+    <Image Include="res\images\sprites-3.png" />
+    <Image Include="res\images\sprites-4.png" />
+    <Image Include="res\images\sprites-5.png" />
+    <Image Include="res\images\sprites-6.png" />
+    <Image Include="res\poke\poke_engine.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Xml Include="WMAppManifest.xml">
+      <SubType>Designer</SubType>
+    </Xml>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\src\Include\FC_Actor.h" />
+    <ClInclude Include="..\..\src\Include\FC_ActorExit.h" />
+    <ClInclude Include="..\..\src\Include\FC_AnimalActor.h" />
+    <ClInclude Include="..\..\src\Include\FC_BaseScene.h" />
+    <ClInclude Include="..\..\src\Include\FC_Button.h" />
+    <ClInclude Include="..\..\src\Include\FC_CatActor.h" />
+    <ClInclude Include="..\..\src\Include\FC_Consts.h" />
+    <ClInclude Include="..\..\src\Include\FC_DogActor.h" />
+    <ClInclude Include="..\..\src\Include\FC_Fire.h" />
+    <ClInclude Include="..\..\src\Include\FC_Game.h" />
+    <ClInclude Include="..\..\src\Include\FC_GameplayScene.h" />
+    <ClInclude Include="..\..\src\Include\FC_GameSession.h" />
+    <ClInclude Include="..\..\src\Include\FC_GameSettings.h" />
+    <ClInclude Include="..\..\src\Include\FC_GlobalHud.h" />
+    <ClInclude Include="..\..\src\Include\FC_Hud.h" />
+    <ClInclude Include="..\..\src\Include\FC_InanimateActor.h" />
+    <ClInclude Include="..\..\src\Include\FC_MainMenuScene.h" />
+    <ClInclude Include="..\..\src\Include\FC_MouseActor.h" />
+    <ClInclude Include="..\..\src\Include\FC_ObjectActor.h" />
+    <ClInclude Include="..\..\src\Include\FC_Player.h" />
+    <ClInclude Include="..\..\src\Include\FC_ScoreBoard.h" />
+    <ClInclude Include="..\..\src\Include\FC_ScorePoint.h" />
+    <ClInclude Include="..\..\src\Include\FC_Sign.h" />
+    <ClInclude Include="..\..\src\Include\FC_Stars.h" />
+    <ClInclude Include="..\..\src\Include\FC_Title.h" />
+    <ClInclude Include="..\..\src\Include\FC_Tutorial.h" />
+    <ClInclude Include="..\..\src\Include\FC_TypeConverters.h" />
+    <ClInclude Include="..\..\src\Include\FC_Types.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\SDL\src\main\winrt\SDL_winrt_main_NonXAML.cpp" />
+    <ClCompile Include="..\..\src\FC_Actor.cpp" />
+    <ClCompile Include="..\..\src\FC_ActorExit.cpp" />
+    <ClCompile Include="..\..\src\FC_AnimalActor.cpp" />
+    <ClCompile Include="..\..\src\FC_BaseScene.cpp" />
+    <ClCompile Include="..\..\src\FC_Button.cpp" />
+    <ClCompile Include="..\..\src\FC_CatActor.cpp" />
+    <ClCompile Include="..\..\src\FC_DogActor.cpp" />
+    <ClCompile Include="..\..\src\FC_Fire.cpp" />
+    <ClCompile Include="..\..\src\FC_Game.cpp" />
+    <ClCompile Include="..\..\src\FC_GameMain.c">
+      <CompileAsWinRT Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">false</CompileAsWinRT>
+      <CompileAsWinRT Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="..\..\src\FC_GameplayScene.cpp" />
+    <ClCompile Include="..\..\src\FC_GameSession.cpp" />
+    <ClCompile Include="..\..\src\FC_GameSettings.cpp" />
+    <ClCompile Include="..\..\src\FC_GlobalHUD.cpp" />
+    <ClCompile Include="..\..\src\FC_Hud.cpp" />
+    <ClCompile Include="..\..\src\FC_InanimateActor.cpp" />
+    <ClCompile Include="..\..\src\FC_MainMenuScene.cpp" />
+    <ClCompile Include="..\..\src\FC_MouseActor.cpp" />
+    <ClCompile Include="..\..\src\FC_ObjectActor.cpp" />
+    <ClCompile Include="..\..\src\FC_Player.cpp" />
+    <ClCompile Include="..\..\src\FC_ScoreBoard.cpp" />
+    <ClCompile Include="..\..\src\FC_ScorePoint.cpp" />
+    <ClCompile Include="..\..\src\FC_Sign.cpp" />
+    <ClCompile Include="..\..\src\FC_Stars.cpp" />
+    <ClCompile Include="..\..\src\FC_Title.cpp" />
+    <ClCompile Include="..\..\src\FC_Tutorial.cpp" />
+    <ClCompile Include="..\..\src\FC_TypeConverters.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\PokeEngine\Platforms\WP\PokeEngineWP\PokeEngineWP.vcxproj">
+      <Project>{e940a666-0a7d-4add-a529-649e0bcc70c4}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\fonts\main-font-big.fnt">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="res\fonts\main-font-medium.fnt">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="res\fonts\main-font.fnt">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="res\poke\poke_engine.cfg">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="res\poke\poke_engine.fnt">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="res\scripts\left-sign-hide.pks">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="res\scripts\left-sign-show.pks">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="res\scripts\left-sign-switch.pks">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="res\scripts\right-sign-hide.pks">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="res\scripts\right-sign-show.pks">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="res\scripts\right-sign-switch.pks">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="res\scripts\sign-idle.pks">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="res\scripts\tutorial.pks">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="res\sounds\points1.ogg">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="res\sounds\points2.ogg">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="res\sounds\points3.ogg">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="res\sprites\splash.ss">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="res\sprites\sprites-1.ss">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="res\sprites\sprites-2.ss">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="res\sprites\sprites-3.ss">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="res\sprites\sprites-4.ss">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="res\sprites\sprites-5.ss">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="res\sprites\sprites-6.ss">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\WindowsPhone\v$(TargetPlatformVersion)\Microsoft.Cpp.WindowsPhone.$(TargetPlatformVersion).targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

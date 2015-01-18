@@ -1,0 +1,326 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source Files\Scenes">
+      <UniqueIdentifier>{8dc0b286-c984-4eaf-8713-bed77fe157ba}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Controls">
+      <UniqueIdentifier>{ef848acb-0f1a-4073-bed0-808f20e169ca}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\controls">
+      <UniqueIdentifier>{4944e8b2-ebd2-4e30-9e3c-c528040866d5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\fonts">
+      <UniqueIdentifier>{de802b8f-2ef3-461e-bd24-035601c3e892}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\images">
+      <UniqueIdentifier>{015205ff-6fe6-44be-8bd6-8fbff9dd322f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\poke">
+      <UniqueIdentifier>{70f04d9a-d7fd-4552-a002-e45f76e88619}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\scenes">
+      <UniqueIdentifier>{aaa7f8bb-a899-4d80-ba82-dcaf1c5a9c6b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\sprites">
+      <UniqueIdentifier>{6e65bbea-c47c-4a8b-bf26-bf983e979992}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\scripts">
+      <UniqueIdentifier>{b7fc74be-e46f-4ca2-ab77-e5a8b590244e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\sounds">
+      <UniqueIdentifier>{da767a2b-1857-4899-b1ea-1b9993babbd5}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\src\FC_Game.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\FC_GameMain.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\FC_MainMenuScene.cpp">
+      <Filter>Source Files\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\FC_BaseScene.cpp">
+      <Filter>Source Files\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\FC_GameplayScene.cpp">
+      <Filter>Source Files\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\FC_TypeConverters.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\FC_CatActor.cpp">
+      <Filter>Source Files\Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\FC_DogActor.cpp">
+      <Filter>Source Files\Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\FC_Actor.cpp">
+      <Filter>Source Files\Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\FC_MouseActor.cpp">
+      <Filter>Source Files\Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\FC_Player.cpp">
+      <Filter>Source Files\Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\FC_Fire.cpp">
+      <Filter>Source Files\Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\FC_Hud.cpp">
+      <Filter>Source Files\Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\FC_ScoreBoard.cpp">
+      <Filter>Source Files\Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\FC_Title.cpp">
+      <Filter>Source Files\Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\FC_Button.cpp">
+      <Filter>Source Files\Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\FC_ActorExit.cpp">
+      <Filter>Source Files\Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\FC_GameSettings.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\FC_GameSession.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\FC_Sign.cpp">
+      <Filter>Source Files\Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\FC_AnimalActor.cpp">
+      <Filter>Source Files\Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\FC_ScorePoint.cpp">
+      <Filter>Source Files\Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\FC_InanimateActor.cpp">
+      <Filter>Source Files\Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\FC_Stars.cpp">
+      <Filter>Source Files\Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\FC_Tutorial.cpp">
+      <Filter>Source Files\Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\FC_GlobalHUD.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\src\Include\FC_BaseScene.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\Include\FC_Game.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\Include\FC_MainMenuScene.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\Include\FC_Consts.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\Include\FC_GameplayScene.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\Include\FC_Actor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\Include\FC_CatActor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\Include\FC_DogActor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\Include\FC_MouseActor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\Include\FC_Types.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\Include\FC_TypeConverters.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\Include\FC_Player.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\Include\FC_Fire.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\Include\FC_Hud.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\Include\FC_ScoreBoard.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\Include\FC_Title.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\Include\FC_Button.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\Include\FC_ActorExit.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\Include\FC_GameSettings.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\Include\FC_GameSession.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\Include\FC_Sign.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\Include\FC_AnimalActor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\Include\FC_ScorePoint.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\Include\FC_InanimateActor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\Include\FC_Stars.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\Include\FC_Tutorial.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\Include\FC_GlobalHud.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\..\assets\res\poke\poke_engine.cfg">
+      <Filter>Resource Files\poke</Filter>
+    </None>
+    <None Include="..\..\..\..\assets\res\poke\poke_engine.fnt">
+      <Filter>Resource Files\poke</Filter>
+    </None>
+    <None Include="..\..\..\..\assets\res\sprites\sprites-1.ss">
+      <Filter>Resource Files\sprites</Filter>
+    </None>
+    <None Include="..\..\..\..\assets\res\sprites\sprites-2.ss">
+      <Filter>Resource Files\sprites</Filter>
+    </None>
+    <None Include="..\..\..\..\assets\res\images\sprites-1.png">
+      <Filter>Resource Files\images</Filter>
+    </None>
+    <None Include="..\..\..\..\assets\res\images\sprites-2.png">
+      <Filter>Resource Files\images</Filter>
+    </None>
+    <None Include="..\..\..\..\assets\res\images\sprites-3.png">
+      <Filter>Resource Files\images</Filter>
+    </None>
+    <None Include="..\..\..\..\assets\res\images\sprites-4.png">
+      <Filter>Resource Files\images</Filter>
+    </None>
+    <None Include="..\..\..\..\assets\res\sprites\sprites-3.ss">
+      <Filter>Resource Files\sprites</Filter>
+    </None>
+    <None Include="..\..\..\..\assets\res\sprites\sprites-4.ss">
+      <Filter>Resource Files\sprites</Filter>
+    </None>
+    <None Include="..\..\..\..\assets\res\scripts\left-sign-switch.pks">
+      <Filter>Resource Files\scripts</Filter>
+    </None>
+    <None Include="..\..\..\..\assets\res\scripts\right-sign-switch.pks">
+      <Filter>Resource Files\scripts</Filter>
+    </None>
+    <None Include="..\..\..\..\assets\res\scripts\left-sign-show.pks">
+      <Filter>Resource Files\scripts</Filter>
+    </None>
+    <None Include="..\..\..\..\assets\res\scripts\right-sign-show.pks">
+      <Filter>Resource Files\scripts</Filter>
+    </None>
+    <None Include="..\..\..\..\assets\res\scripts\sign-idle.pks">
+      <Filter>Resource Files\scripts</Filter>
+    </None>
+    <None Include="..\..\..\..\assets\res\scripts\left-sign-hide.pks">
+      <Filter>Resource Files\scripts</Filter>
+    </None>
+    <None Include="..\..\..\..\assets\res\scripts\right-sign-hide.pks">
+      <Filter>Resource Files\scripts</Filter>
+    </None>
+    <None Include="..\..\..\..\assets\res\fonts\main-font.fnt">
+      <Filter>Resource Files\fonts</Filter>
+    </None>
+    <None Include="..\..\..\..\assets\res\fonts\main-font-big.fnt">
+      <Filter>Resource Files\fonts</Filter>
+    </None>
+    <None Include="..\..\..\..\assets\res\sprites\sprites-5.ss">
+      <Filter>Resource Files\sprites</Filter>
+    </None>
+    <None Include="..\..\..\..\assets\res\images\sprites-5.png">
+      <Filter>Resource Files\images</Filter>
+    </None>
+    <None Include="..\..\..\..\assets\res\scripts\tutorial.pks">
+      <Filter>Resource Files\scripts</Filter>
+    </None>
+    <None Include="..\..\..\..\assets\res\sprites\sprites-6.ss">
+      <Filter>Resource Files\sprites</Filter>
+    </None>
+    <None Include="..\..\..\..\assets\res\images\sprites-6.png">
+      <Filter>Resource Files\images</Filter>
+    </None>
+    <None Include="..\..\..\..\assets\res\poke\poke_engine.png">
+      <Filter>Resource Files\poke</Filter>
+    </None>
+    <None Include="..\..\..\..\assets\res\poke\poke_engine-strings.str">
+      <Filter>Resource Files\poke</Filter>
+    </None>
+    <None Include="..\..\..\..\assets\res\sounds\actor_move.ogg">
+      <Filter>Resource Files\sounds</Filter>
+    </None>
+    <None Include="..\..\..\..\assets\res\sounds\board_hide.ogg">
+      <Filter>Resource Files\sounds</Filter>
+    </None>
+    <None Include="..\..\..\..\assets\res\sounds\board_show.ogg">
+      <Filter>Resource Files\sounds</Filter>
+    </None>
+    <None Include="..\..\..\..\assets\res\sounds\cat_death.ogg">
+      <Filter>Resource Files\sounds</Filter>
+    </None>
+    <None Include="..\..\..\..\assets\res\sounds\mouse_death.ogg">
+      <Filter>Resource Files\sounds</Filter>
+    </None>
+    <None Include="..\..\..\..\assets\res\sounds\points1.ogg">
+      <Filter>Resource Files\sounds</Filter>
+    </None>
+    <None Include="..\..\..\..\assets\res\sounds\points2.ogg">
+      <Filter>Resource Files\sounds</Filter>
+    </None>
+    <None Include="..\..\..\..\assets\res\sounds\points3.ogg">
+      <Filter>Resource Files\sounds</Filter>
+    </None>
+    <None Include="..\..\..\..\assets\res\sounds\title_entrance.ogg">
+      <Filter>Resource Files\sounds</Filter>
+    </None>
+    <None Include="..\..\..\..\assets\res\sounds\title_exit.ogg">
+      <Filter>Resource Files\sounds</Filter>
+    </None>
+    <None Include="..\..\..\..\assets\res\sounds\wrong_animal.ogg">
+      <Filter>Resource Files\sounds</Filter>
+    </None>
+    <None Include="..\..\..\..\assets\res\sounds\main_menu_music.ogg">
+      <Filter>Resource Files\sounds</Filter>
+    </None>
+  </ItemGroup>
+</Project>

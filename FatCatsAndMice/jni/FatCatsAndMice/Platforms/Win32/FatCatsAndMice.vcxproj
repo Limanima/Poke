@@ -1,0 +1,279 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{BC99B051-0063-4B55-8C6A-D7F4A8B9557E}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>FatCatsAndMice</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>NotSet</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>NotSet</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>$(IncludePath)</IncludePath>
+    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <PostBuildEventUseInBuild>true</PostBuildEventUseInBuild>
+    <PreBuildEventUseInBuild>false</PreBuildEventUseInBuild>
+    <CustomBuildBeforeTargets>
+    </CustomBuildBeforeTargets>
+    <CustomBuildAfterTargets>
+    </CustomBuildAfterTargets>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions);_CRT_SECURE_NO_WARNINGS;POKE_DEBUG</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir)\..\..\SDL\Include;$(SolutionDir)\..\..\PokeEngine\src\Include;$(projectdir)..\..\src\Include</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>
+      </AdditionalLibraryDirectories>
+    </Link>
+    <PostBuildEvent>
+      <Command>echo Copy external libs to output if newer
+xcopy $(ProjectDir)external-libs\*.dll $(OutDir) /y /d
+
+echo Copy sdl library to output if newer
+xcopy $(SolutionDir)..\..\SDL\VisualC\SDL\win32\$(Configuration)\SDL2.dll $(OutDir) /y /d
+
+echo Copy sdl_mixer library to output if newer
+xcopy $(SolutionDir)..\..\SDL2_mixer\VisualC\$(Configuration)\SDL2_Mixer.dll $(OutDir) /y /d
+
+echo Copy sdl_net library to output if newer
+xcopy $(SolutionDir)..\..\SDL_net\VisualC\$(Configuration)\SDL2_net.dll $(OutDir) /y /d
+
+echo Copy sdl_image library to output if newer
+xcopy $(SolutionDir)..\..\SDL_image\VisualC\$(Configuration)\SDL2_image.dll $(OutDir) /y /d
+
+echo Copy asset files to output if newer
+xcopy $(SolutionDir)..\..\..\assets\*.* $(OutDir) /s /y /d
+
+</Command>
+    </PostBuildEvent>
+    <PreBuildEvent>
+      <Command>
+      </Command>
+    </PreBuildEvent>
+    <CustomBuildStep>
+      <Command>
+      </Command>
+      <Outputs>
+      </Outputs>
+    </CustomBuildStep>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir)\..\..\SDL\Include;$(SolutionDir)\..\..\PokeEngine\src\Include;$(projectdir)..\..\src\Include</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>%(AdditionalDependencies);opengl32.lib;wininet.lib</AdditionalDependencies>
+      <IgnoreAllDefaultLibraries>
+      </IgnoreAllDefaultLibraries>
+    </Link>
+    <PostBuildEvent>
+      <Command>echo Copy external libs to output if newer
+xcopy $(ProjectDir)external-libs\*.dll $(OutDir) /y /d
+
+echo Copy sdl library to output if newer
+xcopy $(SolutionDir)..\..\SDL\VisualC\SDL\win32\$(Configuration)\SDL2.dll $(OutDir) /y /d
+
+echo Copy sdl_mixer library to output if newer
+xcopy $(SolutionDir)..\..\SDL2_mixer\VisualC\$(Configuration)\SDL2_Mixer.dll $(OutDir) /y /d
+
+echo Copy sdl_net library to output if newer
+xcopy $(SolutionDir)..\..\SDL_net\VisualC\$(Configuration)\SDL2_net.dll $(OutDir) /y /d
+
+echo Copy sdl_image library to output if newer
+xcopy $(SolutionDir)..\..\SDL_image\VisualC\$(Configuration)\SDL2_Image.dll $(OutDir) /y /d
+
+echo Copy asset files to output if newer
+xcopy $(SolutionDir)..\..\..\assets\*.* $(OutDir) /s /y /d
+
+</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Box2D\Platforms\Win32\Box2D.vcxproj">
+      <Project>{93a4332f-37be-4f7c-ace8-5ec1d0da45f9}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\PokeEngine\Platforms\Win32\PokeEngine.vcxproj">
+      <Project>{14f8f0e5-227c-4e74-adb0-b6e2741e4705}</Project>
+      <Private>true</Private>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+      <CopyLocalSatelliteAssemblies>false</CopyLocalSatelliteAssemblies>
+      <LinkLibraryDependencies>true</LinkLibraryDependencies>
+      <UseLibraryDependencyInputs>false</UseLibraryDependencyInputs>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\SDL2_mixer\VisualC\SDL_mixer_VS2010.vcxproj">
+      <Project>{f7e944b3-0815-40cd-b3e4-90b2a15b0e33}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\SDL\VisualC\SDLmain\SDLmain_VS2010.vcxproj">
+      <Project>{da956fd3-e142-46f2-9dd5-c78bebb56b7a}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\SDL\VisualC\SDL\SDL_VS2010.vcxproj">
+      <Project>{81ce8daf-ebb2-4761-8e45-b71abcca8c68}</Project>
+      <Private>true</Private>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+      <CopyLocalSatelliteAssemblies>false</CopyLocalSatelliteAssemblies>
+      <LinkLibraryDependencies>true</LinkLibraryDependencies>
+      <UseLibraryDependencyInputs>false</UseLibraryDependencyInputs>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\SDL_image\VisualC\SDL_image_VS2010.vcxproj">
+      <Project>{2bd5534e-00e2-4bea-ac96-d9a92ea24696}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\SDL_net\VisualC\SDL_net_VS2008.vcxproj">
+      <Project>{8ab3504f-5e58-4910-afe8-7a1e595ac3f4}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\src\FC_Actor.cpp" />
+    <ClCompile Include="..\..\src\FC_ActorExit.cpp" />
+    <ClCompile Include="..\..\src\FC_AnimalActor.cpp" />
+    <ClCompile Include="..\..\src\FC_BaseScene.cpp" />
+    <ClCompile Include="..\..\src\FC_Button.cpp" />
+    <ClCompile Include="..\..\src\FC_CatActor.cpp" />
+    <ClCompile Include="..\..\src\FC_DogActor.cpp" />
+    <ClCompile Include="..\..\src\FC_Fire.cpp" />
+    <ClCompile Include="..\..\src\FC_Game.cpp" />
+    <ClCompile Include="..\..\src\FC_GameMain.c" />
+    <ClCompile Include="..\..\src\FC_GameplayScene.cpp" />
+    <ClCompile Include="..\..\src\FC_GameSession.cpp" />
+    <ClCompile Include="..\..\src\FC_GameSettings.cpp" />
+    <ClCompile Include="..\..\src\FC_GlobalHUD.cpp" />
+    <ClCompile Include="..\..\src\FC_Hud.cpp" />
+    <ClCompile Include="..\..\src\FC_InanimateActor.cpp" />
+    <ClCompile Include="..\..\src\FC_MainMenuScene.cpp" />
+    <ClCompile Include="..\..\src\FC_MouseActor.cpp" />
+    <ClCompile Include="..\..\src\FC_Player.cpp" />
+    <ClCompile Include="..\..\src\FC_ScoreBoard.cpp" />
+    <ClCompile Include="..\..\src\FC_ScorePoint.cpp" />
+    <ClCompile Include="..\..\src\FC_Sign.cpp" />
+    <ClCompile Include="..\..\src\FC_Stars.cpp" />
+    <ClCompile Include="..\..\src\FC_Title.cpp" />
+    <ClCompile Include="..\..\src\FC_Tutorial.cpp" />
+    <ClCompile Include="..\..\src\FC_TypeConverters.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\src\Include\FC_Actor.h" />
+    <ClInclude Include="..\..\src\Include\FC_ActorExit.h" />
+    <ClInclude Include="..\..\src\Include\FC_AnimalActor.h" />
+    <ClInclude Include="..\..\src\Include\FC_BaseScene.h" />
+    <ClInclude Include="..\..\src\Include\FC_Button.h" />
+    <ClInclude Include="..\..\src\Include\FC_CatActor.h" />
+    <ClInclude Include="..\..\src\Include\FC_Consts.h" />
+    <ClInclude Include="..\..\src\Include\FC_DogActor.h" />
+    <ClInclude Include="..\..\src\Include\FC_Fire.h" />
+    <ClInclude Include="..\..\src\Include\FC_Game.h" />
+    <ClInclude Include="..\..\src\Include\FC_GameplayScene.h" />
+    <ClInclude Include="..\..\src\Include\FC_GameSession.h" />
+    <ClInclude Include="..\..\src\Include\FC_GameSettings.h" />
+    <ClInclude Include="..\..\src\Include\FC_GlobalHud.h" />
+    <ClInclude Include="..\..\src\Include\FC_Hud.h" />
+    <ClInclude Include="..\..\src\Include\FC_InanimateActor.h" />
+    <ClInclude Include="..\..\src\Include\FC_MainMenuScene.h" />
+    <ClInclude Include="..\..\src\Include\FC_MouseActor.h" />
+    <ClInclude Include="..\..\src\Include\FC_Player.h" />
+    <ClInclude Include="..\..\src\Include\FC_ScoreBoard.h" />
+    <ClInclude Include="..\..\src\Include\FC_ScorePoint.h" />
+    <ClInclude Include="..\..\src\Include\FC_Sign.h" />
+    <ClInclude Include="..\..\src\Include\FC_Stars.h" />
+    <ClInclude Include="..\..\src\Include\FC_Title.h" />
+    <ClInclude Include="..\..\src\Include\FC_Tutorial.h" />
+    <ClInclude Include="..\..\src\Include\FC_TypeConverters.h" />
+    <ClInclude Include="..\..\src\Include\FC_Types.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\..\assets\res\fonts\main-font-big.fnt" />
+    <None Include="..\..\..\..\assets\res\fonts\main-font.fnt" />
+    <None Include="..\..\..\..\assets\res\images\sprites-1.png" />
+    <None Include="..\..\..\..\assets\res\images\sprites-2.png" />
+    <None Include="..\..\..\..\assets\res\images\sprites-3.png" />
+    <None Include="..\..\..\..\assets\res\images\sprites-4.png" />
+    <None Include="..\..\..\..\assets\res\images\sprites-5.png" />
+    <None Include="..\..\..\..\assets\res\images\sprites-6.png" />
+    <None Include="..\..\..\..\assets\res\poke\poke_engine-strings.str" />
+    <None Include="..\..\..\..\assets\res\poke\poke_engine.cfg">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="..\..\..\..\assets\res\poke\poke_engine.fnt" />
+    <None Include="..\..\..\..\assets\res\poke\poke_engine.png" />
+    <None Include="..\..\..\..\assets\res\scripts\left-sign-hide.pks" />
+    <None Include="..\..\..\..\assets\res\scripts\left-sign-show.pks" />
+    <None Include="..\..\..\..\assets\res\scripts\right-sign-hide.pks" />
+    <None Include="..\..\..\..\assets\res\scripts\right-sign-show.pks" />
+    <None Include="..\..\..\..\assets\res\scripts\right-sign-switch.pks" />
+    <None Include="..\..\..\..\assets\res\scripts\left-sign-switch.pks" />
+    <None Include="..\..\..\..\assets\res\scripts\sign-idle.pks" />
+    <None Include="..\..\..\..\assets\res\scripts\tutorial.pks" />
+    <None Include="..\..\..\..\assets\res\sounds\actor_move.ogg" />
+    <None Include="..\..\..\..\assets\res\sounds\board_hide.ogg" />
+    <None Include="..\..\..\..\assets\res\sounds\board_show.ogg" />
+    <None Include="..\..\..\..\assets\res\sounds\cat_death.ogg" />
+    <None Include="..\..\..\..\assets\res\sounds\main_menu_music.ogg" />
+    <None Include="..\..\..\..\assets\res\sounds\mouse_death.ogg" />
+    <None Include="..\..\..\..\assets\res\sounds\points1.ogg" />
+    <None Include="..\..\..\..\assets\res\sounds\points2.ogg" />
+    <None Include="..\..\..\..\assets\res\sounds\points3.ogg" />
+    <None Include="..\..\..\..\assets\res\sounds\title_entrance.ogg" />
+    <None Include="..\..\..\..\assets\res\sounds\title_exit.ogg" />
+    <None Include="..\..\..\..\assets\res\sounds\wrong_animal.ogg" />
+    <None Include="..\..\..\..\assets\res\sprites\sprites-1.ss" />
+    <None Include="..\..\..\..\assets\res\sprites\sprites-2.ss" />
+    <None Include="..\..\..\..\assets\res\sprites\sprites-3.ss" />
+    <None Include="..\..\..\..\assets\res\sprites\sprites-4.ss" />
+    <None Include="..\..\..\..\assets\res\sprites\sprites-5.ss" />
+    <None Include="..\..\..\..\assets\res\sprites\sprites-6.ss" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
