@@ -1,0 +1,130 @@
+﻿
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+# Explicit paths specified without -i or -o; assuming --only paths...
+# On branch master
+# Your branch is ahead of 'origin/master' by 3 commits.
+#   (use "git push" to publish your local commits)
+#
+# Changes to be committed:
+#	deleted:    FatCatsAndMice/jni/FatCatsAndMice/src/Include/FC_Actor.h
+#	deleted:    FatCatsAndMice/jni/FatCatsAndMice/src/Include/FC_ActorExit.h
+#	deleted:    FatCatsAndMice/jni/FatCatsAndMice/src/Include/FC_AnimalActor.h
+#	deleted:    FatCatsAndMice/jni/FatCatsAndMice/src/Include/FC_BaseScene.h
+#	deleted:    FatCatsAndMice/jni/FatCatsAndMice/src/Include/FC_Button.h
+#	deleted:    FatCatsAndMice/jni/FatCatsAndMice/src/Include/FC_CatActor.h
+#	deleted:    FatCatsAndMice/jni/FatCatsAndMice/src/Include/FC_Consts.h
+#	deleted:    FatCatsAndMice/jni/FatCatsAndMice/src/Include/FC_DogActor.h
+#	deleted:    FatCatsAndMice/jni/FatCatsAndMice/src/Include/FC_Fire.h
+#	deleted:    FatCatsAndMice/jni/FatCatsAndMice/src/Include/FC_Game.h
+#	deleted:    FatCatsAndMice/jni/FatCatsAndMice/src/Include/FC_GameSession.h
+#	deleted:    FatCatsAndMice/jni/FatCatsAndMice/src/Include/FC_GameSettings.h
+#	deleted:    FatCatsAndMice/jni/FatCatsAndMice/src/Include/FC_GameplayScene.h
+#	deleted:    FatCatsAndMice/jni/FatCatsAndMice/src/Include/FC_GlobalHud.h
+#	deleted:    FatCatsAndMice/jni/FatCatsAndMice/src/Include/FC_Hud.h
+#	deleted:    FatCatsAndMice/jni/FatCatsAndMice/src/Include/FC_InanimateActor.h
+#	deleted:    FatCatsAndMice/jni/FatCatsAndMice/src/Include/FC_MainMenuScene.h
+#	deleted:    FatCatsAndMice/jni/FatCatsAndMice/src/Include/FC_MouseActor.h
+#	deleted:    FatCatsAndMice/jni/FatCatsAndMice/src/Include/FC_ObjectActor.h
+#	deleted:    FatCatsAndMice/jni/FatCatsAndMice/src/Include/FC_Player.h
+#	deleted:    FatCatsAndMice/jni/FatCatsAndMice/src/Include/FC_ScoreBoard.h
+#	deleted:    FatCatsAndMice/jni/FatCatsAndMice/src/Include/FC_ScorePoint.h
+#	deleted:    FatCatsAndMice/jni/FatCatsAndMice/src/Include/FC_Sign.h
+#	deleted:    FatCatsAndMice/jni/FatCatsAndMice/src/Include/FC_Stars.h
+#	deleted:    FatCatsAndMice/jni/FatCatsAndMice/src/Include/FC_Title.h
+#	deleted:    FatCatsAndMice/jni/FatCatsAndMice/src/Include/FC_Tutorial.h
+#	deleted:    FatCatsAndMice/jni/FatCatsAndMice/src/Include/FC_TypeConverters.h
+#	deleted:    FatCatsAndMice/jni/FatCatsAndMice/src/Include/FC_Types.h
+#
+# Changes not staged for commit:
+#	deleted:    FatCatsAndMice/jni/FatCatsAndMice/Android.mk
+#	deleted:    FatCatsAndMice/jni/FatCatsAndMice/Platforms/WP/FatCatsAndMiceWP.sdf
+#	deleted:    FatCatsAndMice/jni/FatCatsAndMice/Platforms/WP/FatCatsAndMiceWP.vcxproj
+#	deleted:    FatCatsAndMice/jni/FatCatsAndMice/Platforms/WP/FatCatsAndMiceWP.vcxproj.filters
+#	deleted:    FatCatsAndMice/jni/FatCatsAndMice/Platforms/WP/WMAppManifest.xml
+#	deleted:    FatCatsAndMice/jni/FatCatsAndMice/Platforms/Win32/FatCatsAndMice.vcxproj
+#	deleted:    FatCatsAndMice/jni/FatCatsAndMice/Platforms/Win32/FatCatsAndMice.vcxproj.filters
+#	deleted:    FatCatsAndMice/jni/FatCatsAndMice/Platforms/Win32/FatCatsAndMice.vcxproj.user
+#	deleted:    FatCatsAndMice/jni/FatCatsAndMice/Platforms/Win32/external-libs/libogg-0.dll
+#	deleted:    FatCatsAndMice/jni/FatCatsAndMice/Platforms/Win32/external-libs/libpng16-16.dll
+#	deleted:    FatCatsAndMice/jni/FatCatsAndMice/Platforms/Win32/external-libs/libvorbis-0.dll
+#	deleted:    FatCatsAndMice/jni/FatCatsAndMice/Platforms/Win32/external-libs/libvorbisfile-3.dll
+#	deleted:    FatCatsAndMice/jni/FatCatsAndMice/Platforms/Win32/external-libs/zlib1.dll
+#	deleted:    FatCatsAndMice/jni/FatCatsAndMice/Platforms/iOS/._FatCatsAndMice.xcodeproj
+#	deleted:    FatCatsAndMice/jni/FatCatsAndMice/Platforms/iOS/FatCatsAndMice.xcodeproj/project.pbxproj
+#	deleted:    FatCatsAndMice/jni/FatCatsAndMice/Platforms/iOS/FatCatsAndMice.xcodeproj/xcuserdata/jrlima.xcuserdatad/xcschemes/Fat Cats & Mice.xcscheme
+#	deleted:    FatCatsAndMice/jni/FatCatsAndMice/Platforms/iOS/FatCatsAndMice.xcodeproj/xcuserdata/jrlima.xcuserdatad/xcschemes/xcschememanagement.plist
+#	deleted:    FatCatsAndMice/jni/FatCatsAndMice/Platforms/iOS/FatCatsAndMice/._FatCatsAndMice-Prefix.pch
+#	deleted:    FatCatsAndMice/jni/FatCatsAndMice/Platforms/iOS/FatCatsAndMice/Default-568h@2x.png
+#	deleted:    FatCatsAndMice/jni/FatCatsAndMice/Platforms/iOS/FatCatsAndMice/Default-568h@2x~iphone.png
+#	deleted:    FatCatsAndMice/jni/FatCatsAndMice/Platforms/iOS/FatCatsAndMice/Default-Portrait-1024@2x~ipad.png
+#	deleted:    FatCatsAndMice/jni/FatCatsAndMice/Platforms/iOS/FatCatsAndMice/Default-Portrait-1024~ipad.png
+#	deleted:    FatCatsAndMice/jni/FatCatsAndMice/Platforms/iOS/FatCatsAndMice/Default-Portrait@2x~ipad.png
+#	deleted:    FatCatsAndMice/jni/FatCatsAndMice/Platforms/iOS/FatCatsAndMice/Default.png
+#	deleted:    FatCatsAndMice/jni/FatCatsAndMice/Platforms/iOS/FatCatsAndMice/Default@2x.png
+#	deleted:    FatCatsAndMice/jni/FatCatsAndMice/Platforms/iOS/FatCatsAndMice/Default@2x~iphone.png
+#	deleted:    FatCatsAndMice/jni/FatCatsAndMice/Platforms/iOS/FatCatsAndMice/Default~ipad.png
+#	deleted:    FatCatsAndMice/jni/FatCatsAndMice/Platforms/iOS/FatCatsAndMice/Default~iphone.png
+#	deleted:    FatCatsAndMice/jni/FatCatsAndMice/Platforms/iOS/FatCatsAndMice/FatCatsAndMice-Info.plist
+#	deleted:    FatCatsAndMice/jni/FatCatsAndMice/Platforms/iOS/FatCatsAndMice/FatCatsAndMice-Prefix.pch
+#	deleted:    FatCatsAndMice/jni/FatCatsAndMice/Platforms/iOS/FatCatsAndMice/Images.xcassets/AppIcon.appiconset/Contents.json
+#	deleted:    FatCatsAndMice/jni/FatCatsAndMice/Platforms/iOS/FatCatsAndMice/Images.xcassets/AppIcon.appiconset/Icon-100x100.png
+#	deleted:    FatCatsAndMice/jni/FatCatsAndMice/Platforms/iOS/FatCatsAndMice/Images.xcassets/AppIcon.appiconset/Icon-114x114.png
+#	deleted:    FatCatsAndMice/jni/FatCatsAndMice/Platforms/iOS/FatCatsAndMice/Images.xcassets/AppIcon.appiconset/Icon-120x120.png
+#	deleted:    FatCatsAndMice/jni/FatCatsAndMice/Platforms/iOS/FatCatsAndMice/Images.xcassets/AppIcon.appiconset/Icon-144x144.png
+#	deleted:    FatCatsAndMice/jni/FatCatsAndMice/Platforms/iOS/FatCatsAndMice/Images.xcassets/AppIcon.appiconset/Icon-152x152.png
+#	deleted:    FatCatsAndMice/jni/FatCatsAndMice/Platforms/iOS/FatCatsAndMice/Images.xcassets/AppIcon.appiconset/Icon-29x29.png
+#	deleted:    FatCatsAndMice/jni/FatCatsAndMice/Platforms/iOS/FatCatsAndMice/Images.xcassets/AppIcon.appiconset/Icon-40x40.png
+#	deleted:    FatCatsAndMice/jni/FatCatsAndMice/Platforms/iOS/FatCatsAndMice/Images.xcassets/AppIcon.appiconset/Icon-50x50.png
+#	deleted:    FatCatsAndMice/jni/FatCatsAndMice/Platforms/iOS/FatCatsAndMice/Images.xcassets/AppIcon.appiconset/Icon-57x57.png
+#	deleted:    FatCatsAndMice/jni/FatCatsAndMice/Platforms/iOS/FatCatsAndMice/Images.xcassets/AppIcon.appiconset/Icon-58x58.png
+#	deleted:    FatCatsAndMice/jni/FatCatsAndMice/Platforms/iOS/FatCatsAndMice/Images.xcassets/AppIcon.appiconset/Icon-72x72.png
+#	deleted:    FatCatsAndMice/jni/FatCatsAndMice/Platforms/iOS/FatCatsAndMice/Images.xcassets/AppIcon.appiconset/Icon-76x76.png
+#	deleted:    FatCatsAndMice/jni/FatCatsAndMice/Platforms/iOS/FatCatsAndMice/Images.xcassets/AppIcon.appiconset/Icon-80x80.png
+#	deleted:    FatCatsAndMice/jni/FatCatsAndMice/Platforms/iOS/FatCatsAndMice/Images.xcassets/LaunchImage.launchimage/Contents.json
+#	deleted:    FatCatsAndMice/jni/FatCatsAndMice/Platforms/iOS/FatCatsAndMice/Images.xcassets/LaunchImage.launchimage/Default
+#	deleted:    FatCatsAndMice/jni/FatCatsAndMice/Platforms/iOS/FatCatsAndMice/Images.xcassets/LaunchImage.launchimage/Default-568h
+#	deleted:    FatCatsAndMice/jni/FatCatsAndMice/Platforms/iOS/FatCatsAndMice/Images.xcassets/LaunchImage.launchimage/launch-1536x2008.png
+#	deleted:    FatCatsAndMice/jni/FatCatsAndMice/Platforms/iOS/FatCatsAndMice/Images.xcassets/LaunchImage.launchimage/launch-1536x2048.png
+#	deleted:    FatCatsAndMice/jni/FatCatsAndMice/Platforms/iOS/FatCatsAndMice/Images.xcassets/LaunchImage.launchimage/launch-320x480.png
+#	deleted:    FatCatsAndMice/jni/FatCatsAndMice/Platforms/iOS/FatCatsAndMice/Images.xcassets/LaunchImage.launchimage/launch-640x1136-1.png
+#	deleted:    FatCatsAndMice/jni/FatCatsAndMice/Platforms/iOS/FatCatsAndMice/Images.xcassets/LaunchImage.launchimage/launch-640x1136.png
+#	deleted:    FatCatsAndMice/jni/FatCatsAndMice/Platforms/iOS/FatCatsAndMice/Images.xcassets/LaunchImage.launchimage/launch-640x960-1.png
+#	deleted:    FatCatsAndMice/jni/FatCatsAndMice/Platforms/iOS/FatCatsAndMice/Images.xcassets/LaunchImage.launchimage/launch-640x960.png
+#	deleted:    FatCatsAndMice/jni/FatCatsAndMice/Platforms/iOS/FatCatsAndMice/Images.xcassets/LaunchImage.launchimage/launch-768x1004.png
+#	deleted:    FatCatsAndMice/jni/FatCatsAndMice/Platforms/iOS/FatCatsAndMice/Images.xcassets/LaunchImage.launchimage/launch-768x1024.png
+#	deleted:    FatCatsAndMice/jni/FatCatsAndMice/Platforms/iOS/FatCatsAndMice/en.lproj/._InfoPlist.strings
+#	deleted:    FatCatsAndMice/jni/FatCatsAndMice/Platforms/iOS/FatCatsAndMice/en.lproj/InfoPlist.strings
+#	deleted:    FatCatsAndMice/jni/FatCatsAndMice/Platforms/iOS/FatCatsAndMice/launch-1536x2008.png
+#	deleted:    FatCatsAndMice/jni/FatCatsAndMice/Platforms/iOS/FatCatsAndMice/launch-640x1136-1.png
+#	deleted:    FatCatsAndMice/jni/FatCatsAndMice/Platforms/iOS/FatCatsAndMice/launch-640x960-1.png
+#	deleted:    FatCatsAndMice/jni/FatCatsAndMice/Platforms/iOS/FatCatsAndMice/launch-768x1004.png
+#	deleted:    FatCatsAndMice/jni/FatCatsAndMice/src/FC_Actor.cpp
+#	deleted:    FatCatsAndMice/jni/FatCatsAndMice/src/FC_ActorExit.cpp
+#	deleted:    FatCatsAndMice/jni/FatCatsAndMice/src/FC_AnimalActor.cpp
+#	deleted:    FatCatsAndMice/jni/FatCatsAndMice/src/FC_BaseScene.cpp
+#	deleted:    FatCatsAndMice/jni/FatCatsAndMice/src/FC_Button.cpp
+#	deleted:    FatCatsAndMice/jni/FatCatsAndMice/src/FC_CatActor.cpp
+#	deleted:    FatCatsAndMice/jni/FatCatsAndMice/src/FC_DogActor.cpp
+#	deleted:    FatCatsAndMice/jni/FatCatsAndMice/src/FC_Fire.cpp
+#	deleted:    FatCatsAndMice/jni/FatCatsAndMice/src/FC_Game.cpp
+#	deleted:    FatCatsAndMice/jni/FatCatsAndMice/src/FC_GameMain.c
+#	deleted:    FatCatsAndMice/jni/FatCatsAndMice/src/FC_GameSession.cpp
+#	deleted:    FatCatsAndMice/jni/FatCatsAndMice/src/FC_GameSettings.cpp
+#	deleted:    FatCatsAndMice/jni/FatCatsAndMice/src/FC_GameplayScene.cpp
+#	deleted:    FatCatsAndMice/jni/FatCatsAndMice/src/FC_GlobalHUD.cpp
+#	deleted:    FatCatsAndMice/jni/FatCatsAndMice/src/FC_Hud.cpp
+#	deleted:    FatCatsAndMice/jni/FatCatsAndMice/src/FC_InanimateActor.cpp
+#	deleted:    FatCatsAndMice/jni/FatCatsAndMice/src/FC_MainMenuScene.cpp
+#	deleted:    FatCatsAndMice/jni/FatCatsAndMice/src/FC_MouseActor.cpp
+#	deleted:    FatCatsAndMice/jni/FatCatsAndMice/src/FC_ObjectActor.cpp
+#	deleted:    FatCatsAndMice/jni/FatCatsAndMice/src/FC_Player.cpp
+#	deleted:    FatCatsAndMice/jni/FatCatsAndMice/src/FC_ScoreBoard.cpp
+#	deleted:    FatCatsAndMice/jni/FatCatsAndMice/src/FC_ScorePoint.cpp
+#	deleted:    FatCatsAndMice/jni/FatCatsAndMice/src/FC_Sign.cpp
+#	deleted:    FatCatsAndMice/jni/FatCatsAndMice/src/FC_Stars.cpp
+#	deleted:    FatCatsAndMice/jni/FatCatsAndMice/src/FC_Title.cpp
+#	deleted:    FatCatsAndMice/jni/FatCatsAndMice/src/FC_Tutorial.cpp
+#	deleted:    FatCatsAndMice/jni/FatCatsAndMice/src/FC_TypeConverters.cpp
+#
+
